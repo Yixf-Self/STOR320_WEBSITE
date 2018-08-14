@@ -1,12 +1,12 @@
 ---
 title: '**STOR 320: Introduction to Data Science**'
 output:
-  pdf_document:
-    toc: yes
   html_document:
     theme: cosmo
     toc: yes
     toc_float: yes
+  pdf_document:
+    toc: yes
 ---
 
 
@@ -17,9 +17,9 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Instructional Assistant: [Thomas Keefe](http://stat-or.unc.edu/people/graduate-students-department)
 
-- STOR 320.01 **[Course Syllabus](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/320.2%20Syllabus.pdf)**
+- STOR 320.01 **[Course Syllabus](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Syllabi/320.1%20Syllabus.pdf)**
 
-- STOR 320.02 **[Course Syllabus](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/320.2%20Syllabus.pdf)**
+- STOR 320.02 **[Course Syllabus](hhttps://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Syllabi/320.2%20Syllabus.pdf)**
 
 # **Course Material**
 
