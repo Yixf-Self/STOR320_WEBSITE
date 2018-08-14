@@ -1,12 +1,12 @@
 ---
 title: '**STOR 320: Introduction to Data Science**'
 output:
+  pdf_document:
+    toc: yes
   html_document:
     theme: cosmo
     toc: yes
     toc_float: yes
-  pdf_document:
-    toc: yes
 ---
 
 
