@@ -19,7 +19,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 - STOR 320.01 **[Course Syllabus](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Syllabi/320.1%20Syllabus.pdf)**
 
-- STOR 320.02 **[Course Syllabus](hhttps://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Syllabi/320.2%20Syllabus.html)**
+- STOR 320.02 **[Course Syllabus](https://drive.google.com/drive/folders/1vnKNR7sNI5xnjuMRefx8BQfuyiCgWenT)**
 
 # **Course Material**
 
