@@ -17,7 +17,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Instructional Assistant: [Thomas Keefe](http://stat-or.unc.edu/people/graduate-students-department)
 
-See the **[course syllabus](https://drive.google.com/open?id=0B2lwGKhIFjYYYVh5NVVsZVJjbmM)** for more information. 
+- STOR 320.01: **[Course Syllabus](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/320.1%20Syllabus.pdf)** for more information. 
 
 # **Course Material**
 
