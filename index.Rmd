@@ -11,7 +11,7 @@ output:
 This course is an application-driven introduction to data science. Statistical and computational tools are valued throughout the modern workplace from Silicon Valley startups, to marine biology labs, to Wall Street firms. These tools require technical skills such as programming and statistics. They also require professional skills such as communication, teamwork, problem solving, and critical thinking.
 
 
-- Instructor: [Robin Cunningham](http://stat-or.unc.edu/people/faculty/robin-cunningham)
+- Instructor: [Mario Giacomazzo](http://www.supermariogiacomazzo.com/)
 
 - Instructional Assistant: [Adam Waterbury](http://stat-or.unc.edu/people/graduate-students-department)
 
