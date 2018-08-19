@@ -1,5 +1,5 @@
 ---
-title: '**STOR 320: Introduction to Data Science**'
+title: '**STOR 320: Intro to Data Science**'
 output:
   html_document:
     theme: cosmo
@@ -28,7 +28,7 @@ This course is an application-driven introduction to data science. Statistical a
 | Date | Lecture | Slides | Tutorial | Assignment | Solutions|
 |------|--------|-------|-------|-------|-------|
 |August 22 |Course Overview, Install R | [Lecture 1](https://www.dropbox.com/s/onli0k3vl1v6bmu/STOR%20320%20Lecture%201%2008-23-17.pptx?dl=0) || [Setup](http://rpubs.com/redrobincl/299923)|||
-<!-- |August 25 |Visualization and ggplot2 | [Lecture 2](https://www.dropbox.com/s/3kewdkom4r7ht5e/STOR%20320%20Lecture%202%2008-25-17.pptx?dl=0) | [Homework 1](http://rpubs.com/redrobincl/301780)| -->
+|August 24 |Visualization and ggplot2 | [Lecture 2](https://www.dropbox.com/s/3kewdkom4r7ht5e/STOR%20320%20Lecture%202%2008-25-17.pptx?dl=0) || [Lab 1](http://rpubs.com/redrobincl/301780)|[Lab 1]()|
 <!-- |August 28 | ggplot Wrap-up and Workflow Basics| [Lecture 3](https://www.dropbox.com/s/403yr1vxniw7ave/STOR%20320%20Lecture%203%2008-28-17.pptx?dl=0) | [Reading for 8-28](http://rpubs.com/redrobincl/302494)| -->
 <!-- |August 30 | Data Transformations with Dplyr| [Lecture 4](https://www.dropbox.com/s/2so7c7nr4pc9cwb/STOR%20320%20Lecture%204%2008-30-17.pptx?dl=0) | [Homework for 8-30](http://rpubs.com/redrobincl/302710)| -->
 <!-- |Sept. 1 | Data Transformations with Dplyr| [Class Activity](https://www.dropbox.com/s/knonga5b5dzlu0h/STOR%20320%20%E2%80%93%20Class%20Activity%20090117.docx?dl=0) | [Homework for Sept 1](http://rpubs.com/redrobincl/303670)| -->
@@ -73,6 +73,12 @@ This course is an application-driven introduction to data science. Statistical a
 
 
 # **Additional resources**
+
+- [Rmarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+- [ggplot2 Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+
+- [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
 # **Miscellaneous**
 
