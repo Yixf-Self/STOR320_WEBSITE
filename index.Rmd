@@ -28,7 +28,7 @@ This course is an application-driven introduction to data science. Statistical a
 | Date | Lecture | Slides | Tutorial | Assignment | Solutions|
 |------|--------|-------|-------|-------|-------|
 |August 22 |Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1vjsgH0VzgcmeExx3g7hHnolXSgP0Dy7X/view?usp=sharing) || |||
-|August 24 |Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1N3z7KrgaZe5vg4z9zFffE11NuuJNAOho/view?usp=sharing) || [Lab 1](Assignments/Lab_1.html) ([Download](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|[Lab 1](Assignments/Lab 1/Solutions_1.html)|
+|August 24 |Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1N3z7KrgaZe5vg4z9zFffE11NuuJNAOho/view?usp=sharing) || [Lab 1](Assignments/Lab 1/Lab_1.html) ([Download](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|[Lab 1](Assignments/Lab 1/Solutions_1.html)|
 <!-- |August 28 | ggplot Wrap-up and Workflow Basics| [Lecture 3](https://www.dropbox.com/s/403yr1vxniw7ave/STOR%20320%20Lecture%203%2008-28-17.pptx?dl=0) | [Reading for 8-28](http://rpubs.com/redrobincl/302494)| -->
 <!-- |August 30 | Data Transformations with Dplyr| [Lecture 4](https://www.dropbox.com/s/2so7c7nr4pc9cwb/STOR%20320%20Lecture%204%2008-30-17.pptx?dl=0) | [Homework for 8-30](http://rpubs.com/redrobincl/302710)| -->
 <!-- |Sept. 1 | Data Transformations with Dplyr| [Class Activity](https://www.dropbox.com/s/knonga5b5dzlu0h/STOR%20320%20%E2%80%93%20Class%20Activity%20090117.docx?dl=0) | [Homework for Sept 1](http://rpubs.com/redrobincl/303670)| -->
