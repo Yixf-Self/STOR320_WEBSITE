@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Instructions
 
+**Exercises:** 1-5 (Pgs. 6-7); 1-2, 5 (Pg. 12); 1-5 (Pgs. 20-21)
+
 **Assigned:** Friday, August 24, 2018
 
 **Due:** Friday, August 31, 2018 by 5:00 PM
@@ -22,7 +24,7 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-# Section 3.2.4
+# Chapter 1 (Pgs. 6-7)
 
 ##  Exercise 1
 ```{r}
@@ -74,7 +76,7 @@ ggplot(data=mpg,aes(x=class,y=drv)) +
 
 Scatter plots are not meant to visualize the relationship between two categorical/qualitative variables. 
 
-# Section 3.3.1
+# Chapter 1 (Pg. 12)
 
 ##  Exercise 1
 ```{r}
@@ -120,7 +122,7 @@ ggplot(data=mpg) +
 ```
 The **stroke** aesthetic works similar to the **shape** aesthetic. The size of the outline around the dots is based on the magnitude of the variable **cty**.
 
-# Section 3.6.1
+# Chapter 1 (Pgs. 20-21)
 
 ##  Exercise 1
 For line chart, use **geom_line**. For boxplot, use **geom_boxplot**. For histogram, use **geom_histogram**.

@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Instructions
 
+**Exercises:** 1-5 (Pgs. 6-7); 1-2, 5 (Pg. 12); 1-5 (Pgs. 20-21)
+
 **Assigned:** Friday, August 24, 2018
 
 **Due:** Friday, August 31, 2018 by 5:00 PM
@@ -22,7 +24,7 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-# Section 3.2.4
+# Chapter 1 (Pgs. 6-7)
 
 ##  Exercise 1
 ```{r}
@@ -74,23 +76,44 @@ ggplot(data=mpg,aes(x=class,y=drv)) +
 
 Scatter plots are not meant to visualize the relationship between two categorical/qualitative variables. 
 
-# Section 3.3.1
+# Chapter 1 (Pg. 12)
 
 ##  Exercise 1
+```{r}
+#
+```
 
 ##  Exercise 2
+```{r}
+#
+```
 
 ##  Exercise 5
+```{r}
+#
+```
 
-# Section 3.6.1
+# Chapter 1 (Pgs. 20-21)
 
 ##  Exercise 1
+```{r}
+#
+```
 
 ##  Exercise 2
+```{r}
+#
+```
 
 ##  Exercise 3
+```{r}
+#
+```
 
 ##  Exercise 4
+```{r}
+#
+```
 
 ##  Exercise 5
 
