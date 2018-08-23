@@ -21,9 +21,9 @@ output:
 This course is an application-driven introduction to data science. Statistical and computational tools are valued throughout the modern workplace from Silicon Valley startups, to marine biology labs, to Wall Street firms. These tools require technical skills such as programming and statistics. They also require professional skills such as communication, teamwork, problem solving, and critical thinking.
 
 
-- Instructor: [Mario Giacomazzo](http://www.supermariogiacomazzo.com/)
+- Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
-- Instructional Assistant: [Thomas Keefe](http://stat-or.unc.edu/people/graduate-students-department)
+- Instructional Assistant: **[Thomas Keefe](http://stat-or.unc.edu/people/graduate-students-department)**
 
 - STOR 320.01 **[Course Syllabus](https://drive.google.com/file/d/1J4SmWeiOrxTWhPXM9CVXpI8KEGFwe7Fe/view?usp=sharing)**
 
@@ -32,12 +32,59 @@ This course is an application-driven introduction to data science. Statistical a
 
 # **Course Material**
 
-
 | Date | Lecture | Slides | Tutorial(T) | Lab(L) | Analysis(A)| Solutions  |
 |------|---------|--------|:---------:|:---:|:------------:|-----------:|
-|August 22 |Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| |
-|August 24 |Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[L1](Lab/Lab 1/Solutions_1.html)|
-||||||||
+|Aug. 22|Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| |
+|Aug. 24|Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[L1](Lab/Lab 1/Solutions_1.html)|
+|Aug. 27|||||||
+|Aug. 29|||||||
+|Aug. 31||||L2|||
+|Sep. 3|Don't Labor on Labor Day||||||
+|Sep. 5|||||||
+|Sep. 7||||L3|||
+|Sep. 10|||||||
+|Sep. 12|||||||
+|Sep. 14|||||A1||
+|Sep. 17|||||||
+|Sep. 19|||||||
+|Sep. 21||||L4|||
+|Sep. 24|||||||
+|Sep. 26|||||||
+|Sep. 28||||L5|||
+|Oct. 1|||||||
+|Oct. 3|||||||
+|Oct. 5||||L6|||
+|Oct. 8|||||||
+|Oct. 10|||||||
+|Oct. 12|||||A2||
+|Oct. 15|||||||
+|Oct. 17|||||||
+|Oct. 19|Fall Brizzeak|||L7|||
+|Oct. 22|||||||
+|Oct. 24|||||||
+|Oct. 26||||L8|||
+|Oct. 29|||||||
+|Oct. 31|||||||
+|Nov. 2||||L9|||
+|Nov. 5|||||||
+|Nov. 7|||||||
+|Nov. 9|||||A3||
+|Nov. 12|||||||
+|Nov. 14|||||||
+|Nov. 16|||||L10||
+|Nov. 19|||||||
+|Nov. 21|Thanksgiving||||||
+|Nov. 23|Thanksgiving||||||
+|Nov. 26|||||||
+|Nov. 28|||||||
+|Nov. 30|||||A4||
+|Dec. 3|||||||
+|Dec. 5|||||||
+|Dec. 10|STOR 320.01 Final Presentations (12-3 PM)||||||
+|Dec. 11|STOR 320.02 Final Presentations (12-3 PM)||||||
+|Dec. 12|Final Written Paper (Submit before 5PM)||||||
+
+
 <!-- |August 28 | ggplot Wrap-up and Workflow Basics| [Lecture 3](https://www.dropbox.com/s/403yr1vxniw7ave/STOR%20320%20Lecture%203%2008-28-17.pptx?dl=0) | [Reading for 8-28](http://rpubs.com/redrobincl/302494)| -->
 <!-- |August 30 | Data Transformations with Dplyr| [Lecture 4](https://www.dropbox.com/s/2so7c7nr4pc9cwb/STOR%20320%20Lecture%204%2008-30-17.pptx?dl=0) | [Homework for 8-30](http://rpubs.com/redrobincl/302710)| -->
 <!-- |Sept. 1 | Data Transformations with Dplyr| [Class Activity](https://www.dropbox.com/s/knonga5b5dzlu0h/STOR%20320%20%E2%80%93%20Class%20Activity%20090117.docx?dl=0) | [Homework for Sept 1](http://rpubs.com/redrobincl/303670)| -->
@@ -72,6 +119,54 @@ This course is an application-driven introduction to data science. Statistical a
 <!-- |Nov. 20 | Donner Destiny |[Slides](https://www.dropbox.com/s/v5240dew6iif2n7/Donner_Party.Rmd?dl=0)|[Classification Folder   ](https://www.dropbox.com/s/z8ao35ggv2yp2af/classification.zip?dl=0)   [Classification Activity](https://www.dropbox.com/s/d59z1uw6xtzuykr/STOR%20320%20%E2%80%93%20Classification%20Activity%20112017.docx?dl=0)| -->
 <!-- |Dec. 4 | Project Presentations and Donners |[Surveys](https://www.dropbox.com/s/eio7oxuyz5n5qsv/Survey%20Links%20for%20Presentations%2012-04-17.docx?dl=0)|[Donner_Modified](https://www.dropbox.com/s/8j7wgalok1f61j5/Donner_Party_update.Rmd?dl=0)  | -->
 <!-- |Dec. 4 | Project Presentations and Donners |[Surveys for Exam Day](https://www.dropbox.com/s/heden10bejim063/Survey%20Links%20for%20Presentations%2012-15-17.docx?dl=0)|| -->
+
+# **Assignment Tracker**
+
+All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. Project parts will have more specific instructions.
+
+| Assigned | Lab(L) | Analysis(A) | Project(P)| Due Date (Time) |
+|----------|--------|-------------|:---------:|----------------:|
+| August 24| L1     |             |           | August 31 (5 PM)|
+|          |        |             |           |                 |
+
+# **Final Project Details**
+
+For the final project, each section of STOR 320 will be divided (ideally) into reasearch groups of size 4. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. May God have mercy on your souls. 
+
+## Research Group Assignments
+
+To find your research group, see below:
+
+- STOR 320.01
+
+- STOR 320.02
+
+## Four Roles
+
+Although everyone is responsible for the entire project, each member of the group will be assigned a specific role for accountability and consistency. These four specific roles are described as follows:
+
+- **The Creator:** Schedule and Meet with Dr. Mario or Sir Thomas Keefe to Propose Your Group's Research Idea
+
+- **The Interpreter:** Schedule and Meet with Dr. Mario or Sir Thomas Keefe to Share Findings from Exploratory Analysis
+
+- **The Orator:** Give a Captivating 4 Minute Slideshow Presentation During Final Exam Day
+
+- **The Deliverer:** Deliver Your Group from Evil by Editing and Submitting the Exploratory Analysis and Final Written Paper via SAKAI Before the Deadline
+
+## Four Parts Including Point Values
+
+This final project will be divided into four parts worth a total of 100 points. Each part will have a clear rubric as non-subjective as possible. The parts along with total point values are found below: 
+
+- P1: Project Proposal *(10 Points)*
+
+- P2: Exploratory Analysis *(20 Points)*
+
+- P3: Final Presentations *(30 Points)*
+
+- P4: Final Written Paper *(40 Points)*
+
+##
+
 
 
 
