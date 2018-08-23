@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Due:** Friday, August 31, 2018 by 5:00 PM
 
-**Submission:** Submit via an electronic document on Sakai. Must be submitted as a html file generated in RStudio. All assigned problems are chosen according to the online textbook (http://r4ds.had.co.nz/). 
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as a html file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. 
 
 ```{r, include=FALSE}
 library(tidyverse)
