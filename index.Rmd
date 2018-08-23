@@ -1,5 +1,6 @@
 ---
 title: '**STOR 320: Intro to Data Science**'
+geometry: margin=2
 output:
   html_document:
     theme: cosmo
@@ -9,6 +10,13 @@ output:
     toc: yes
 ---
 
+<style type="text/css">
+.main-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 This course is an application-driven introduction to data science. Statistical and computational tools are valued throughout the modern workplace from Silicon Valley startups, to marine biology labs, to Wall Street firms. These tools require technical skills such as programming and statistics. They also require professional skills such as communication, teamwork, problem solving, and critical thinking.
 
@@ -25,10 +33,10 @@ This course is an application-driven introduction to data science. Statistical a
 # **Course Material**
 
 
-| Date | Lecture | Slides | Tutorial | Assignment | Solutions|
-|------|--------|-------|-------|-------|-------|
-|August 22 |Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || |||
-|August 24 |Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [Tutorial 1](Lectures/Lecture_2/)([Download](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [Lab 1](Assignments/Lab 1/Lab_1.html) ([Download](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|[Lab 1](Assignments/Lab 1/Solutions_1.html)|
+| Date | Lecture | Slides | Tutorial(T) | Lab(L) | Data Analysis(DA)| Solutions  |
+|------|---------|--------|:---------:|:---:|:------------:|-----------:|
+|August 22 |Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| |
+|August 24 |Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture_2/)([Download](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Assignments/Lab 1/Lab_1.html) ([Download](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[L1](Assignments/Lab 1/Solutions_1.html)|
 <!-- |August 28 | ggplot Wrap-up and Workflow Basics| [Lecture 3](https://www.dropbox.com/s/403yr1vxniw7ave/STOR%20320%20Lecture%203%2008-28-17.pptx?dl=0) | [Reading for 8-28](http://rpubs.com/redrobincl/302494)| -->
 <!-- |August 30 | Data Transformations with Dplyr| [Lecture 4](https://www.dropbox.com/s/2so7c7nr4pc9cwb/STOR%20320%20Lecture%204%2008-30-17.pptx?dl=0) | [Homework for 8-30](http://rpubs.com/redrobincl/302710)| -->
 <!-- |Sept. 1 | Data Transformations with Dplyr| [Class Activity](https://www.dropbox.com/s/knonga5b5dzlu0h/STOR%20320%20%E2%80%93%20Class%20Activity%20090117.docx?dl=0) | [Homework for Sept 1](http://rpubs.com/redrobincl/303670)| -->
