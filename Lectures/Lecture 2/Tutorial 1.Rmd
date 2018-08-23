@@ -1,5 +1,5 @@
 ---
-title: "STOR 320 Tutorial 2"
+title: "STOR 320 Tutorial 1"
 author: "Mario Giacomazzo"
 date: "August 22, 2018"
 output: html_document
