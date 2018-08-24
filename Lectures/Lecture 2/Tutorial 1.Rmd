@@ -21,7 +21,7 @@ For **our** class we will always, **Knit to HTML**!!!
 
 For more assistance with RMarkdown, see Chapter 21 in *R for Data Science* and the RMarkdown cheat sheet at <https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf>, which link is also found on [course website](https://supermariogiacomazzo.github.io/STOR320_WEBSITE/).
 
-# Overview of the Midwest Data from the Tidyverse
+# Overview of the Mammals Sleep Dataset from the Tidyverse
 
 ```{r}
 msleep #Prints the data but takes up a lot of space

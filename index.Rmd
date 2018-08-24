@@ -165,8 +165,12 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - P4: Final Written Paper *(40 Points)*
 
-##
+## Due Dates of Individual Parts
 
+| Part | Description | Due Date (Time) |
+|----------|--------:|
+| P1  | Project Proposal    |August 31 (5 PM)|
+|          |        |             |           |                 |
 
 
 
