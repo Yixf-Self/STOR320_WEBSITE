@@ -32,57 +32,57 @@ This course is an application-driven introduction to data science. Statistical a
 
 # **Course Material**
 
-| Date | Lecture | Slides | Tutorial(T) | Lab(L) | Analysis(A)| Solutions  |
-|------|---------|--------|:---------:|:---:|:------------:|-----------:|
-|Aug. 22|Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| |
-|Aug. 24|Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[L1](Lab/Lab 1/Solutions_1.html)|
-|Aug. 27|||||||
-|Aug. 29|||||||
-|Aug. 31||||L2|||
-|Sep. 3|Don't Labor on Labor Day||||||
-|Sep. 5|||||||
-|Sep. 7||||L3|||
-|Sep. 10|||||||
-|Sep. 12|||||||
-|Sep. 14|||||A1||
-|Sep. 17|||||||
-|Sep. 19|||||||
-|Sep. 21||||L4|||
-|Sep. 24|||||||
-|Sep. 26|||||||
-|Sep. 28||||L5|||
-|Oct. 1|||||||
-|Oct. 3|||||||
-|Oct. 5||||L6|||
-|Oct. 8|||||||
-|Oct. 10|||||||
-|Oct. 12|||||A2||
-|Oct. 15|||||||
-|Oct. 17|||||||
-|Oct. 19|Fall Brizzeak|||L7|||
-|Oct. 22|||||||
-|Oct. 24|||||||
-|Oct. 26||||L8|||
-|Oct. 29|||||||
-|Oct. 31|||||||
-|Nov. 2||||L9|||
-|Nov. 5|||||||
-|Nov. 7|||||||
-|Nov. 9|||||A3||
-|Nov. 12|||||||
-|Nov. 14|||||||
-|Nov. 16|||||L10||
-|Nov. 19|||||||
-|Nov. 21|Thanksgiving||||||
-|Nov. 23|Thanksgiving||||||
-|Nov. 26|||||||
-|Nov. 28|||||||
-|Nov. 30|||||A4||
-|Dec. 3|||||||
-|Dec. 5|||||||
-|Dec. 10|STOR 320.01 Final Presentations (12-3 PM)||||||
-|Dec. 11|STOR 320.02 Final Presentations (12-3 PM)||||||
-|Dec. 12|Final Written Paper (Submit before 5PM)||||||
+| Date | Lecture | Slides | Tutorial(T) | Lab(L) | Analysis(A)| Project(P)| Solutions  |
+|------|---------|--------|:---------:|:---:|:------------:|:------------:|-----------:|
+|Aug. 22|Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| ||
+|Aug. 24|Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) || [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[L1](Lab/Lab 1/Solutions_1.html)|
+|Aug. 27||||||||
+|Aug. 29||||||||
+|Aug. 31||||L2||||
+|Sep. 3|Don't Labor on Labor Day|||||||
+|Sep. 5||||||||
+|Sep. 7||||L3||||
+|Sep. 10||||||||
+|Sep. 12||||||||
+|Sep. 14|||||A1|||
+|Sep. 17||||||||
+|Sep. 19||||||||
+|Sep. 21||||L4||||
+|Sep. 24||||||||
+|Sep. 26||||||||
+|Sep. 28||||L5||||
+|Oct. 1||||||||
+|Oct. 3||||||||
+|Oct. 5||||L6||P1||
+|Oct. 8||||||||
+|Oct. 10||||||||
+|Oct. 12|||||A2|||
+|Oct. 15||||||||
+|Oct. 17||||||||
+|Oct. 19|Fall Brizzeak|||L7||||
+|Oct. 22||||||||
+|Oct. 24||||||||
+|Oct. 26||||L8||||
+|Oct. 29||||||||
+|Oct. 31||||||||
+|Nov. 2||||L9||P2||
+|Nov. 5||||||||
+|Nov. 7||||||||
+|Nov. 9|||||A3|||
+|Nov. 12||||||||
+|Nov. 14||||||||
+|Nov. 16||||L10||||
+|Nov. 19||||||||
+|Nov. 21|Thanksgiving|||||||
+|Nov. 23|Thanksgiving|||||||
+|Nov. 26|||||||||
+|Nov. 28||||||||
+|Nov. 30|||||A4|||
+|Dec. 3||||||||
+|Dec. 5||||||||
+|Dec. 10|STOR 320.01 Final Presentation|||||P3||
+|Dec. 11|STOR 320.02 Final Presentation|||||P3||
+|Dec. 12|Final Written Paper|||||P4||
 
 
 <!-- |August 28 | ggplot Wrap-up and Workflow Basics| [Lecture 3](https://www.dropbox.com/s/403yr1vxniw7ave/STOR%20320%20Lecture%203%2008-28-17.pptx?dl=0) | [Reading for 8-28](http://rpubs.com/redrobincl/302494)| -->
