@@ -25,10 +25,11 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Instructional Assistant: **[Thomas Keefe](http://stat-or.unc.edu/people/graduate-students-department)**
 
-- STOR 320.01 **[Course Syllabus](https://drive.google.com/file/d/1J4SmWeiOrxTWhPXM9CVXpI8KEGFwe7Fe/view?usp=sharing)**
+- STOR 320.01 **[Course Syllabus](https://drive.google.com/file/d/18gI5ak5Kdrl6TY2bFfzZA7H2l8uNrXGu/view?usp=sharing)**
 
-- STOR 320.02 **[Course Syllabus](https://drive.google.com/file/d/1NVOiTKvoTE6qKbqz7uE_NkLUTgE3quCP/view?usp=sharing
+- STOR 320.02 **[Course Syllabus](https://drive.google.com/file/d/1h92pSV7o2hzbLCah82hiF9O4ak2IAFRo/view?usp=sharing
 )**
+
 
 # **Course Material**
 
@@ -161,17 +162,20 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - P2: Exploratory Analysis *(20 Points)*
 
-- P3: Final Presentations *(30 Points)*
+- P3: Final Presentation *(30 Points)*
 
 - P4: Final Written Paper *(40 Points)*
 
 ## Due Dates of Individual Parts
 
 | Part | Description | Due Date (Time) |
-|----------|--------:|
-| P1  | Project Proposal    |August 31 (5 PM)|
-|          |        |             |           |                 |
-
+|------|-------------|----------------:|
+| P1  | Project Proposal     |September 28 (5 PM)|
+| P2  | Exploratory Analysis |October 12 (5 PM)|
+| P3  | Final Presentation (STOR 320.01)   |December 10 (12 PM)|
+| P3  | Final Presentation (STOR 320.02)  |December 11 (12 PM)|
+| P4  | Final Written Paper  |December 12 (5 PM)|
+||||
 
 
 # **Reading**
