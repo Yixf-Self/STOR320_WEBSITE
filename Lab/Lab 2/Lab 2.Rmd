@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Instructions
 
-**Exercises:** 1-5 (Pgs. 6-7); 1-2, 5 (Pg. 12); 1-5 (Pgs. 20-21); Open Response
+**Exercises:** 1-5 (Pgs. 6-7); 1-2, 5 (Pg. 12); 1-5 (Pgs. 20-21)
 
 **Assigned:** Friday, August 24, 2018
 
