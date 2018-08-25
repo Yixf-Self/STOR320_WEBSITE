@@ -35,10 +35,10 @@ This course is an application-driven introduction to data science. Statistical a
 | Date | Lecture | Slides | Tutorial(T) | Lab(L) | Analysis(A)| Project(P)| Solutions  |
 |------|---------|--------|:---------:|:---:|:------------:|:------------:|-----------:|
 |Aug. 22|Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| ||
-|Aug. 24|Visualization and ggplot2 | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) || [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[L1](Lab/Lab 1/Solutions_1.html)|
-|Aug. 27||| [T2](Lectures/Lecture 3/Tutorial_2.html) ([.Rmd]())|||||
-|Aug. 29||||||||
-|Aug. 31||||L2||||
+|Aug. 24|Data Visualization | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||[L1](Lab/Lab 1/Solutions_1.html)|
+|Aug. 27|Workflow in RMarkdown|| [T2](Lectures/Lecture 3/Tutorial_2.html) ([.Rmd]())|||||
+|Aug. 29|Data Transformation I|||||||
+|Aug. 31|Data Transformation II|||L2||||
 |Sep. 3|Don't Labor on Labor Day|||||||
 |Sep. 5||||||||
 |Sep. 7||||L3||||
