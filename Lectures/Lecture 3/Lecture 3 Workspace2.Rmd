@@ -1,5 +1,5 @@
 ---
-title: "Lecture 2 Workspace"
+title: "Lecture 3 Workspace"
 author: "Mario Giacomazzo"
 date: "August 25, 2018"
 output: html_document

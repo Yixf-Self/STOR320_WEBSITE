@@ -1,0 +1,75 @@
+---
+title: "Lecture 4 Workspace"
+author: "Mario Giacomazzo"
+date: "August 25, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(nycflights13)
+library(tidyverse)
+```
+
+
+```{r}
+flights
+```
+
+```{r}
+x=3
+y=4
+x<y
+x>y
+x!=y
+x==y
+```
+
+```{r}
+x=1/49
+y=49
+x*y==1
+```
+
+```{r}
+x*y
+near(x*y,1)
+```
+
+```{r}
+x=T
+y=F
+
+#Basic
+x&y
+x|y
+!x
+
+#Combined
+!x|!y
+!(x&y)
+!x&!y
+```
+
+```{r}
+
+```
+
+
+```{r}
+male.age=c(NA,20,21,35,22,NA)
+female.age=c(21,NA,23,33,22,NA)
+age.data=tibble(ma=male.age,fa=female.age)
+age.data
+
+is.na(male.age)
+na.omit(age.data)
+mean(male.age)
+mean(male.age,na.rm=T)
+```
+
+
+```{r}
+
+```
+
