@@ -51,10 +51,6 @@ x|y
 !x&!y
 ```
 
-```{r}
-
-```
-
 
 ```{r}
 male.age=c(NA,20,21,35,22,NA)
@@ -70,6 +66,131 @@ mean(male.age,na.rm=T)
 
 
 ```{r}
-
+filter(flights,is.na(air_time))
+filter(flights,!is.na(air_time))
+na.omit(flights)
 ```
 
+```{r}
+head(flights)
+```
+
+```{r}
+head(arrange(flights,day,dep_time))
+```
+
+
+```{r}
+head(arrange(flights,desc(day),dep_time))
+```
+
+```{r}
+miss.data=tibble(x=c(1,1,NA,3,3,NA),
+                 y=c(NA,4,NA,5,NA,7))
+miss.data
+```
+
+```{r}
+arrange(miss.data,x)
+```
+
+```{r}
+arrange(miss.data,desc(x))
+```
+
+```{r}
+order(miss.data$x)
+order(desc(miss.data$x))
+is.na(miss.data$x)
+order(is.na(miss.data$x))
+order(is.na(miss.data$x),
+      decreasing=T)
+```
+
+
+
+
+```{r}
+names(flights)
+```
+
+```{r}
+data1=select(flights,year,month,day)
+names(data1)
+```
+
+
+```{r}
+data2=select(flights,dep_time:arr_delay)
+names(data2)
+```
+
+```{r}
+data3=select(flights,-(dep_time:arr_delay))
+names(data3)
+```
+
+```{r}
+length(names(flights))
+data4=select(flights,c(1,3,8,12))
+names(data4)
+```
+
+```{r}
+length(names(flights))
+data5=select(flights,-c(1,3,8,12))
+names(data5)
+```
+
+
+
+```{r}
+data6=select(flights,starts_with("dep"))
+names(data6)
+```
+
+```{r}
+data7=select(flights,ends_with("delay"))
+names(data7)
+```
+
+```{r}
+data8=select(flights,contains("ar"))
+names(data8)
+```
+
+```{r}
+data9=select(flights,yr=year)
+names(data9)
+data10=rename(flights,yr=year)
+names(data10)
+```
+
+```{r}
+head(flights)
+data11=select(flights,dep_time,arr_time,
+              air_time,everything())
+head(data11)
+```
+
+```{r}
+flights_sml<-select(flights,year:day,
+                    starts_with("dep"),
+                    starts_with("arr"),
+                    distance,air_time)
+head(flights_sml)
+```
+
+```{r}
+mutate_flights_sml<-mutate(flights_sml,
+                           gain=arr_delay-dep_delay,
+                           speed=distance/air_time*60)
+head(select(mutate_flights_sml,gain,speed,everything()))
+```
+
+```{r}
+transmute_flights_sml<-transmute(flights_sml,
+                           gain=arr_delay-dep_delay,
+                           speed=distance/air_time*60)
+head(select(transmute_flights_sml,gain,speed,everything()))
+```

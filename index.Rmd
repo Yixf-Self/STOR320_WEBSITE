@@ -36,11 +36,11 @@ This course is an application-driven introduction to data science. Statistical a
 |------|---------|--------|---------|:---:|:------------:|:------------:|-----------:|
 |Aug. 22|Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| ||
 |Aug. 24|Data Visualization | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||[L1](Lab/Lab 1/Solutions_1.html)|
-|Aug. 27|Workflow in RMarkdown|[Lecture 3](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Lectures/Lecture 3/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))||||L2|
+|Aug. 27|Workflow in RMarkdown|[Lecture 3](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Lectures/Lecture 3/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|||||
 |Aug. 29|Data Transformation I|||||||
-|Aug. 31|Data Transformation II|||[L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))||||
+|Aug. 31|Data Transformation II|||[L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||L2|
 |Sep. 3|Don't Labor on Labor Day|||||||
-|Sep. 5||||||||
+|Sep. 5|Data Transformation III|||||||
 |Sep. 7||||L3||||
 |Sep. 10||||||||
 |Sep. 12||||||||
