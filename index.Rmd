@@ -183,6 +183,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 - [R for Data Science](https://drive.google.com/file/d/1Wca-b3m6CTbBQqO7tUEh_CdD3xVgjYVb/view?usp=sharing) (R4DS)
 - [R Programming for Data Science](https://drive.google.com/file/d/1XVF5v4MTBhIp_dq9MzTI0TtPfVrF6eaZ/view?usp=sharing) (RP4DS)
 - [The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing) (AoRP)
+- [An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing) (ISLR)
 
 # **Additional resources**
 
