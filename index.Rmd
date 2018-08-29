@@ -25,9 +25,9 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Instructional Assistant: **[Thomas Keefe](http://stat-or.unc.edu/people/graduate-students-department)**
 
-- STOR 320.01 **[Course Syllabus](https://app.luminpdf.com/viewer/kk32G8JgfEGuoPJzX/share?sk=c16dcc3e-f4b3-47f1-bd4c-a8c54849b820)**
+- STOR 320.01 **[Course Syllabus](https://drive.google.com/file/d/18gI5ak5Kdrl6TY2bFfzZA7H2l8uNrXGu/view?usp=sharing)**
 
-- STOR 320.02 **[Course Syllabus](https://app.luminpdf.com/viewer/JwGxJbjMTJwP2hy3Z/share?sk=bdedd7c9-df35-43c7-930e-d1c3afc8b180)**
+- STOR 320.02 **[Course Syllabus](https://drive.google.com/file/d/1h92pSV7o2hzbLCah82hiF9O4ak2IAFRo/view?usp=sharing)**
 
 
 # **Course Material**
@@ -35,9 +35,9 @@ This course is an application-driven introduction to data science. Statistical a
 | Date | Lecture | Slides | Tutorial(T) | Lab(L) | Analysis(A)| Project(P)| Solutions  |
 |------|---------|--------|---------|:---:|:------------:|:------------:|-----------:|
 |Aug. 22|Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| ||
-|Aug. 24|Data Visualization | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Lectures/Lecture 2/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||[L1](Lab/Lab 1/Solutions_1.html)|
-|Aug. 27|Workflow in RMarkdown|[Lecture 3](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Lectures/Lecture 3/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|||||
-|Aug. 29|Data Transformation I|[Lecture 4](https://app.luminpdf.com/viewer/64ou63ZPoWCqP9nHD/share?sk=88e73dc8-cede-47d3-99c5-f834f064a3cc)||||||
+|Aug. 24|Data Visualization | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Tutorial/Tutorial 1/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||[L1](Lab/Lab 1/Solutions_1.html)|
+|Aug. 27|Workflow in RMarkdown|[Lecture 3](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Tutorial 2/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|||||
+|Aug. 29|Data Transformation I|[Lecture 4](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)||||||
 |Aug. 31|Data Transformation II|||[L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||L2|
 |Sep. 3|Don't Labor on Labor Day|||||||
 |Sep. 5|Data Transformation III|||||||
