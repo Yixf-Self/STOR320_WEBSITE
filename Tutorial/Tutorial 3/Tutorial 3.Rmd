@@ -45,7 +45,7 @@ Now, apply `select()` to create a new dataset `f1b` based on `f1a` only containi
 f1b<-select(f1a, VARIABLES)
 ```
 
-Rename the variable "dest" to "destination" in `f1b`
+Rename the variable "dest" to "destination" in `f1b`.
 ```{r,eval=F}
 f1b=rename(f1b,destination=dest)
 ```

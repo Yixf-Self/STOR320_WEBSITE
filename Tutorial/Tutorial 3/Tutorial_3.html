@@ -151,7 +151,7 @@ $(document).ready(function () {
 <pre class="r"><code>f1a&lt;-filter(flights, CRITERIA)</code></pre>
 <p>Now, apply <code>select()</code> to create a new dataset <code>f1b</code> based on <code>f1a</code> only containing variables “flight”, “carrier”, “origin”, and “dest”.</p>
 <pre class="r"><code>f1b&lt;-select(f1a, VARIABLES)</code></pre>
-<p>Rename the variable “dest” to “destination” in <code>f1b</code></p>
+<p>Rename the variable “dest” to “destination” in <code>f1b</code>.</p>
 <pre class="r"><code>f1b=rename(f1b,destination=dest)</code></pre>
 <p>Because <code>f1b</code> only contains records for flight number 807, sorting by flight number is irrelevant. Create a new dataset <code>f1c</code> that is identical in content to <code>f1b</code> but is sorted by “carrier” first, “origin” second, and destination last. Use the function <code>head()</code>to display the first 5 rows of the data in <code>f1c</code>.</p>
 <pre class="r"><code>f1c&lt;-arrange(f1b,VARIABLES)
