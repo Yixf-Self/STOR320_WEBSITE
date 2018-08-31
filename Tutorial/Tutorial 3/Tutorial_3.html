@@ -152,10 +152,10 @@ $(document).ready(function () {
 <p>Now, apply <code>select()</code> to create a new dataset <code>f1b</code> based on <code>f1a</code> only containing variables “flight”, “carrier”, “origin”, and “dest”.</p>
 <pre class="r"><code>f1b&lt;-select(f1a, VARIABLES)</code></pre>
 <p>Rename the variable “dest” to “destination” in <code>f1b</code></p>
-<pre class="r"><code>f1b&lt;-rename(f1b,RENAME)</code></pre>
+<pre class="r"><code>f1b=rename(f1b,destination=dest)</code></pre>
 <p>Because <code>f1b</code> only contains records for flight number 807, sorting by flight number is irrelevant. Create a new dataset <code>f1c</code> that is identical in content to <code>f1b</code> but is sorted by “carrier” first, “origin” second, and destination last. Use the function <code>head()</code>to display the first 5 rows of the data in <code>f1c</code>.</p>
-<pre class="r"><code>f1c&lt;-arrange(f1b,SORT_BY)
-head(f1c,NUMBER_O_ROWS)</code></pre>
+<pre class="r"><code>f1c&lt;-arrange(f1b,VARIABLES)
+head(f1c,5)</code></pre>
 <p>At first glance, it seems that 807 uniquely represents the flight from _______ to _______ by carrier ________. To confirm this, create a new dataset <code>f1d</code> that is <code>f1c</code> sorted by the three variables previously mentioned, all in descending order. The function <code>desc()</code> is required here. Follow this by displaying the first 18 rows of the data in <code>f1d</code>.</p>
 <pre class="r"><code>f1d&lt;-arrange(f1c,SORT_BY)
 head(f1d,18)</code></pre>

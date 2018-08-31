@@ -9,7 +9,7 @@ output: html_document
 # This is a good place to put libraries required for using the ggplot function
 knitr::opts_chunk$set(echo = TRUE)
 options(scipen=999)
-library(tidyverse) #Loads the tidyverse package for ggplot
+library(dplyr) #Loads the dplyr package for data manipulation
 library(nycflights13) #Loads the nycflights13 package for flights data
 ```
 
@@ -47,13 +47,13 @@ f1b<-select(f1a, VARIABLES)
 
 Rename the variable "dest" to "destination" in `f1b`
 ```{r,eval=F}
-f1b<-rename(f1b,RENAME)
+f1b=rename(f1b,destination=dest)
 ```
 
 Because `f1b` only contains records for flight number 807, sorting by flight number is irrelevant. Create a new dataset `f1c` that is identical in content to `f1b` but is sorted by "carrier" first, "origin" second, and destination last. Use the function `head()`to display the first 5 rows of the data in `f1c`.
 ```{r,eval=F}
-f1c<-arrange(f1b,SORT_BY)
-head(f1c,NUMBER_O_ROWS)
+f1c<-arrange(f1b,VARIABLES)
+head(f1c,5)
 ```
 
 At first glance, it seems that 807 uniquely represents the flight from _______ to _______ by carrier ________. To confirm this, create a new dataset `f1d` that is `f1c` sorted by the three variables previously mentioned, all in descending order. The function `desc()` is required here. Follow this by displaying the first 18 rows of the data in `f1d`.
