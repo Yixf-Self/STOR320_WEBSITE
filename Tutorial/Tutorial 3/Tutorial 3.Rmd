@@ -56,11 +56,11 @@ f1c<-arrange(f1b,SORT_BY)
 head(f1c,NUMBER_O_ROWS)
 ```
 
-At first glance, it seems that 807 uniquely represents the flight from _______ to _______ by carrier ________. To confirm this, create a new dataset `f1d` that is `f1c` sorted by the three variables previously mentioned, all in descending order. The function `desc()` is required here. Follow this by displaying the first 5 rows of the data in `f1d`.
+At first glance, it seems that 807 uniquely represents the flight from _______ to _______ by carrier ________. To confirm this, create a new dataset `f1d` that is `f1c` sorted by the three variables previously mentioned, all in descending order. The function `desc()` is required here. Follow this by displaying the first 18 rows of the data in `f1d`.
 
 ```{r,eval=F}
 f1d<-arrange(f1c,SORT_BY)
-head(f1d,NUMBER_O_ROWS)
+head(f1d,18)
 ```
 
 May we conclude that flight numbers can be mapped to a unique carrier? ________ (*Yes/No*)

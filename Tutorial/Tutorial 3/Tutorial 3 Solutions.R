@@ -63,7 +63,7 @@ f.accuracy<-mutate(flights,
                    accuracy=abs(dep_delay)+(arr_delay))
 head(f.accuracy,5)
 
-f.accuracy2=select(f.accuracy2,carrier,accuracy)
+f.accuracy2=select(f.accuracy,carrier,accuracy)
 
 carrier.summary<-f.accuracy2 %>%
                     group_by(carrier) %>%
