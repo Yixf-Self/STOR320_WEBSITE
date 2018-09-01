@@ -1,4 +1,4 @@
-library(dplyr)
+library(tidyverse)
 library(nycflights13)
 
 names(flights)
@@ -8,13 +8,13 @@ f1a=filter(flights,flight==807)
 
 f1b=select(f1a,flight,carrier,origin,dest)
 
-f1b=rename(f1b,destination=dest)
+f1c=rename(f1b,destination=dest)
 
-f1c=arrange(f1b,carrier,origin,dest)
-head(f1c,5)
+f1d=arrange(f1c,carrier,origin,destination)
+head(f1d,5)
 
-f1d=arrange(f1c,desc(carrier),desc(origin),desc(dest))
-head(f1d,18)
+f1e=arrange(f1d,desc(carrier),desc(origin),desc(destination))
+head(f1e,18)
 
 #Part2
 f2a=transmute(flights,

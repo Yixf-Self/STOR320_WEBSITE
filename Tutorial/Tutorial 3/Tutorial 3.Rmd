@@ -45,22 +45,22 @@ Now, apply `select()` to create a new dataset `f1b` based on `f1a` only containi
 f1b<-select(f1a, VARIABLES)
 ```
 
-Rename the variable "dest" to "destination" in `f1b`.
+Rename the variable "dest" to "destination" in `f1c`.
 ```{r,eval=F}
-f1b=rename(f1b,destination=dest)
+f1c=rename(f1b,destination=dest)
 ```
 
-Because `f1b` only contains records for flight number 807, sorting by flight number is irrelevant. Create a new dataset `f1c` that is identical in content to `f1b` but is sorted by "carrier" first, "origin" second, and destination last. Use the function `head()`to display the first 5 rows of the data in `f1c`.
+Because `f1c` only contains records for flight number 807, sorting by flight number is irrelevant. Create a new dataset `f1d` that is identical in content to `f1b` but is sorted by "carrier" first, "origin" second, and "destination"" last. Use the function `head()`to display the first 5 rows of the data in `f1d`.
 ```{r,eval=F}
-f1c<-arrange(f1b,VARIABLES)
-head(f1c,5)
+f1d<-arrange(f1c,VARIABLES)
+head(f1d,5)
 ```
 
-At first glance, it seems that 807 uniquely represents the flight from _______ to _______ by carrier ________. To confirm this, create a new dataset `f1d` that is `f1c` sorted by the three variables previously mentioned, all in descending order. The function `desc()` is required here. Follow this by displaying the first 18 rows of the data in `f1d`.
+At first glance, it seems that 807 uniquely represents the flight from _______ to _______ by carrier ________. To confirm this, create a new dataset `f1e` that is `f1d` sorted by the three variables previously mentioned, all in descending order. The function `desc()` is required here. Follow this by displaying the first 18 rows of the data in `f1d`.
 
 ```{r,eval=F}
-f1d<-arrange(f1c,SORT_BY)
-head(f1d,18)
+f1e<-arrange(f1d,SORT_BY)
+head(f1e,18)
 ```
 
 May we conclude that flight numbers can be mapped to a unique carrier? ________ (*Yes/No*)
