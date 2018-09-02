@@ -40,7 +40,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Aug. 29|Data Transformation I|[Lecture 4](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)||||||
 |Aug. 31|Data Transformation II|[Lecture 5](https://drive.google.com/file/d/1W35ZO5yKH0k-yI3ogr7ilN0r5Fn85Rat/view?usp=sharing)|[T3](Tutorial/Tutorial 3/Tutorial_3.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|[L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||L2|
 |Sep. 3|Don't Labor on Labor Day|||||||
-|Sep. 5|Data Transformation III|||||||
+|Sep. 5|Data Transformation III|[Lecture 6](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||||||
 |Sep. 7|Data Transformation IV||||A1||A1|
 |Sep. 10|Exploratory Data Analysis I|||||||
 |Sep. 12|Exploratory Data Analysis II|||||||
@@ -181,8 +181,11 @@ This final project will be divided into four parts worth a total of 100 points. 
 # **Reading**
 
 - [R for Data Science](https://drive.google.com/file/d/1Wca-b3m6CTbBQqO7tUEh_CdD3xVgjYVb/view?usp=sharing) (R4DS)
+
 - [R Programming for Data Science](https://drive.google.com/file/d/1XVF5v4MTBhIp_dq9MzTI0TtPfVrF6eaZ/view?usp=sharing) (RP4DS)
+
 - [The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing) (AoRP)
+
 - [An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing) (ISLR)
 
 # **Additional resources**
