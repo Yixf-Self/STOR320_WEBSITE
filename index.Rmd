@@ -122,13 +122,14 @@ This course is an application-driven introduction to data science. Statistical a
 
 # **Assignment Tracker**
 
-All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. Project parts will have more specific instructions.
+All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. 
 
-| Assigned | Lab(L) | Analysis(A) | Project(P)| Due Date (Time) |
-|----------|:--------:|:-------------:|:---------:|----------------:|
-| August 24| L1     |             |           | August 31 (5 PM)|
-| August 31| L2     |             |           | September 7 (5 PM)|
-|          |        |             |           |                 |
+| Assigned | Lab(L) | Analysis(A) | Due Date (Time) |
+|----------|:--------:|:-------------:|----------------:|
+| August 24| L1     |              |August 31 (5 PM)|
+| August 31| L2     |             |September 7 (5 PM)|
+| September 7 | | A1 | September 14 (5 PM)|
+|          |        |             |           |
 
 # **Final Project Details**
 
