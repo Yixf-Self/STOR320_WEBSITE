@@ -181,23 +181,23 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 # **Reading**
 
-- [R for Data Science](https://drive.google.com/file/d/1Wca-b3m6CTbBQqO7tUEh_CdD3xVgjYVb/view?usp=sharing) (R4DS)
+- **[R for Data Science](https://drive.google.com/file/d/1Wca-b3m6CTbBQqO7tUEh_CdD3xVgjYVb/view?usp=sharing)** (R4DS)
 
-- [R Programming for Data Science](https://drive.google.com/file/d/1XVF5v4MTBhIp_dq9MzTI0TtPfVrF6eaZ/view?usp=sharing) (RP4DS)
+- **[R Programming for Data Science](https://drive.google.com/file/d/1XVF5v4MTBhIp_dq9MzTI0TtPfVrF6eaZ/view?usp=sharing)** (RP4DS)
 
-- [The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing) (AoRP)
+- **[The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing)** (AoRP)
 
-- [An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing) (ISLR)
+- **[An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing)** (ISLR)
 
 # **Additional resources**
 
-- [Rmarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)
+- **[Rmarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)**
 
-- [ggplot2 Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+- **[ggplot2 Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)**
 
-- [Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)
+- **[Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)**
 
-- [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+- **[Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)**
 
 # **Miscellaneous**
 
