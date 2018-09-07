@@ -1,11 +1,6 @@
 library(tidyverse)
 library(readxl)
 
-#Set Working Directory Based on Source File Directory
-setwd("D:/")
-FILE="~/Group Assignments/Groups4FinalProj.R"
-dirname(FILE)
-setwd(dirname(FILE))
 #Read Rosters
 Section1=read_excel("STOR320_001_FA18_Roster.xlsx")
 Section2=read_excel("STOR320_002_FA18_Roster.xlsx")
@@ -19,7 +14,8 @@ Group.select.func<-function(data){
           arrange(Order) %>%
           mutate(Group=c(rep(1:(length(student.names)%/%4),each=4),rep(NA,length(student.names)%%4))) %>%
           mutate(Group=replace_na(Group,max(Group,na.rm=T))) %>%
-          mutate(Role="TBD")
+          mutate(Role="TBD") %>%
+          select(-Order)
   return(group)
 }
 
@@ -27,4 +23,6 @@ Group.select.func<-function(data){
 Final.Section1=Group.select.func(Section1)
 Final.Section2=Group.select.func(Section2)
 
-#Add Empty Variables for Positions
+#Save Datasets
+write_csv(Final.Section1,path=str_c(getwd(),"/STOR320.01 Group Assignments.csv"))
+write_csv(Final.Section2,path=str_c(getwd(),"/STOR320.02 Group Assignments.csv"))

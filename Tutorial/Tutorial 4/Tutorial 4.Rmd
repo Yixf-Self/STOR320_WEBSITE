@@ -39,7 +39,7 @@ To further incite your anger towards the airline industry, we will continue to p
 
 Using the pipe `%>%` to chain functions from `dplyr`, modify the code below to create a dataset named `flight.summary` that contains the following ordered modfications:
 
-1. Startswith the raw dataset `flights` in the package `nycflights13`.
+1. Starts with the raw dataset `flights` in the package `nycflights13`.
 
 2. Transform delay variables so that they are measured in minutes since midnight, and then create a metric to measure accuracy based on those transformed delay variables.
 
