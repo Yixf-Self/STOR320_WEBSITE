@@ -6,6 +6,7 @@ output:
     theme: cosmo
     toc: yes
     toc_float: yes
+    in_header: "favicon.html"
   pdf_document:
     toc: yes
 ---
