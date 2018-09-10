@@ -49,14 +49,77 @@ Wage %>%
 ```{r}
 ggplot(data=Wage) +
   geom_histogram(aes(x=wage,y=..count../sum(..count..)),
-                 fill="lightskyblue",color="black",bins=40) + 
+                 fill="lightskyblue",color="black",bins=60) + 
   theme_dark() +  
   ylab("Relative Frequency") + xlab("Wage ($/Hr)")
 ```
 
 ```{r}
-ggplot(data=Wage) +
-  geom_histogram(aes(x=wage,y=..count../sum(..count..)),bins=40,fill="deepskyblue1",color="black") + 
-  theme_dark() +  
-  ylab("Relative Frequency")
+Wage2=Wage %>%
+        filter(between(wage,0,30))
+summarize(Wage,n())
+summarize(Wage2,n())
 ```
+
+```{r}
+Wage3=Wage %>%
+      mutate(wage=ifelse(wage>30,NA,wage))
+summarize(Wage,n())
+summarize(Wage3,n())
+```
+
+```{r}
+ggplot(data=diamonds) +
+  geom_count(mapping=aes(x=cut,y=color))
+```
+
+```{r}
+diamonds%>%
+  group_by(cut, color)%>%
+  summarize(n=n())%>%
+  subset(select=c("cut","color","n"))%>%  
+  spread(cut, n)
+```
+
+```{r}
+sum.diamond1=diamonds %>%
+             group_by(color,cut) %>%
+             summarize(n=n()) %>%
+             mutate(prop=n/sum(n))
+head(sum.diamond1,2)
+```
+
+```{r}
+sum.diamond2=diamonds %>%
+             group_by(color,cut) %>%
+             summarize(n=n()) %>%
+             ungroup() %>%
+             mutate(prop=n/sum(n))
+head(sum.diamond2,2)
+```
+
+```{r}
+sum(sum.diamond1$n)
+(sum.diamond1$n/sum(sum.diamond1$n))[1:2]
+sum(sum.diamond1$prop)
+sum(sum.diamond2$n)
+(sum.diamond2$n/sum(sum.diamond2$n))[1:2]
+sum(sum.diamond2$prop)
+```
+
+```{r}
+diamonds %>%
+  group_by(color,cut) %>%
+  summarize(n=n()) %>%
+  ungroup() %>%
+  mutate(prop=n/sum(n)) %>%
+ggplot(mapping = aes(x = color, y = cut)) +
+geom_tile(mapping = aes(fill = prop))
+```
+
+```{r}
+library(hexbin)
+ggplot(data = diamonds) +
+geom_hex(mapping = aes(x = carat, y = price))
+```
+
