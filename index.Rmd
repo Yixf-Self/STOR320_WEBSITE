@@ -45,7 +45,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 5|Data Transformation III|[Lecture 6](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||||||
 |Sep. 7|Data Transformation IV|[Lecture 7](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[T4](Tutorial/Tutorial 4/Tutorial_4.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))||[A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/1W7enkA4HtOeiS6Q_kwE43T3cgx6wGX9S/view?usp=sharing))||A1|
 |Sep. 10|Exploratory Data Analysis I|[Lecture 8](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||||||
-|Sep. 12|Exploratory Data Analysis II|||||||
+|Sep. 12|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)||||||
 |Sep. 14|Project Introduction|||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||P1, P2|L3|
 |Sep. 17|Data Import|||||||
 |Sep. 19|Tidy Data I|||||||
