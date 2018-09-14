@@ -47,7 +47,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 10|Exploratory Data Analysis I|[Lecture 8](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||||||
 |Sep. 12|Hurricane Florence|||||||
 |Sep. 14|Hurricane Florence|||||||
-|Sep. 17|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)||||||
+|Sep. 17|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[T5](Tutorial/Tutorial 5/Tutorial_5.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|||||
 |Sep. 19|Project Introduction|||||P1, P2||
 |Sep. 21|Data Import|||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||L3|
 |Sep. 24|Tidy Data I|||||||
