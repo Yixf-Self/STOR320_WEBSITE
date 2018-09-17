@@ -1,0 +1,83 @@
+---
+title: "Exploratory Data Analysis"
+author: "Group PLACE_GROUP_NUMBER_HERE"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+
+# Import Data Below
+# read_csv()
+```
+
+#Creator: FIRSTNAME LASTNAME
+
+###Q1: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+
+###Q2: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+#Interpreter: FIRSTNAME LASTNAME
+
+###Q1: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+###Q2: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+#Orator: FIRSTNAME LASTNAME
+
+###Q1: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+###Q2: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+#Deliverer: FIRSTNAME LASTNAME
+
+###Q1: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+###Q2: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -47,17 +47,17 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 10|Exploratory Data Analysis I|[Lecture 8](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||||||
 |Sep. 12|Hurricane Florence|||||||
 |Sep. 14|Hurricane Florence|||||||
-|Sep. 17|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[T5](Tutorial/Tutorial 5/Tutorial_5.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|||||
-|Sep. 19|Project Introduction|||||P1, P2||
-|Sep. 21|Data Import|||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||L3|
-|Sep. 24|Tidy Data I|||||||
-|Sep. 26|Tidy Data II|||||||
-|Sep. 28|Joins|||||||
-|Oct. 1|Strings|||||||
-|Oct. 3|Programming I|||||||
-|Oct. 5|Programming II|||||||
-|Oct. 8|Programming III|||||||
-|Oct. 10||||||||
+|Sep. 17|Hurricane Florence|||||||
+|Sep. 19|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[T5](Tutorial/Tutorial 5/Tutorial_5.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|||||
+|Sep. 21|Final Project|||||P1, P2||
+|Sep. 24|Data Import|||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||L3|
+|Sep. 26|Tidy Data I|||||||
+|Sep. 28|Tidy Data II|||||||
+|Oct. 1|Joins|||||||
+|Oct. 3|Strings|||||||
+|Oct. 5|Programming I|||||||
+|Oct. 8|Programming II|||||||
+|Oct. 10|Programming III|||||||
 |Oct. 12||||||||
 |Oct. 15||||||||
 |Oct. 17||||||||
@@ -77,8 +77,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 19||||||||
 |Nov. 21|Thanksgiving|||||||
 |Nov. 23|Thanksgiving|||||||
-|Nov. 26|||||||||
-|Nov. 28||||||||
+|Nov. 26||||||||
+|Nov. 28|||||||||
 |Nov. 30||||||||
 |Dec. 3||||||||
 |Dec. 5||||||||
@@ -142,9 +142,9 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 To find your research group, see below:
 
-- **[STOR 320.01](https://docs.google.com/spreadsheets/d/1QSAC7h8Z-DBlcM8UJ0HG-3o5q1j0_G7uoUZy1fkRwUk/edit?usp=sharing)**
+- **[STOR 320.01](https://docs.google.com/spreadsheets/d/1XPw0jxwXG5o2v5ywGNrucjpSFP3sqs6uDsIO1s4gDfY/edit?usp=sharing)**
 
-- **[STOR 320.02](https://docs.google.com/spreadsheets/d/15qvk2WgeNT4BK0Up6IgA_2zPiWc_QMyVqYjp_-uo94I/edit?usp=sharing)**
+- **[STOR 320.02](https://docs.google.com/spreadsheets/d/1fa9t7pbFAA6MHhT8B-rmMXeRkxCQrSfCR9bZAve0VEE/edit?usp=sharing)**
 
 ## Four Roles
 
@@ -164,7 +164,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - P1: Project Proposal *(10 Points)*
 
-- P2: Exploratory Analysis *(20 Points)*
+- P2: Exploratory Data Analysis *(20 Points)*
 
 - P3: Final Presentation *(30 Points)*
 
@@ -175,7 +175,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------:|----------------:|
 | P1  | Project Proposal| Office Hours Meeting     |October 5 (5 PM)|
-| P2  | Exploratory Analysis |Submit on Sakai|November 2 (5 PM)|
+| P2  | Exploratory Data Analysis |Submit on Sakai|November 2 (5 PM)|
 | P3  | Final Presentation (STOR 320.01)|In Gardner 105|December 10 (12 PM)|
 | P3  | Final Presentation (STOR 320.02)|In Hanes 120|December 11 (12 PM)|
 | P4  | Final Written Paper|Submit on Sakai|December 12 (5 PM)|
