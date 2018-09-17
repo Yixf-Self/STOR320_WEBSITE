@@ -1,6 +1,6 @@
 ---
 title: "Exploratory Data Analysis"
-author: "Group PLACE_GROUP_NUMBER_HERE"
+author: "STOR 320.(01 OR 02) Group PLACE_GROUP_NUMBER_HERE"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
@@ -20,8 +20,15 @@ library(tidyverse)
 #
 ```
 
+```{r}
+#
+```
 
 ###Q2: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
 ```{r}
 #
 ```
@@ -33,7 +40,15 @@ library(tidyverse)
 #
 ```
 
+```{r}
+#
+```
+
 ###Q2: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
 ```{r}
 #
 ```
@@ -45,7 +60,15 @@ library(tidyverse)
 #
 ```
 
+```{r}
+#
+```
+
 ###Q2: WRITE_QUESTION_HERE
+```{r}
+#
+```
+
 ```{r}
 #
 ```
@@ -57,14 +80,41 @@ library(tidyverse)
 #
 ```
 
+```{r}
+#
+```
+
 ###Q2: WRITE_QUESTION_HERE
 ```{r}
 #
 ```
 
+```{r}
 #
+```
 
+# Follow-up Questions
 
+### New Questions Based Off Initial Investigation
+
+- Q1: WRITE_QUESTION_HERE
+- Q2: WRITE_QUESTION_HERE
+- Q3: WRITE_QUESTION_HERE 
+- Q4: WRITE_QUESTION_HERE
+
+### Investigation of Follow-up Questions
+
+GIVE WHAT 2 QUESTIONS YOU ATTEMPTED TO INVESTIGATE FURTHER IN COMPLETE SENTENCES (*Example:* Our group decided to investigate Q2 and Q4 in further detail.)
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+#Summary
 
 
 

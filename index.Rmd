@@ -49,7 +49,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 14|Hurricane Florence|||||||
 |Sep. 17|Hurricane Florence|||||||
 |Sep. 19|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[T5](Tutorial/Tutorial 5/Tutorial_5.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|||||
-|Sep. 21|Final Project|||||P1, P2||
+|Sep. 21|Final Project I|||||P1, P2||
 |Sep. 24|Data Import|||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||L3|
 |Sep. 26|Tidy Data I|||||||
 |Sep. 28|Tidy Data II|||||||
@@ -82,9 +82,9 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 30||||||||
 |Dec. 3||||||||
 |Dec. 5||||||||
-|Dec. 10|STOR 320.01 Final Presentation|||||P3||
-|Dec. 11|STOR 320.02 Final Presentation|||||P3||
-|Dec. 12|Final Written Paper|||||P4||
+|Dec. 10|STOR 320.01 Final Presentation|||||||
+|Dec. 11|STOR 320.02 Final Presentation|||||||
+|Dec. 12|Final Written Paper|||||||
 |||||||||
 
 <!-- |August 28 | ggplot Wrap-up and Workflow Basics| [Lecture 3](https://www.dropbox.com/s/403yr1vxniw7ave/STOR%20320%20Lecture%203%2008-28-17.pptx?dl=0) | [Reading for 8-28](http://rpubs.com/redrobincl/302494)| -->
