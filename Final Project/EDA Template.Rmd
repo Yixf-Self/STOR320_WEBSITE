@@ -16,18 +16,12 @@ library(tidyverse)
 #Creator: FIRSTNAME LASTNAME
 
 ###Q1: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
 ```
 
 ###Q2: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
@@ -36,18 +30,12 @@ library(tidyverse)
 #Interpreter: FIRSTNAME LASTNAME
 
 ###Q1: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
 ```
 
 ###Q2: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
@@ -56,18 +44,12 @@ library(tidyverse)
 #Orator: FIRSTNAME LASTNAME
 
 ###Q1: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
 ```
 
 ###Q2: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
@@ -76,18 +58,12 @@ library(tidyverse)
 #Deliverer: FIRSTNAME LASTNAME
 
 ###Q1: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
 ```
 
 ###Q2: WRITE_QUESTION_HERE
-```{r}
-#
-```
 
 ```{r}
 #
@@ -106,12 +82,14 @@ library(tidyverse)
 
 GIVE WHAT 2 QUESTIONS YOU ATTEMPTED TO INVESTIGATE FURTHER IN COMPLETE SENTENCES (*Example:* Our group decided to investigate Q2 and Q4 in further detail.)
 
-```{r}
+SHOW AT LEAST 2 TABLES OR FIGURES BELOW THAT EXPLORE ANSWERS FOR THE QUESTIONS YOU ARE INVESTIGATING FURTHER.
 
+```{r}
+#
 ```
 
 ```{r}
-
+#
 ```
 
 #Summary

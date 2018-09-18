@@ -164,7 +164,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[P1: Project Proposal](Final Project/Project_Proposal.html)** *(10 Points)*
 
-- P2: Exploratory Data Analysis *(20 Points)*
+- **[P2: Exploratory Data Analysis](Final Project/Exploratory_Data_Analysis.html)** *(20 Points)*
 
 - P3: Final Presentation *(30 Points)*
 
