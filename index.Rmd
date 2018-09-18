@@ -162,7 +162,7 @@ Although everyone is responsible for the entire project, each member of the grou
 
 This final project will be divided into four parts worth a total of 100 points. Each part will have a clear rubric as non-subjective as possible. The parts along with total point values are found below: 
 
-- **[P1: Project Proposal](/Final Project/Project_Proposal.html)** *(10 Points)*
+- **[P1: Project Proposal](Final Project/Project_Proposal.html)** *(10 Points)*
 
 - P2: Exploratory Data Analysis *(20 Points)*
 
