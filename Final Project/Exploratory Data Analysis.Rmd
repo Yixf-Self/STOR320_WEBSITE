@@ -1,0 +1,40 @@
+---
+title: '**Project Proposal**'
+geometry: margin=2
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+# **Purpose**
+
+The purpose of the project proposal is to demonstrate your ability to find relevant and interesting data and to propose many thoughtful and creative questions about that data. This is the first stage in your final project, and the data you select will be heavily explored for the remainder of the project. Work as a team to find data that intrigues the entire team and develop questions that are valuable for exploration.
+
+# **Requirements**
+
+A 5 minute meeting should be scheduled during office hours of either the Instructor or Instructional Assistant. To reserve your 5 minute time slot, email ahead of time. Time slots will be priortized according to email. I highly recommend scheduling your project proposal as soon as possible to ensure you have a spot before the deadline. If your Orator fails to schedule the project proposal meeting before the deadline, a minimum 2 point penalty will be given. This penalty applies to your entire group.
+
+# **Rubric**
+
+|Requirement|Points|
+|-------|------:|
+|Source of Data Given|1 Point|
+|Data has 5 Variables with 2 Categorical|2 Points|
+|Effective Communcation of Data Content|3 Points|
+|At Least 2 Questions Per Group Member|3 Points|
+|Roles of Other Members Assigned|1 Point|
+|**Total**|**10 Points**|
+|||
+

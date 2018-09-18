@@ -24,7 +24,7 @@ output:
 
 # **Part 1: Project Proposal**
 
-A 5 minute meeting should be scheduled during office hours of either the Instructor or Instructional Assistant. To reserve your 5 minute time slot, email ahead of time. Time slots will be priortized according to email. I highly recommend scheduling your project proposal as soon as possible to ensure you have a spot before the deadline. If your Orator fails to set up project proposal meeting before the deadline, a minimum 2 point penalty will be given. This penalty applies to your entire group.
+A 5 minute meeting should be scheduled during office hours of either the Instructor or Instructional Assistant. To reserve your 5 minute time slot, email ahead of time. Time slots will be priortized according to email. I highly recommend scheduling your project proposal as soon as possible to ensure you have a spot before the deadline. If your Orator fails to schedule the project proposal meeting before the deadline, a minimum 2 point penalty will be given. This penalty applies to your entire group.
 
 |Requirement|Points|
 |-------|------:|

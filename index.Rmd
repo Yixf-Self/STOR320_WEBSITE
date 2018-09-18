@@ -162,7 +162,7 @@ Although everyone is responsible for the entire project, each member of the grou
 
 This final project will be divided into four parts worth a total of 100 points. Each part will have a clear rubric as non-subjective as possible. The parts along with total point values are found below: 
 
-- P1: Project Proposal *(10 Points)*
+- **[P1: Project Proposal](/Final Project/Project_Proposal.html)** *(10 Points)*
 
 - P2: Exploratory Data Analysis *(20 Points)*
 
@@ -174,8 +174,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------:|----------------:|
-| P1  | Project Proposal| Office Hours Meeting     |October 5 (5 PM)|
-| P2  | Exploratory Data Analysis |Submit on Sakai|November 2 (5 PM)|
+| P1  | Project Proposal| Office Hours Meeting     |October 12 (5 PM)|
+| P2  | Exploratory Data Analysis |Submit on Sakai|November 9 (5 PM)|
 | P3  | Final Presentation (STOR 320.01)|In Gardner 105|December 10 (12 PM)|
 | P3  | Final Presentation (STOR 320.02)|In Hanes 120|December 11 (12 PM)|
 | P4  | Final Written Paper|Submit on Sakai|December 12 (5 PM)|
