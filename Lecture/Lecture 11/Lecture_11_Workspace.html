@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2018-09-18" />
+<meta name="date" content="2018-09-20" />
 
 <title>Lecture 11 Workspace</title>
 
@@ -124,12 +124,170 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Lecture 11 Workspace</h1>
 <h4 class="author"><em>Mario Giacomazzo</em></h4>
-<h4 class="date"><em>September 18, 2018</em></h4>
+<h4 class="date"><em>September 20, 2018</em></h4>
 
 </div>
 
 
+<pre class="r"><code>library(readr)</code></pre>
+<pre class="r"><code>UniRank=read_csv(file=&quot;D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Lecture/Lecture 11/Example/cwurData.csv&quot;,
+                 col_names=T)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   world_rank = col_integer(),
+##   institution = col_character(),
+##   country = col_character(),
+##   national_rank = col_integer(),
+##   quality_of_education = col_integer(),
+##   alumni_employment = col_integer(),
+##   quality_of_faculty = col_integer(),
+##   publications = col_integer(),
+##   influence = col_integer(),
+##   citations = col_integer(),
+##   broad_impact = col_integer(),
+##   patents = col_integer(),
+##   score = col_double(),
+##   year = col_integer()
+## )</code></pre>
+<pre class="r"><code>glimpse(UniRank)</code></pre>
+<pre><code>## Observations: 2,198
+## Variables: 14
+## $ world_rank           &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13...
+## $ institution          &lt;chr&gt; &quot;Harvard University&quot;, &quot;Massachusetts Inst...
+## $ country              &lt;chr&gt; &quot;USA&quot;, &quot;USA&quot;, &quot;USA&quot;, &quot;United Kingdom&quot;, &quot;U...
+## $ national_rank        &lt;int&gt; 1, 2, 3, 1, 4, 5, 2, 6, 7, 8, 9, 10, 11, ...
+## $ quality_of_education &lt;int&gt; 7, 9, 17, 10, 2, 8, 13, 14, 23, 16, 15, 2...
+## $ alumni_employment    &lt;int&gt; 9, 17, 11, 24, 29, 14, 28, 31, 21, 52, 26...
+## $ quality_of_faculty   &lt;int&gt; 1, 3, 5, 4, 7, 2, 9, 12, 10, 6, 8, 14, 24...
+## $ publications         &lt;int&gt; 1, 12, 4, 16, 37, 53, 15, 14, 13, 6, 34, ...
+## $ influence            &lt;int&gt; 1, 4, 2, 16, 22, 33, 13, 6, 12, 5, 20, 21...
+## $ citations            &lt;int&gt; 1, 4, 2, 11, 22, 26, 19, 15, 14, 3, 28, 1...
+## $ broad_impact         &lt;int&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N...
+## $ patents              &lt;int&gt; 5, 1, 15, 50, 18, 101, 26, 66, 5, 16, 101...
+## $ score                &lt;dbl&gt; 100.00, 91.67, 89.50, 86.17, 85.21, 82.50...
+## $ year                 &lt;int&gt; 2012, 2012, 2012, 2012, 2012, 2012, 2012,...</code></pre>
+<pre class="r"><code>SHSAT=read_csv(file=&quot;Example/D5 SHSAT Registrations and Testers.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   DBN = col_character(),
+##   `School name` = col_character(),
+##   `Year of SHST` = col_integer(),
+##   `Grade level` = col_integer(),
+##   `Enrollment on 10/31` = col_integer(),
+##   `Number of students who registered for the SHSAT` = col_integer(),
+##   `Number of students who took the SHSAT` = col_integer()
+## )</code></pre>
+<pre class="r"><code>glimpse(SHSAT)</code></pre>
+<pre><code>## Observations: 140
+## Variables: 7
+## $ DBN                                               &lt;chr&gt; &quot;05M046&quot;, &quot;0...
+## $ `School name`                                     &lt;chr&gt; &quot;P.S. 046 Ar...
+## $ `Year of SHST`                                    &lt;int&gt; 2013, 2014, ...
+## $ `Grade level`                                     &lt;int&gt; 8, 8, 8, 8, ...
+## $ `Enrollment on 10/31`                             &lt;int&gt; 91, 95, 73, ...
+## $ `Number of students who registered for the SHSAT` &lt;int&gt; 31, 26, 21, ...
+## $ `Number of students who took the SHSAT`           &lt;int&gt; 14, 7, 10, 8...</code></pre>
+<pre class="r"><code>Housing=read_csv(file=&quot;Example/thads2013n.txt&quot;)
+head(Housing,5)</code></pre>
+<pre><code>## # A tibble: 5 x 99
+##   CONTROL  AGE1 METRO3 REGION  LMED   FMR   L30   L50   L80  IPOV BEDRMS
+##   &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;  &lt;chr&gt;  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt;
+## 1 '10000~    82 '3'    '1'    73738   956 15738 26213 40322 11067      2
+## 2 '10000~    50 '5'    '3'    55846  1100 17165 28604 45744 24218      4
+## 3 '10000~    53 '5'    '3'    55846  1100 13750 22897 36614 15470      4
+## 4 '10000~    67 '5'    '3'    55846   949 13750 22897 36614 13964      3
+## 5 '10000~    26 '1'    '3'    60991   737 14801 24628 39421 15492      2
+## # ... with 88 more variables: BUILT &lt;int&gt;, STATUS &lt;chr&gt;, TYPE &lt;int&gt;,
+## #   VALUE &lt;int&gt;, VACANCY &lt;int&gt;, TENURE &lt;chr&gt;, NUNITS &lt;int&gt;, ROOMS &lt;int&gt;,
+## #   WEIGHT &lt;dbl&gt;, PER &lt;int&gt;, ZINC2 &lt;int&gt;, ZADEQ &lt;chr&gt;, ZSMHC &lt;int&gt;,
+## #   STRUCTURETYPE &lt;int&gt;, OWNRENT &lt;chr&gt;, UTILITY &lt;dbl&gt;, OTHERCOST &lt;dbl&gt;,
+## #   COST06 &lt;dbl&gt;, COST12 &lt;dbl&gt;, COST08 &lt;dbl&gt;, COSTMED &lt;dbl&gt;, TOTSAL &lt;int&gt;,
+## #   ASSISTED &lt;int&gt;, GLMED &lt;int&gt;, GL30 &lt;int&gt;, GL50 &lt;int&gt;, GL80 &lt;int&gt;,
+## #   APLMED &lt;dbl&gt;, ABL30 &lt;dbl&gt;, ABL50 &lt;dbl&gt;, ABL80 &lt;dbl&gt;, ABLMED &lt;dbl&gt;,
+## #   BURDEN &lt;dbl&gt;, INCRELAMIPCT &lt;dbl&gt;, INCRELAMICAT &lt;int&gt;,
+## #   INCRELPOVPCT &lt;dbl&gt;, INCRELPOVCAT &lt;int&gt;, INCRELFMRPCT &lt;dbl&gt;,
+## #   INCRELFMRCAT &lt;int&gt;, COST06RELAMIPCT &lt;dbl&gt;, COST06RELAMICAT &lt;int&gt;,
+## #   COST06RELPOVPCT &lt;dbl&gt;, COST06RELPOVCAT &lt;int&gt;, COST06RELFMRPCT &lt;dbl&gt;,
+## #   COST06RELFMRCAT &lt;int&gt;, COST08RELAMIPCT &lt;dbl&gt;, COST08RELAMICAT &lt;int&gt;,
+## #   COST08RELPOVPCT &lt;dbl&gt;, COST08RELPOVCAT &lt;int&gt;, COST08RELFMRPCT &lt;dbl&gt;,
+## #   COST08RELFMRCAT &lt;int&gt;, COST12RELAMIPCT &lt;dbl&gt;, COST12RELAMICAT &lt;int&gt;,
+## #   COST12RELPOVPCT &lt;dbl&gt;, COST12RELPOVCAT &lt;int&gt;, COST12RELFMRPCT &lt;dbl&gt;,
+## #   COST12RELFMRCAT &lt;int&gt;, COSTMedRELAMIPCT &lt;dbl&gt;, COSTMedRELAMICAT &lt;int&gt;,
+## #   COSTMedRELPOVPCT &lt;dbl&gt;, COSTMedRELPOVCAT &lt;int&gt;,
+## #   COSTMedRELFMRPCT &lt;dbl&gt;, COSTMedRELFMRCAT &lt;int&gt;, FMTZADEQ &lt;chr&gt;,
+## #   FMTMETRO3 &lt;chr&gt;, FMTBUILT &lt;chr&gt;, FMTSTRUCTURETYPE &lt;chr&gt;,
+## #   FMTBEDRMS &lt;chr&gt;, FMTOWNRENT &lt;chr&gt;, FMTCOST06RELPOVCAT &lt;chr&gt;,
+## #   FMTCOST08RELPOVCAT &lt;chr&gt;, FMTCOST12RELPOVCAT &lt;chr&gt;,
+## #   FMTCOSTMEDRELPOVCAT &lt;chr&gt;, FMTINCRELPOVCAT &lt;chr&gt;,
+## #   FMTCOST06RELFMRCAT &lt;chr&gt;, FMTCOST08RELFMRCAT &lt;chr&gt;,
+## #   FMTCOST12RELFMRCAT &lt;chr&gt;, FMTCOSTMEDRELFMRCAT &lt;chr&gt;,
+## #   FMTINCRELFMRCAT &lt;chr&gt;, FMTCOST06RELAMICAT &lt;chr&gt;,
+## #   FMTCOST08RELAMICAT &lt;chr&gt;, FMTCOST12RELAMICAT &lt;chr&gt;,
+## #   FMTCOSTMEDRELAMICAT &lt;chr&gt;, FMTINCRELAMICAT &lt;chr&gt;, FMTASSISTED &lt;chr&gt;,
+## #   FMTBURDEN &lt;chr&gt;, FMTREGION &lt;chr&gt;, FMTSTATUS &lt;chr&gt;</code></pre>
+<pre class="r"><code>Housing2=read_csv(file=&quot;Example/thads2013n.txt&quot;) %&gt;%
+          select(METRO3,REGION,VALUE,ASSISTED)
+head(Housing2,5)</code></pre>
+<pre><code>## # A tibble: 5 x 4
+##   METRO3 REGION   VALUE ASSISTED
+##   &lt;chr&gt;  &lt;chr&gt;    &lt;int&gt;    &lt;int&gt;
+## 1 '3'    '1'      40000       -9
+## 2 '5'    '3'     130000       -9
+## 3 '5'    '3'     150000       -9
+## 4 '5'    '3'     200000       -9
+## 5 '1'    '3'         -6        0</code></pre>
+<pre class="r"><code>FreshBeats=read_csv(url(&quot;https://think.cs.vt.edu/corgis/csv/music/music.csv?forcedownload=1&quot;))
 
+FreshBeats2=FreshBeats %&gt;%
+  filter(artist.name==&quot;Word&quot;) %&gt;%
+  arrange(desc(artist.hotttnesss)) %&gt;%
+  select(artist.hotttnesss,artist.name,title)</code></pre>
+<pre class="r"><code>setwd(&quot;Example&quot;)
+write_csv(FreshBeats2,&quot;FreshBeats2.csv&quot;)</code></pre>
+<pre class="r"><code>DATA=tribble(
+  ~x, ~y, ~`:(`,
+  #--/--/--
+  &quot;a&quot;,2,3.6,
+  &quot;b&quot;,1,8.5
+) 
+DATA</code></pre>
+<pre><code>## # A tibble: 2 x 3
+##   x         y  `:(`
+##   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 a         2   3.6
+## 2 b         1   8.5</code></pre>
+<pre class="r"><code>#Extract by Variable Name
+DATA$x</code></pre>
+<pre><code>## [1] &quot;a&quot; &quot;b&quot;</code></pre>
+<pre class="r"><code>DATA$&quot;:(&quot;</code></pre>
+<pre><code>## [1] 3.6 8.5</code></pre>
+<pre class="r"><code>DATA[[&quot;y&quot;]]</code></pre>
+<pre><code>## [1] 2 1</code></pre>
+<pre class="r"><code>DATA[,c(&quot;x&quot;,&quot;:(&quot;)]</code></pre>
+<pre><code>## # A tibble: 2 x 2
+##   x      `:(`
+##   &lt;chr&gt; &lt;dbl&gt;
+## 1 a       3.6
+## 2 b       8.5</code></pre>
+<pre class="r"><code>#Extract by Location
+DATA[[1]]</code></pre>
+<pre><code>## [1] &quot;a&quot; &quot;b&quot;</code></pre>
+<pre class="r"><code>DATA[,3]</code></pre>
+<pre><code>## # A tibble: 2 x 1
+##    `:(`
+##   &lt;dbl&gt;
+## 1   3.6
+## 2   8.5</code></pre>
+<pre class="r"><code>DATA[2,]</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   x         y  `:(`
+##   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 b         1   8.5</code></pre>
+<pre class="r"><code>DATA[2,2:3]</code></pre>
+<pre><code>## # A tibble: 1 x 2
+##       y  `:(`
+##   &lt;dbl&gt; &lt;dbl&gt;
+## 1     1   8.5</code></pre>
 
 
 
