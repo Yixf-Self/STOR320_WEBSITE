@@ -43,7 +43,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Aug. 31|Data Transformation II|[Lecture 5](https://drive.google.com/file/d/1W35ZO5yKH0k-yI3ogr7ilN0r5Fn85Rat/view?usp=sharing)|[T3](Tutorial/Tutorial 3/Tutorial_3.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|[L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||[L2](Lab/Lab 2/Lab_2_Soln_TK.html)|
 |Sep. 3|Don't Labor on Labor Day|||||||
 |Sep. 5|Data Transformation III|[Lecture 6](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||||||
-|Sep. 7|Data Transformation IV|[Lecture 7](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[T4](Tutorial/Tutorial 4/Tutorial_4.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))||[A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/1W7enkA4HtOeiS6Q_kwE43T3cgx6wGX9S/view?usp=sharing))||A1|
+|Sep. 7|Data Transformation IV|[Lecture 7](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[T4](Tutorial/Tutorial 4/Tutorial_4.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))||[A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/1W7enkA4HtOeiS6Q_kwE43T3cgx6wGX9S/view?usp=sharing))||[A1](Analysis/Analysis 1/Solutions_1.html)|
 |Sep. 10|Exploratory Data Analysis I|[Lecture 8](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||||||
 |Sep. 12|Hurricane Florence|||||||
 |Sep. 14|Hurricane Florence|||||||
@@ -51,7 +51,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 19|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[T5](Tutorial/Tutorial 5/Tutorial_5.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|||||
 |Sep. 21|Final Project I|[Lecture 10](https://drive.google.com/file/d/1McGiOljDvGVYgK6CM28d_Ic_mNzQ5SLl/view?usp=sharing)||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||P1, P2|L3|
 |Sep. 24|Data Import|[Lecture 11](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||||||
-|Sep. 26|Tidy Data I|||||||
+|Sep. 26|Tidy Data I|[Lecture 12]([Lecture 11](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing))||||||
 |Sep. 28|Tidy Data II||||[L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))||L4|
 |Oct. 1|Joins|||||||
 |Oct. 3|Strings|||||||
