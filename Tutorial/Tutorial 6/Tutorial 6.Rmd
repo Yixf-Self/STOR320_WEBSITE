@@ -99,10 +99,11 @@ glimpse(tidy.school)
 
 #Part 4: Missing Data Analysis
 
-The original data contains explicitly missing and implicitly missing values. Instances of both can be visibly seen in the first ten observations. Below is a table showing the first 10 observations in the cleaned dataset we called `tidy.school`.
+The original data contains explicitly missing and implicitly missing values. Instances of both can be visibly seen in the first ten observations. Below is a table showing the first 10 observations in the cleaned dataset we called `tidy.school`. To appropriately, view this we have to sort our observations by `school` and `student` as seen in the original dataset `untidy.school`.
 
 ```{r,echo=F,results="asis",eval=F}
 tab.tidy.school = tidy.school %>%
+                  arrange(school,student) %>%
                   head(10) %>%
                   xtable(digits=0,align="ccccccc")
 
@@ -114,3 +115,12 @@ print(tab.tidy.school,type="html",include.rownames=F,
                              border-spacing=5px"
       )
 ```
+
+Based on the table above, you can see that student *3* from school *1* has a missing score and percentile for the year 2018. This is an example of explicitly missing information. In logitudinal studies where measures are taken on individuals over a fixed time period, this is a common occurrence. Hypothesize a reason for this scenario to happen.
+
+Based on the table above, you can see that student *4* from school *1* is clearly missing scores and percentiles from both years *2017* and *2018*. This is an example of implicitly missing information. This is a less common occurrence, but try to hypothesize a reason for this scenario to happen. 
+
+```{r}
+
+```
+

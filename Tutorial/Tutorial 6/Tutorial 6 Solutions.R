@@ -54,3 +54,17 @@ glimpse(untidy3.school)
 # Part 3: Spread Type of Value Into Multiple Columns
 tidy.school = untidy3.school %>%
                     spread(key="type",value="Value")  
+
+# Part 4: Missing Data Analysis
+tab.tidy.school = tidy.school %>%
+  arrange(school,student) %>%
+  head(10) %>%
+  xtable(digits=0,align="ccccccc")
+
+print(tab.tidy.school,type="html",include.rownames=F,
+      html.table.attributes="align='center',
+      rules='rows',
+      width=50%,
+      frame='hsides',
+      border-spacing=5px"
+)
