@@ -158,7 +158,7 @@ The figure below uses boxplots to show the distribution of scores in the 20 scho
 
 ```{r,eval=F}
 ggplot(final.tidy.school) +
-  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(school))) + 
+  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(CID))) + 
   guides(fill=F)+
   theme_minimal()
 ```
@@ -167,13 +167,13 @@ Using different colors for each student, the next two pictures show the change i
 
 ```{r,eval=F}
 ggplot(final.tidy.school) + 
-  geom_line(aes(x=Year,y=Score,color=as.factor(student))) +
+  geom_line(aes(x=Year,y=Score,color=as.factor(CID))) +
   guides(color=F) +
   scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
   theme_minimal()
 
 ggplot(final.tidy.school) + 
-  geom_line(aes(x=Year,y=Percentile,color=as.factor(student))) +
+  geom_line(aes(x=Year,y=Percentile,color=as.factor(CID))) +
   guides(color=F) +
   scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
   theme_minimal()
