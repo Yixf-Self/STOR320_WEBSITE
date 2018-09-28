@@ -155,7 +155,7 @@ untidy.school = tibble(
 <pre><code>## Warning: package 'bindrcpp' was built under R version 3.5.1</code></pre>
 <p>Below is an HTML table generated using the <code>xtable</code> package in R. For more information regarding this package, see the <a href="https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf">xtable gallery</a>. The R code in the code chunk converts an R data frame object to an HTML table. HTML table attributes can be specified within the function <code>print()</code>. The code chunk option <code>echo=F</code> prevents the code from showing and the option <code>results=&quot;asis&quot;</code> ensures that the resulting HTML table is displayed when knitted to HTML. The table provides a preview of the first 10 rows of the simulated data.</p>
 <!-- html table generated in R 3.5.0 by xtable 1.8-3 package -->
-<!-- Fri Sep 28 14:06:34 2018 -->
+<!-- Fri Sep 28 14:28:33 2018 -->
 <table align="center" , rules="rows" , width="50%," frame="hsides" , border-spacing="5px">
 <tr>
 <th>
@@ -185,10 +185,10 @@ value2018
 Score
 </td>
 <td align="center">
-55
+42
 </td>
 <td align="center">
-76
+73
 </td>
 </tr>
 <tr>
@@ -202,10 +202,10 @@ Score
 Percentile
 </td>
 <td align="center">
-69
+22
 </td>
 <td align="center">
-58
+29
 </td>
 </tr>
 <tr>
@@ -219,10 +219,10 @@ Percentile
 Score
 </td>
 <td align="center">
-44
+47
 </td>
 <td align="center">
-69
+71
 </td>
 </tr>
 <tr>
@@ -236,10 +236,10 @@ Score
 Percentile
 </td>
 <td align="center">
-26
+40
 </td>
 <td align="center">
-7
+15
 </td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ Percentile
 Score
 </td>
 <td align="center">
-45
+49
 </td>
 <td align="center">
 </td>
@@ -269,7 +269,7 @@ Score
 Percentile
 </td>
 <td align="center">
-30
+47
 </td>
 <td align="center">
 </td>
@@ -285,10 +285,10 @@ Percentile
 Score
 </td>
 <td align="center">
-33
+48
 </td>
 <td align="center">
-68
+79
 </td>
 </tr>
 <tr>
@@ -300,28 +300,28 @@ Score
 </td>
 <td align="center">
 Percentile
-</td>
-<td align="center">
-4
-</td>
-<td align="center">
-4
-</td>
-</tr>
-<tr>
-<td align="center">
-1
-</td>
-<td align="center">
-6
-</td>
-<td align="center">
-Score
 </td>
 <td align="center">
 43
 </td>
 <td align="center">
+81
+</td>
+</tr>
+<tr>
+<td align="center">
+1
+</td>
+<td align="center">
+6
+</td>
+<td align="center">
+Score
+</td>
+<td align="center">
+47
+</td>
+<td align="center">
 68
 </td>
 </tr>
@@ -336,7 +336,7 @@ Score
 Percentile
 </td>
 <td align="center">
-23
+40
 </td>
 <td align="center">
 4
@@ -352,10 +352,10 @@ Percentile
 <pre><code>## # A tibble: 4 x 5
 ##   school student type       value2017 value2018
 ##    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
-## 1      1       1 Score             55        76
-## 2      1       1 Percentile        69        58
-## 3      2       1 Score             73        77
-## 4      2       1 Percentile        99        67</code></pre>
+## 1      1       1 Score             42        73
+## 2      1       1 Percentile        22        29
+## 3      2       1 Score             55        78
+## 4      2       1 Percentile        70        74</code></pre>
 <p>The subsetted table contains scores and percentiles for two completely different children identified by <code>student==1</code>. We need to create a unique identifier for each student in the Cleveland school district. The <code>unite()</code> function can be utilized to create a new variable called <code>CID</code> by concatenating the identifiers for <code>school</code> and <code>student</code>. We want <code>CID</code> to follow the general form <em>SCHOOL.STUDENT</em>. Create a new tibble called <code>untidy2.school</code> that fixes this problem without dropping the original variables <code>school</code> or <code>student</code>. Read the documentation for <code>unite()</code> either by searching on google or using <code>?unite</code> to prevent the loss of original variables in the creation of a new variable.</p>
 <pre class="r"><code>untidy2.school = untidy.school %&gt;%
                     unite(CID,school,student,MORE)
@@ -406,7 +406,7 @@ print(tab.tidy2.school,type=&quot;html&quot;,include.rownames=F,
 <h1>Part 5: Summarizing Figures</h1>
 <p>The figure below uses boxplots to show the distribution of scores in the 20 schools for the years 2017 and 2018. If you were the district superintendent, how would you distribute the King’s ransom to these schools?</p>
 <pre class="r"><code>ggplot(final.tidy.school) +
-  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(CID))) + 
+  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(school))) + 
   guides(fill=F)+
   theme_minimal()</code></pre>
 <p>Using different colors for each student, the next two pictures show the change in test scores and percentiles for all students (without missing values) sampled from the district. Both of these pictures are necessary in understanding the improvement in mathematical knowledge on the student level. As you can see, they are very different from each other. Hypothesize an educational strategy the district might have taken that would have caused this phenomenon to occur.</p>

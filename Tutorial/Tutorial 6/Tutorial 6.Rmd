@@ -158,7 +158,7 @@ The figure below uses boxplots to show the distribution of scores in the 20 scho
 
 ```{r,eval=F}
 ggplot(final.tidy.school) +
-  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(CID))) + 
+  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(school))) + 
   guides(fill=F)+
   theme_minimal()
 ```
