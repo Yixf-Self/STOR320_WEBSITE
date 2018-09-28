@@ -155,7 +155,7 @@ untidy.school = tibble(
 <pre><code>## Warning: package 'bindrcpp' was built under R version 3.5.1</code></pre>
 <p>Below is an HTML table generated using the <code>xtable</code> package in R. For more information regarding this package, see the <a href="https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf">xtable gallery</a>. The R code in the code chunk converts an R data frame object to an HTML table. HTML table attributes can be specified within the function <code>print()</code>. The code chunk option <code>echo=F</code> prevents the code from showing and the option <code>results=&quot;asis&quot;</code> ensures that the resulting HTML table is displayed when knitted to HTML. The table provides a preview of the first 10 rows of the simulated data.</p>
 <!-- html table generated in R 3.5.0 by xtable 1.8-3 package -->
-<!-- Thu Sep 27 22:34:22 2018 -->
+<!-- Thu Sep 27 23:46:08 2018 -->
 <table align="center" , rules="rows" , width="50%," frame="hsides" , border-spacing="5px">
 <tr>
 <th>
@@ -185,10 +185,10 @@ value2018
 Score
 </td>
 <td align="center">
-52
+43
 </td>
 <td align="center">
-72
+73
 </td>
 </tr>
 <tr>
@@ -202,10 +202,10 @@ Score
 Percentile
 </td>
 <td align="center">
-61
+21
 </td>
 <td align="center">
-23
+32
 </td>
 </tr>
 <tr>
@@ -219,10 +219,10 @@ Percentile
 Score
 </td>
 <td align="center">
-66
+46
 </td>
 <td align="center">
-76
+73
 </td>
 </tr>
 <tr>
@@ -236,26 +236,10 @@ Score
 Percentile
 </td>
 <td align="center">
-95
+31
 </td>
 <td align="center">
-61
-</td>
-</tr>
-<tr>
-<td align="center">
-1
-</td>
-<td align="center">
-3
-</td>
-<td align="center">
-Score
-</td>
-<td align="center">
-49
-</td>
-<td align="center">
+32
 </td>
 </tr>
 <tr>
@@ -264,22 +248,6 @@ Score
 </td>
 <td align="center">
 3
-</td>
-<td align="center">
-Percentile
-</td>
-<td align="center">
-50
-</td>
-<td align="center">
-</td>
-</tr>
-<tr>
-<td align="center">
-1
-</td>
-<td align="center">
-5
 </td>
 <td align="center">
 Score
@@ -288,7 +256,39 @@ Score
 43
 </td>
 <td align="center">
-76
+</td>
+</tr>
+<tr>
+<td align="center">
+1
+</td>
+<td align="center">
+3
+</td>
+<td align="center">
+Percentile
+</td>
+<td align="center">
+21
+</td>
+<td align="center">
+</td>
+</tr>
+<tr>
+<td align="center">
+1
+</td>
+<td align="center">
+5
+</td>
+<td align="center">
+Score
+</td>
+<td align="center">
+41
+</td>
+<td align="center">
+75
 </td>
 </tr>
 <tr>
@@ -302,10 +302,10 @@ Score
 Percentile
 </td>
 <td align="center">
-27
+16
 </td>
 <td align="center">
-61
+52
 </td>
 </tr>
 <tr>
@@ -319,10 +319,10 @@ Percentile
 Score
 </td>
 <td align="center">
-55
+44
 </td>
 <td align="center">
-72
+78
 </td>
 </tr>
 <tr>
@@ -336,10 +336,10 @@ Score
 Percentile
 </td>
 <td align="center">
-72
+24
 </td>
 <td align="center">
-23
+79
 </td>
 </tr>
 </table>
@@ -352,10 +352,10 @@ Percentile
 <pre><code>## # A tibble: 4 x 5
 ##   school student type       value2017 value2018
 ##    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
-## 1      1       1 Score             52        72
-## 2      1       1 Percentile        61        23
-## 3      2       1 Score             59        74
-## 4      2       1 Percentile        84        41</code></pre>
+## 1      1       1 Score             43        73
+## 2      1       1 Percentile        21        32
+## 3      2       1 Score             52        74
+## 4      2       1 Percentile        54        42</code></pre>
 <p>The subsetted table contains scores and percentiles for two completely different children identified by <code>student==1</code>. We need to create a unique identifier for each student in the Cleveland school district. The <code>unite()</code> function can be utilized to create a new variable called <code>CID</code> by concatenating the identifiers for <code>school</code> and <code>student</code>. We want <code>CID</code> to follow the general form <em>SCHOOL.STUDENT</em>. Create a new tibble called <code>untidy2.school</code> that fixes this problem without dropping the original variables <code>school</code> or <code>student</code>. Read the documentation for <code>unite()</code> either by searching on google or using <code>?unite</code> to prevent the loss of original variables in the creation of a new variable.</p>
 <pre class="r"><code>untidy2.school = untidy.school %&gt;%
                     unite(CID,school,student,MORE)
@@ -363,7 +363,7 @@ glimpse(untidy2.school)</code></pre>
 </div>
 <div id="part-2-gather-variables-with-yearly-values" class="section level1">
 <h1>Part 2: Gather Variables With Yearly Values</h1>
-<p>The variables <code>value2017</code> and <code>value2018</code> contain the scores and percentiles for two different years. In a new tibble called <code>untidy3.school</code>, based on <code>untidy2.school</code>, we want to create a new variable called <code>Year</code> and a new variable called <code>Value</code> that display the year and the result from that year, respectively. The variable <code>Year</code> should be a numeric vector containing either <em>2017</em> or <em>2018</em>. The most efficient way to modify the data in this manner is to start by renaming <code>value2017</code> and <code>value2018</code> to nonsynctactic names <code>2017</code> and <code>2018</code>. Remember that you need to surround nonsyncactic names with backticks to achieve this result. The</p>
+<p>The variables <code>value2017</code> and <code>value2018</code> contain the scores and percentiles for two different years. In a new tibble called <code>untidy3.school</code>, based on <code>untidy2.school</code>, we want to create a new variable called <code>Year</code> and a new variable called <code>Value</code> that display the year and the result from that year, respectively. The variable <code>Year</code> should be a numeric vector containing either <em>2017</em> or <em>2018</em>. The most efficient way to modify the data in this manner is to start by renaming <code>value2017</code> and <code>value2018</code> to nonsynctactic names <code>2017</code> and <code>2018</code>. Remember that you need to surround nonsyncactic names with backticks to achieve this result.</p>
 <pre class="r"><code>untidy3.school = untidy2.school %&gt;%
                     rename(NEWVAR=OLDVAR,NEWVAR=OLDVAR) %&gt;%
                     gather(`2017`:`2018`,key=FILL,value=FILL,convert=T)
@@ -381,6 +381,46 @@ glimpse(tidy.school)</code></pre>
 <p>The original data contains explicitly missing and implicitly missing values. Instances of both can be visibly seen in the first ten observations. Below is a table showing the first 10 observations in the cleaned dataset we called <code>tidy.school</code>. To appropriately, view this we have to sort our observations by <code>school</code> and <code>student</code> as seen in the original dataset <code>untidy.school</code>.</p>
 <p>Based on the table above, you can see that student <em>3</em> from school <em>1</em> has a missing score and percentile for the year 2018. This is an example of explicitly missing information. In logitudinal studies where measures are taken on individuals over a fixed time period, this is a common occurrence. Hypothesize a reason for this scenario to happen.</p>
 <p>Based on the table above, you can see that student <em>4</em> from school <em>1</em> is clearly missing scores and percentiles from both years <em>2017</em> and <em>2018</em>. This is an example of implicitly missing information. This is a less common occurrence, but try to hypothesize a reason for this scenario to happen.</p>
+<p>Use the <code>complete()</code> function to convert all implicitly missing to explicitly missing. Create a new table called <code>tidy2.school</code> that reports missing values as <code>NA</code> for all combinations of school, student, and year.</p>
+<pre class="r"><code>tidy2.school=tidy.school %&gt;%
+  complete(VARIABLES)</code></pre>
+<p>The first 10 rows of <code>tidy2.school</code> are displayed below.</p>
+<pre class="r"><code>tab.tidy2.school = tidy2.school %&gt;%
+  head(10) %&gt;%
+  xtable(digits=0,align=&quot;ccccccc&quot;)
+
+print(tab.tidy2.school,type=&quot;html&quot;,include.rownames=F,
+      html.table.attributes=&quot;align='center',
+      rules='rows',
+      width=50%,
+      frame='hsides',
+      border-spacing=5px&quot;
+)</code></pre>
+<p>If you inspect the first 10 rows of <code>tidy2.school</code>, you should see that the variable <code>CID</code> is missing for student <em>4</em> from school <em>1</em> even though we know that this students unique district ID should be <em>“1.4”</em>. Using the pipe <code>%&gt;%</code>, combine all previous statements in an order where this will not occur. Create a tibble named <code>final.tidy.school</code> using a chain of commands that begins with calling the original tibble <code>untidy.school</code></p>
+<pre class="r"><code>final.tidy.school = untidy.school %&gt;%
+                      MORE %&gt;%
+                      MORE %&gt;%
+                      ...</code></pre>
+</div>
+<div id="part-5-summarizing-figures" class="section level1">
+<h1>Part 5: Summarizing Figures</h1>
+<p>The figure below uses boxplots to show the distribution of scores in the 20 schools for the years 2017 and 2018. If you were the district superintendent, how would you distribute the King’s ransom to these schools?</p>
+<pre class="r"><code>ggplot(final.tidy.school) +
+  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(school))) + 
+  guides(fill=F)+
+  theme_minimal()</code></pre>
+<p>Using different colors for each student, the next two pictures show the change in test scores and percentiles for all students (without missing values) sampled from the district. Both of these pictures are necessary in understanding the improvement in mathematical knowledge on the student level. As you can see, they are very different from each other. Hypothesize an educational strategy the district might have taken that would have caused this phenomenon to occur.</p>
+<pre class="r"><code>ggplot(final.tidy.school) + 
+  geom_line(aes(x=Year,y=Score,color=as.factor(student))) +
+  guides(color=F) +
+  scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
+  theme_minimal()
+
+ggplot(final.tidy.school) + 
+  geom_line(aes(x=Year,y=Percentile,color=as.factor(student))) +
+  guides(color=F) +
+  scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
+  theme_minimal()</code></pre>
 </div>
 
 

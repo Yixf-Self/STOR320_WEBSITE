@@ -68,3 +68,43 @@ print(tab.tidy.school,type="html",include.rownames=F,
       frame='hsides',
       border-spacing=5px"
 )
+
+tidy2.school=tidy.school %>%
+  complete(school,student,Year)
+
+tab.tidy2.school = tidy2.school %>%
+  head(10) %>%
+  xtable(digits=0,align="ccccccc")
+
+print(tab.tidy2.school,type="html",include.rownames=F,
+      html.table.attributes="align='center',
+      rules='rows',
+      width=50%,
+      frame='hsides',
+      border-spacing=5px"
+)
+
+final.tidy.school = untidy.school %>%
+                      rename(`2017`=value2017,`2018`=value2018) %>%
+                      gather(`2017`:`2018`,key="Year",value="Value",convert=T) %>%
+                      spread(key="type",value="Value")  %>%
+                      complete(school,student,Year) %>%
+                      unite(CID,school,student,sep=".",remove=F)
+
+ggplot(final.tidy.school) +
+  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(school))) + 
+  guides(fill=F)+
+  theme_minimal()
+
+ggplot(final.tidy.school) + 
+  geom_line(aes(x=Year,y=Score,color=CID)) +
+  guides(color=F) +
+  scale_x_discrete(lim=c(2017,2018),breaks=c(2017,2018),labels=c(2017,2018)) +
+  theme_minimal()
+
+ggplot(final.tidy.school) + 
+  geom_line(aes(x=Year,y=Percentile,color=CID)) +
+  guides(color=F) +
+  scale_x_discrete(lim=c(2017,2018),breaks=c(2017,2018),labels=c(2017,2018)) +
+  theme_minimal()
+                      
