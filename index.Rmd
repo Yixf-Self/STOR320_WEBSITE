@@ -52,10 +52,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 21|Final Project I|[Lecture 10](https://drive.google.com/file/d/1McGiOljDvGVYgK6CM28d_Ic_mNzQ5SLl/view?usp=sharing)||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||P1, P2|L3|
 |Sep. 24|Data Import|[Lecture 11](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||||||
 |Sep. 26|Tidy Data I|[Lecture 12](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||||||
-|Sep. 28|Tidy Data II|[Lecture 13](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[T6](Tutorial/Tutorial 6/Tutorial_6.html) ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))||[L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))||L4|
+|Sep. 28|Tidy Data II|[Lecture 13](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[T6](Tutorial/Tutorial 6/Tutorial_6.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|[L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||L4|
 |Oct. 1|Joins|||||||
 |Oct. 3|Strings|||||||
-|Oct. 5|Programming I|||||||
+|Oct. 5|Programming I||||A2||A2|
 |Oct. 8|Programming II|||||||
 |Oct. 10|Programming III|||||||
 |Oct. 12||||||||
@@ -133,6 +133,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | September 7 | | A1 | September 21 (5 PM)|
 | September 14 | L3 ||September 28 (5 PM)|
 | September 28 | L4 ||October 5 (5 PM)|
+| October 5 | | A2 | October 12 (5PM)|
 |          |        |             |           |
 
 # **Final Project Details**
