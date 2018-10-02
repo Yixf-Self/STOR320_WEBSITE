@@ -53,9 +53,9 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 24|Data Import|[Lecture 11](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||||||
 |Sep. 26|Tidy Data I|[Lecture 12](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||||||
 |Sep. 28|Tidy Data II|[Lecture 13](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[T6](Tutorial/Tutorial 6/Tutorial_6.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|[L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||L4|
-|Oct. 1|Joins I|[Lecture 14](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||||||
-|Oct. 3|Joins II|||||||
-|Oct. 5|Strings / Factors||||A2||A2|
+|Oct. 1|Joins|[Lecture 14](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||||||
+|Oct. 3|Web Scraping I|||||||
+|Oct. 5|Web Scraping II||||A2||A2|
 |Oct. 8|Programming I|||||||
 |Oct. 10|Programming II|||||||
 |Oct. 12|Programming III|||||||
