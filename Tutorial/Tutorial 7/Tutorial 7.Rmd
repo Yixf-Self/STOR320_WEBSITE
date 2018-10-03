@@ -46,7 +46,7 @@ Many Wikipedia pages contain information organized in tables. Consider the [US C
 
 Using `rvest` functions such as `read_html()` and `html_table()`, we create a data frame called `VIOLENT` that contains all information read from the desired Wikipedia page.
 
-```{r}
+```{r, eval=F}
 URL.VIOLENT="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29"
 VIOLENT = URL.VIOLENT %>%
   read_html() %>%
@@ -59,7 +59,7 @@ str(VIOLENT)
 
 You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?
 
-```{r}
+```{r, eval=F}
 VIOLENT2=VIOLENT[-1,1:8]
 colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robbery","Assault")
 str(VIOLENT2)
@@ -69,7 +69,7 @@ str(VIOLENT2)
 
 The subheadings in the Wikipedia table create problems when parsed to data frame. The presence of this problem causes known numeric variables to be treated as categorical variables. We need to use functions inside and outside `tidyverse` to fix this issue.
 
-```{r}
+```{r, eval=F}
 VIOLENT3=VIOLENT2 %>%
             mutate(Population=str_replace_all(Population,",","")) %>%
             mutate_at(3:8,as.numeric)
@@ -80,7 +80,7 @@ str(VIOLENT3)
 
 Using `str_detect()` we can identify cases in `City` where unwanted characters {"-","2","*"} make an appearance.
 
-```{r}
+```{r, eval=F}
 VIOLENT3[str_detect(VIOLENT3$City,"[-2*]"),]$City
 ```
 
@@ -88,7 +88,7 @@ VIOLENT3[str_detect(VIOLENT3$City,"[-2*]"),]$City
 
 The unwanted characters {"-","2","*"} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss.
 
-```{r}
+```{r, eval=F}
 VIOLENT4 = VIOLENT3 %>%
               mutate(City=str_replace_all(City,"[*]",""))
 VIOLENT4 %>%
@@ -113,7 +113,7 @@ The [`noncensus`](https://cran.r-project.org/web/packages/noncensus/noncensus.pd
 
 The data in `zip_codes` provided in the `noncensus` package gives us important geographical information for all US cities.
 
-```{r}
+```{r, eval=F}
 data(zip_codes)
 ZIP=zip_codes
 str(ZIP)
@@ -121,9 +121,9 @@ str(ZIP)
 
 ##Chunk 2: Summarize for Joining
 
-Many US metropolitan areas cover multiple zip codes. Using `group_by()` and `summarize()`, we can obtain the average position for each combination of city and state
+Many US metropolitan areas cover multiple zip codes. Using `group_by()` and `summarize()`, we can obtain the average position for each combination of city and state.
 
-```{r}
+```{r, eval=F}
 ZIP2 = ZIP %>%
         group_by(city,state) %>%
         summarize(lat=mean(latitude),lon=mean(longitude)) %>%
@@ -135,7 +135,7 @@ write_csv(ZIP2,"FINAL_ZIP.CSV")
 
 Run the code below. What makes merging `ZIP2` with `VIOLENT6` problematic? 
 
-```{r}
+```{r, eval=F}
 head(VIOLENT6[,1:4],3)
 head(ZIP2,3)
 ```
@@ -146,7 +146,7 @@ Using your favorite search engine, you can look up the government established ab
 
 ##Chunk 1: Web Scraping Table of State Abbreviations
 
-```{r}
+```{r, eval=F}
 URL.STATE_ABBREV = "https://state.1keydata.com/state-abbreviations.php"
 STATE_ABBREV = URL.STATE_ABBREV %>%
                 read_html() %>%
@@ -158,7 +158,7 @@ head(STATE_ABBREV)
 
 ##Chunk 2: Transforming the Table
 
-```{r}
+```{r, eval=F}
 STATE_ABBREV_TOP = STATE_ABBREV[,1:2]
 names(STATE_ABBREV_TOP)=c("State","state")
 STATE_ABBREV_BOT = STATE_ABBREV[,3:4]
