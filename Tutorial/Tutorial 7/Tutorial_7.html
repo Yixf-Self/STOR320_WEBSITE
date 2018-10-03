@@ -182,6 +182,163 @@ str(VIOLENT)</code></pre>
 ##  $ Property Crime: chr  &quot;Larceny-Theft&quot; &quot;925.3&quot; &quot;477.6&quot; &quot;383.1&quot; ...
 ##  $ Arson1        : chr  &quot;Motor Vehicle Theft&quot; &quot;15.9&quot; &quot;8.0&quot; &quot;35.2&quot; ...</code></pre>
 </div>
+<div id="chunk-2-initial-selection-of-violent-crimes-and-cleaning" class="section level2">
+<h2>Chunk 2: Initial Selection of Violent Crimes and Cleaning</h2>
+<p>You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?</p>
+<pre class="r"><code>VIOLENT2=VIOLENT[-1,1:8]
+colnames(VIOLENT2)=c(&quot;State&quot;,&quot;City&quot;,&quot;Population&quot;,&quot;Total&quot;,&quot;Murder&quot;,&quot;Rape&quot;,&quot;Robbery&quot;,&quot;Assault&quot;)
+str(VIOLENT2)</code></pre>
+<pre><code>## 'data.frame':    83 obs. of  8 variables:
+##  $ State     : chr  &quot;New Mexico&quot; &quot;California&quot; &quot;Alaska&quot; &quot;Texas&quot; ...
+##  $ City      : chr  &quot;Albuquerque&quot; &quot;Anaheim&quot; &quot;Anchorage&quot; &quot;Arlington&quot; ...
+##  $ Population: chr  &quot;559,721&quot; &quot;349,471&quot; &quot;301,239&quot; &quot;387,565&quot; ...
+##  $ Total     : chr  &quot;965.8&quot; &quot;363.7&quot; &quot;1070.9&quot; &quot;502.1&quot; ...
+##  $ Murder    : chr  &quot;7.7&quot; &quot;5.2&quot; &quot;8.6&quot; &quot;2.1&quot; ...
+##  $ Rape      : chr  &quot;72.2&quot; &quot;36.9&quot; &quot;171.6&quot; &quot;53.7&quot; ...
+##  $ Robbery   : chr  &quot;301.2&quot; &quot;125.6&quot; &quot;206.1&quot; &quot;136.5&quot; ...
+##  $ Assault   : chr  &quot;584.8&quot; &quot;196.0&quot; &quot;684.5&quot; &quot;309.9&quot; ...</code></pre>
+</div>
+<div id="chunk-3-fixing-variable-types" class="section level2">
+<h2>Chunk 3: Fixing Variable Types</h2>
+<p>The subheadings in the Wikipedia table create problems when parsed to data frame. The presence of this problem causes known numeric variables to be treated as categorical variables. We need to use functions inside and outside <code>tidyverse</code> to fix this issue.</p>
+<pre class="r"><code>VIOLENT3=VIOLENT2 %&gt;%
+            mutate(Population=str_replace_all(Population,&quot;,&quot;,&quot;&quot;)) %&gt;%
+            mutate_at(3:8,as.numeric)
+str(VIOLENT3)</code></pre>
+<pre><code>## 'data.frame':    83 obs. of  8 variables:
+##  $ State     : chr  &quot;New Mexico&quot; &quot;California&quot; &quot;Alaska&quot; &quot;Texas&quot; ...
+##  $ City      : chr  &quot;Albuquerque&quot; &quot;Anaheim&quot; &quot;Anchorage&quot; &quot;Arlington&quot; ...
+##  $ Population: num  559721 349471 301239 387565 464710 ...
+##  $ Total     : num  966 364 1071 502 1120 ...
+##  $ Murder    : num  7.7 5.2 8.6 2.1 20.2 6.7 2.5 5.9 57.8 5.7 ...
+##  $ Rape      : num  72.2 36.9 171.6 53.7 36.6 ...
+##  $ Robbery   : num  301 126 206 136 429 ...
+##  $ Assault   : num  585 196 684 310 634 ...</code></pre>
+</div>
+<div id="chunk-4-identifying-problematic-cases-in-city" class="section level2">
+<h2>Chunk 4: Identifying Problematic Cases in <code>City</code></h2>
+<p>Using <code>str_detect()</code> we can identify cases in <code>City</code> where unwanted characters {“-”,“2”,“*“} make an appearance.</p>
+<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[-2*]&quot;),]$City</code></pre>
+<pre><code>## [1] &quot;Charlotte-Mecklenburg&quot; &quot;Cleveland*&quot;            &quot;Mobile2&quot;              
+## [4] &quot;Newark*&quot;               &quot;Portland*&quot;             &quot;Raleigh**&quot;</code></pre>
+</div>
+<div id="chunk-5-cleaning-problematic-cities" class="section level2">
+<h2>Chunk 5: Cleaning Problematic Cities</h2>
+<p>The unwanted characters {“-”,“2”,“*“} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss.</p>
+<pre class="r"><code>VIOLENT4 = VIOLENT3 %&gt;%
+              mutate(City=str_replace_all(City,&quot;[*]&quot;,&quot;&quot;))
+VIOLENT4 %&gt;%
+  filter(City %in% c(&quot;Cleveland&quot;,&quot;Newark&quot;,&quot;Portland&quot;,&quot;Raleigh&quot;))</code></pre>
+<pre><code>##            State      City Population  Total Murder  Rape Robbery Assault
+## 1           Ohio Cleveland     388655 1334.3   16.2 124.0   769.3   424.8
+## 2     New Jersey    Newark     279110 1077.7   33.3  17.6   688.6   338.2
+## 3         Oregon  Portland     615672  472.8    4.2  42.6   137.6   288.5
+## 4 North Carolina   Raleigh     428993  392.3    2.8  18.4   141.0   230.1</code></pre>
+<pre class="r"><code>VIOLENT5 = VIOLENT4 %&gt;% 
+              mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City))
+VIOLENT5 %&gt;%
+  filter(City %in% c(&quot;Charlotte&quot;))</code></pre>
+<pre><code>##            State      City Population Total Murder Rape Robbery Assault
+## 1 North Carolina Charlotte     877817 677.6    6.9 24.6   221.8   424.2</code></pre>
+<pre class="r"><code>VIOLENT6 = VIOLENT5 %&gt;%
+              mutate(City=str_replace(City,&quot;[2]&quot;,&quot;&quot;))
+VIOLENT6 %&gt;%
+  filter(City %in% c(&quot;Mobile&quot;))</code></pre>
+<pre><code>##     State   City Population Total Murder Rape Robbery Assault
+## 1 Alabama Mobile     250346 610.8    9.6 46.3   160.6   394.3</code></pre>
+<pre class="r"><code>str(VIOLENT6)</code></pre>
+<pre><code>## 'data.frame':    83 obs. of  8 variables:
+##  $ State     : chr  &quot;New Mexico&quot; &quot;California&quot; &quot;Alaska&quot; &quot;Texas&quot; ...
+##  $ City      : chr  &quot;Albuquerque&quot; &quot;Anaheim&quot; &quot;Anchorage&quot; &quot;Arlington&quot; ...
+##  $ Population: num  559721 349471 301239 387565 464710 ...
+##  $ Total     : num  966 364 1071 502 1120 ...
+##  $ Murder    : num  7.7 5.2 8.6 2.1 20.2 6.7 2.5 5.9 57.8 5.7 ...
+##  $ Rape      : num  72.2 36.9 171.6 53.7 36.6 ...
+##  $ Robbery   : num  301 126 206 136 429 ...
+##  $ Assault   : num  585 196 684 310 634 ...</code></pre>
+<pre class="r"><code>write_csv(VIOLENT6,&quot;FINAL_VIOLENT.CSV&quot;)</code></pre>
+</div>
+</div>
+<div id="part-2-geographical-locations-of-us-cities" class="section level1">
+<h1>Part 2: Geographical Locations of US Cities</h1>
+<p>The <a href="https://cran.r-project.org/web/packages/noncensus/noncensus.pdf"><code>noncensus</code></a> package in R contains preloaded datasets useful for population studies. Imagine if we wanted to plot the crime information from <code>VIOLENT6</code> on a US map. What information would we need?</p>
+<div id="chunk-1-read-in-zip-data" class="section level2">
+<h2>Chunk 1: Read in ZIP Data</h2>
+<p>The data in <code>zip_codes</code> provided in the <code>noncensus</code> package gives us important geographical information for all US cities.</p>
+<pre class="r"><code>data(zip_codes)
+ZIP=zip_codes
+str(ZIP)</code></pre>
+<pre><code>## 'data.frame':    43524 obs. of  6 variables:
+##  $ zip      : chr  &quot;00210&quot; &quot;00211&quot; &quot;00212&quot; &quot;00213&quot; ...
+##  $ city     : chr  &quot;Portsmouth&quot; &quot;Portsmouth&quot; &quot;Portsmouth&quot; &quot;Portsmouth&quot; ...
+##  $ state    : chr  &quot;NH&quot; &quot;NH&quot; &quot;NH&quot; &quot;NH&quot; ...
+##  $ latitude : num  43 43 43 43 43 ...
+##  $ longitude: num  -71 -71 -71 -71 -71 ...
+##  $ fips     : num  33015 33015 33015 33015 33015 ...</code></pre>
+</div>
+<div id="chunk-2-summarize-for-joining" class="section level2">
+<h2>Chunk 2: Summarize for Joining</h2>
+<p>Many US metropolitan areas cover multiple zip codes. Using <code>group_by()</code> and <code>summarize()</code>, we can obtain the average position for each combination of city and state</p>
+<pre class="r"><code>ZIP2 = ZIP %&gt;%
+        group_by(city,state) %&gt;%
+        summarize(lat=mean(latitude),lon=mean(longitude)) %&gt;%
+        ungroup()
+write_csv(ZIP2,&quot;FINAL_ZIP.CSV&quot;)</code></pre>
+</div>
+<div id="chunk-3-assessing-future-join-issues" class="section level2">
+<h2>Chunk 3: Assessing Future Join Issues</h2>
+<p>Run the code below. What makes merging <code>ZIP2</code> with <code>VIOLENT6</code> problematic?</p>
+<pre class="r"><code>head(VIOLENT6[,1:4],3)</code></pre>
+<pre><code>##        State        City Population  Total
+## 1 New Mexico Albuquerque     559721  965.8
+## 2 California     Anaheim     349471  363.7
+## 3     Alaska   Anchorage     301239 1070.9</code></pre>
+<pre class="r"><code>head(ZIP2,3)</code></pre>
+<pre><code>## # A tibble: 3 x 4
+##   city       state   lat   lon
+##   &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 Aaronsburg PA     40.9 -77.4
+## 2 Abbeville  AL     31.6 -85.2
+## 3 Abbeville  GA     32.0 -83.3</code></pre>
+</div>
+</div>
+<div id="part-3-linking-state-names-to-state-abbreviations" class="section level1">
+<h1>Part 3: Linking State Names to State Abbreviations</h1>
+<p>Using your favorite search engine, you can look up the government established abbreviations for each state in the US of A. An HTML table found at <a href="https://state.1keydata.com/state-abbreviations.php" class="uri">https://state.1keydata.com/state-abbreviations.php</a> makes this connection for us. However, the way this data is presented is not in the <em>tidy</em> spirit. Soap can’t clean this, unless it is the <a href="https://www.dove.com/us/en/washing-and-bathing/beauty-bar.html">Dove Beauty Bar</a>.</p>
+<div id="chunk-1-web-scraping-table-of-state-abbreviations" class="section level2">
+<h2>Chunk 1: Web Scraping Table of State Abbreviations</h2>
+<pre class="r"><code>URL.STATE_ABBREV = &quot;https://state.1keydata.com/state-abbreviations.php&quot;
+STATE_ABBREV = URL.STATE_ABBREV %&gt;%
+                read_html() %&gt;%
+                html_table(fill=T) %&gt;%
+                .[[3]] %&gt;%
+                .[-1,]
+head(STATE_ABBREV)</code></pre>
+<pre><code>##           X1 X2            X3 X4
+## 2    Alabama AL       Montana MT
+## 3     Alaska AK      Nebraska NE
+## 4    Arizona AZ        Nevada NV
+## 5   Arkansas AR New Hampshire NH
+## 6 California CA    New Jersey NJ
+## 7   Colorado CO    New Mexico NM</code></pre>
+</div>
+<div id="chunk-2-transforming-the-table" class="section level2">
+<h2>Chunk 2: Transforming the Table</h2>
+<pre class="r"><code>STATE_ABBREV_TOP = STATE_ABBREV[,1:2]
+names(STATE_ABBREV_TOP)=c(&quot;State&quot;,&quot;state&quot;)
+STATE_ABBREV_BOT = STATE_ABBREV[,3:4]
+names(STATE_ABBREV_BOT)=c(&quot;State&quot;,&quot;state&quot;)
+STATE_ABBREV2=rbind(STATE_ABBREV_TOP,STATE_ABBREV_BOT) %&gt;% arrange(State)
+head(STATE_ABBREV2)</code></pre>
+<pre><code>##        State state
+## 1    Alabama    AL
+## 2     Alaska    AK
+## 3    Arizona    AZ
+## 4   Arkansas    AR
+## 5 California    CA
+## 6   Colorado    CO</code></pre>
+<pre class="r"><code>write_csv(STATE_ABBREV2,&quot;FINAL_STATE_ABBREV.CSV&quot;)</code></pre>
+</div>
 </div>
 
 

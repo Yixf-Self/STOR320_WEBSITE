@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE,warning=F)
 options(scipen=999)
 library(tidyverse)    #Essential Functions
 library(rvest)        #Read Tables From Webpages
+library(noncensus)    #Contains Zip Codes for US Cities
 ```
 
 # Introduction
@@ -56,8 +57,114 @@ str(VIOLENT)
 
 ##Chunk 2: Initial Selection of Violent Crimes and Cleaning
 
+You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?
+
 ```{r}
 VIOLENT2=VIOLENT[-1,1:8]
 colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robbery","Assault")
-head(VIOLENT2)
+str(VIOLENT2)
 ```
+
+##Chunk 3: Fixing Variable Types
+
+The subheadings in the Wikipedia table create problems when parsed to data frame. The presence of this problem causes known numeric variables to be treated as categorical variables. We need to use functions inside and outside `tidyverse` to fix this issue.
+
+```{r}
+VIOLENT3=VIOLENT2 %>%
+            mutate(Population=str_replace_all(Population,",","")) %>%
+            mutate_at(3:8,as.numeric)
+str(VIOLENT3)
+```
+
+##Chunk 4: Identifying Problematic Cases in `City`
+
+Using `str_detect()` we can identify cases in `City` where unwanted characters {"-","2","*"} make an appearance.
+
+```{r}
+VIOLENT3[str_detect(VIOLENT3$City,"[-2*]"),]$City
+```
+
+##Chunk 5: Cleaning Problematic Cities
+
+The unwanted characters {"-","2","*"} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss.
+
+```{r}
+VIOLENT4 = VIOLENT3 %>%
+              mutate(City=str_replace_all(City,"[*]",""))
+VIOLENT4 %>%
+  filter(City %in% c("Cleveland","Newark","Portland","Raleigh"))
+VIOLENT5 = VIOLENT4 %>% 
+              mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
+VIOLENT5 %>%
+  filter(City %in% c("Charlotte"))
+VIOLENT6 = VIOLENT5 %>%
+              mutate(City=str_replace(City,"[2]",""))
+VIOLENT6 %>%
+  filter(City %in% c("Mobile"))
+str(VIOLENT6)
+write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
+```
+
+# Part 2: Geographical Locations of US Cities
+
+The [`noncensus`](https://cran.r-project.org/web/packages/noncensus/noncensus.pdf) package in R contains preloaded datasets useful for population studies. Imagine if we wanted to plot the crime information from `VIOLENT6` on a US map. What information would we need?
+
+##Chunk 1: Read in ZIP Data
+
+The data in `zip_codes` provided in the `noncensus` package gives us important geographical information for all US cities.
+
+```{r}
+data(zip_codes)
+ZIP=zip_codes
+str(ZIP)
+```
+
+##Chunk 2: Summarize for Joining
+
+Many US metropolitan areas cover multiple zip codes. Using `group_by()` and `summarize()`, we can obtain the average position for each combination of city and state
+
+```{r}
+ZIP2 = ZIP %>%
+        group_by(city,state) %>%
+        summarize(lat=mean(latitude),lon=mean(longitude)) %>%
+        ungroup()
+write_csv(ZIP2,"FINAL_ZIP.CSV")
+```
+
+##Chunk 3: Assessing Future Join Issues
+
+Run the code below. What makes merging `ZIP2` with `VIOLENT6` problematic? 
+
+```{r}
+head(VIOLENT6[,1:4],3)
+head(ZIP2,3)
+```
+
+# Part 3: Linking State Names to State Abbreviations
+
+Using your favorite search engine, you can look up the government established abbreviations for each state in the US of A. An HTML table found at https://state.1keydata.com/state-abbreviations.php makes this connection for us. However, the way this data is presented is not in the *tidy* spirit. Soap can't clean this, unless it is the [Dove Beauty Bar](https://www.dove.com/us/en/washing-and-bathing/beauty-bar.html).
+
+##Chunk 1: Web Scraping Table of State Abbreviations
+
+```{r}
+URL.STATE_ABBREV = "https://state.1keydata.com/state-abbreviations.php"
+STATE_ABBREV = URL.STATE_ABBREV %>%
+                read_html() %>%
+                html_table(fill=T) %>%
+                .[[3]] %>%
+                .[-1,]
+head(STATE_ABBREV)
+```
+
+##Chunk 2: Transforming the Table
+
+```{r}
+STATE_ABBREV_TOP = STATE_ABBREV[,1:2]
+names(STATE_ABBREV_TOP)=c("State","state")
+STATE_ABBREV_BOT = STATE_ABBREV[,3:4]
+names(STATE_ABBREV_BOT)=c("State","state")
+STATE_ABBREV2=rbind(STATE_ABBREV_TOP,STATE_ABBREV_BOT) %>% arrange(State)
+head(STATE_ABBREV2)
+write_csv(STATE_ABBREV2,"FINAL_STATE_ABBREV.CSV")
+```
+
