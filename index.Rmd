@@ -54,8 +54,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 26|Tidy Data I|[Lecture 12](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||||||
 |Sep. 28|Tidy Data II|[Lecture 13](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[T6](Tutorial/Tutorial 6/Tutorial_6.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|[L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||L4|
 |Oct. 1|Joins|[Lecture 14](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||||||
-|Oct. 3|Web Scraping I|[Lecture 15](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[T6](Tutorial/Tutorial 7/Tutorial_7.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|||||
-|Oct. 5|Web Scraping II||||A2||A2|
+|Oct. 3|Web Scraping I|[Lecture 15](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[T7](Tutorial/Tutorial 7/Tutorial_7.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|||||
+|Oct. 5|Web Scraping II|[Lecture 16](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[T8](Tutorial/Tutorial 8/Tutorial_8.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))||A2||A2|
 |Oct. 8|Programming I|||||||
 |Oct. 10|Programming II|||||||
 |Oct. 12|Programming III|||||||
@@ -196,6 +196,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 - **[R for Data Science](https://drive.google.com/file/d/1Wca-b3m6CTbBQqO7tUEh_CdD3xVgjYVb/view?usp=sharing)** (R4DS)
 
 - **[R Programming for Data Science](https://drive.google.com/file/d/1XVF5v4MTBhIp_dq9MzTI0TtPfVrF6eaZ/view?usp=sharing)** (RP4DS)
+
+- **[Text Mining with R](https://www.tidytextmining.com/)** (TMwR)
 
 - **[The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing)** (AoRP)
 
