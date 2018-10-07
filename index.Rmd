@@ -202,6 +202,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing)** (AoRP)
 
+- **[A First Course in Statistical Programming with R](https://drive.google.com/file/d/1NBadpF5MLWI3AFsyWo3nbpQnL8sWeZdT/view?usp=sharing)** (FCSPR)
+
 - **[An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing)** (ISLR)
 
 # **Additional resources**
