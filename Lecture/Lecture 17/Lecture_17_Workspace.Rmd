@@ -1,0 +1,27 @@
+---
+title: "Lecture 17 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(forcats)
+```
+
+```{r}
+eye.colors=c("Brown","Hazel","Blue","Green","Amber")
+
+eye.sample=tibble(eye=sample(eye.colors,size=50, 
+                    prob=c(0.55,0.05,0.08,0.02,0.05),replace=T))
+
+ggplot(data=eye.sample) +
+  geom_bar(aes(x=eye),fill="lightskyblue1") + 
+  xlab("Eye Color") + ylab("Count") +
+  theme_minimal()
+  
+```
+
