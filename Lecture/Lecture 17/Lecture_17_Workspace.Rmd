@@ -15,13 +15,79 @@ library(forcats)
 ```{r}
 eye.colors=c("Brown","Hazel","Blue","Green","Amber")
 
+set.seed(320)
 eye.sample=tibble(eye=sample(eye.colors,size=50, 
                     prob=c(0.55,0.05,0.08,0.02,0.05),replace=T))
 
 ggplot(data=eye.sample) +
   geom_bar(aes(x=eye),fill="lightskyblue1") + 
+  scale_x_discrete(drop=F) +
   xlab("Eye Color") + ylab("Count") +
   theme_minimal()
-  
+```
+
+```{r}
+set.seed(320)
+eye.sample2=tibble(eye=factor(sample(eye.colors,size=50, 
+                    prob=c(0.55,0.05,0.08,0.02,0.05),replace=T),levels=eye.colors))
+
+ggplot(data=eye.sample2) +
+  geom_bar(aes(x=eye),fill="lightskyblue1") + 
+  scale_x_discrete(drop=F) +
+  xlab("Eye Color") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+survey.levels=c("Magical","Alright","Regular","Inferior","Offensive")
+
+set.seed(80)
+survey.sample=tibble(result=sample(c("Magical","Alright","Regular","Inferior","Ofensive"),size=80,
+                                   prob=c(0.1,0.4,0.2,0.1,0.2),replace=T))
+ggplot(data=survey.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  scale_x_discrete(drop=F) +
+  xlab("Survey Result") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+survey.levels=c("Magical","Alright","Regular","Inferior","Offensive")
+
+set.seed(80)
+survey.sample=tibble(result=factor(sample(c("Magical","Alright","Regular","Inferior","Ofensive"),size=80,
+                                   prob=c(0.1,0.4,0.2,0.1,0.2),replace=T),levels=survey.levels))
+ggplot(data=survey.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  scale_x_discrete(drop=F) +
+  xlab("Survey Result") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+set.seed(80)
+urbanicity.sample=tibble(result=sample(1:4,size=1000,
+                     prob=c(0.5,0.3,0.18,0.02),replace=T))
+ggplot(data=urbanicity.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  xlab("") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+urbanicity=c("Metro","Burbs","Rural","Isolated")
+
+set.seed(80)
+urbanicity.sample=tibble(result=factor(sample(1:4,size=1000,
+                    prob=c(0.5,0.3,0.18,0.02),replace=T),levels=1:4,labels=urbanicity))
+ggplot(data=urbanicity.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  xlab("") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+Social=gss_cat
+names(Social)
 ```
 
