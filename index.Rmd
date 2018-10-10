@@ -59,7 +59,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 8|Factors|[Lecture 17](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||||||
 |Oct. 10|Programming I|[Lecture 18](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[T9](Tutorial/Tutorial 9/Tutorial_9.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|||||
 |Oct. 12|University Day|||[L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||L5|
-|Oct. 15|Programming II|||||||
+|Oct. 15|Programming II|[Lecture 19](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[T10](Tutorial/Tutorial 10/Tutorial_10.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|||||
 |Oct. 17|Programming III|||||||
 |Oct. 19|Fall Brizzeak|||||||
 |Oct. 22||||||||
