@@ -57,10 +57,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 3|Web Scraping I|[Lecture 15](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[T7](Tutorial/Tutorial 7/Tutorial_7.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|||||
 |Oct. 5|Web Scraping II|[Lecture 16](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[T8](Tutorial/Tutorial 8/Tutorial_8.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))||[A2](Analysis/Analysis 2/Analysis_2.html) ([.zip](https://drive.google.com/file/d/1zApD_fi1d2frr3oCLwSutygNmC0oUKe4/view?usp=sharing))||A2|
 |Oct. 8|Factors|[Lecture 17](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||||||
-|Oct. 10|Programming I|||||||
-|Oct. 12|Programming II|||[L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||L5|
-|Oct. 15|Programming III|||||||
-|Oct. 17|Programming IV|||||||
+|Oct. 10|Programming I|[Lecture 18](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[T9](Tutorial/Tutorial 9/Tutorial_9.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|||||
+|Oct. 12|University Day|||[L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||L5|
+|Oct. 15|Programming II|||||||
+|Oct. 17|Programming III|||||||
 |Oct. 19|Fall Brizzeak|||||||
 |Oct. 22||||||||
 |Oct. 24||||||||
