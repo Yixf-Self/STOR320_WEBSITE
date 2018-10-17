@@ -135,6 +135,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | September 28 | L4 ||October 5 (5 PM)|
 | October 5 | | A2 | October 12 (5PM)|
 | October 12 | L5 |  | October 22 (5PM)|
+| October 26 | L6 | |October 26 (5PM)|
 |          |        |             |           |
 
 # **Final Project Details**
