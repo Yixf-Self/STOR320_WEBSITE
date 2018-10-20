@@ -1,6 +1,6 @@
 ---
 title: "Analysis 3: Statistical Programming with Traffic Data"
-author: "Mario Giacomazzo"
+author: "FIRSTNAME LASTNAME"
 date:  "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
