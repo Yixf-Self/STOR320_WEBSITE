@@ -61,10 +61,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 12|University Day|||[L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||L5|
 |Oct. 15|Programming II|[Lecture 19](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[T10](Tutorial/Tutorial 10/Tutorial_10.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|||||
 |Oct. 17|Programming III|[Lecture 20](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||||||
-|Oct. 19|Fall Brizzeak||||||L6|
+|Oct. 19|Fall Brizzeak||||[A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1fWNMY4sU67NZQXcrs9M_6yeIBIAQa8nU/view?usp=sharing))||A3|
 |Oct. 22|Programming IV|||||||
 |Oct. 24||||||||
-|Oct. 26||||||||
+|Oct. 26|||||L6||L6|
 |Oct. 29||||||||
 |Oct. 31||||||||
 |Nov. 2||||||||
@@ -135,7 +135,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | September 28 | L4 ||October 5 (5 PM)|
 | October 5 | | A2 | October 12 (5PM)|
 | October 12 | L5 |  | October 22 (5PM)|
-| October 26 | L6 | |October 26 (5PM)|
+| October 26 | A3 | |October 26 (5PM)|
 |          |        |             |           |
 
 # **Final Project Details**
