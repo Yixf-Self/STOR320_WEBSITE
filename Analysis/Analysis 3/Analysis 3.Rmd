@@ -1,6 +1,6 @@
 ---
 title: "Analysis 3: Statistical Programming with Traffic Data"
-author: "FIRSTNAME LASTNAME"
+author: "Mario Giacomazzo"
 date:  "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
 ---
@@ -119,7 +119,7 @@ plot=ggplot(data=SUB.DATA) +
 plot
 ```
 
-I want you to create a function called `DAYPLOT.func` which takes three arguments `data`, `sensor`, and `dayabbrev`. This function should allow a user to specify the tibble (`DATA1` or `DATA2`), the sensor location ("L101","L102","L103",etc.), and the abbreviated weekday name ("M","T","W",etc.)
+I want you to create a function called `DAYPLOT.func` which takes three arguments `data`, `sensor`, and `dayabbrev`. This function should allow a user to specify the tibble (`DATA1` or `DATA2`), the sensor location ("L101","L102","L103",etc.), and the abbreviated weekday name ("M","T","W",etc.). Your function `DAYPLOT.func()` should create the image above if you use arguments `data=DATA1`, `sensor="L101"`, and `dayabbrev="M"`.
 
 Code *(4 Points)*:
 ```{r,eval=F}
@@ -181,6 +181,7 @@ TRAFFICSUM.func(aprilday=10) #DO NOT CHANGE
 
 For sensor "L103", I want you to create a matrix called `OUTPUT.A` that contains three columns that contain the day of April, the median traffic volume, and IQR of traffic volume. The information in the output from the final line of the below code chunk should match the information provided in the preview of `OUTPUT` in the prompt for Part 2. To create this matrix, start with `OUTPUT.A=NULL` and use a **for** loop to add a row at a time using a combination of `rbind()` and your function `TRAFFICSUM.func()`. You don't need to give this matrix column names or convert it to a tibble. Just make sure the content matches.
 
+Code and Output:
 ```{r,eval=F}
 OUTPUT.A=NULL #DO NOT CHANGE
 
@@ -197,6 +198,7 @@ head(OUTPUT.A) #DO NOT CHANGE
 
 Now we will do the same thing that we did in the previous question except we will start by initiating a tibble full of missing values. Here we will call our final tibble `OUTPUT.B` which is initiated in the first line. The variable names of `OUTPUT.B` were created in the second line and chosen to match the variable names in `OUTPUT` from the prompt to Part 2. In order to make this loop work, you will need to use your created function `TRAFFICSUM.func()` and a thorough understanding of the function `which()`. The beauty of `which()` is that it can be used to link the unique days in April to the index. For example, April 3 is the first day for which we have data. Therefore, the volume median and IQR for this day should be in the first row. The function `which()` can be used to linke *3* to *1*, *4* to *2*, *5* to *3*, etc. This ensures that information is saved in its appropriate row. When you run this code, the output from `head(OUTPUT.B)` should be identical to `head(OUTPUT)`.
 
+Code and Output:
 ```{r,eval=F}
 OUTPUT.B=as.tibble(matrix(NA,20,3)) #DO NOT CHANGE
 names(OUTPUT.B)=c("DAY","median","IQR") #DO NOT CHANGE
