@@ -91,6 +91,7 @@ print(y.factor[1:20]) #DO NOT CHANGE
 ###Q3 *(4 Points)*
 Now that you understand the process, we want to create a function called `DAYNAME.func` that takes a single argument called `data`. This function should extract the appropriate numeric vector of days in April and output a factor vector of categorical day names. The content of this function should be very similar to the previous code. The final four lines of the code chunk will create the new variable `DAYNAME` in both datasets and then print the first 6 rows using `head()`. 
 
+Code and Output:
 ```{r,eval=F}
 DAYNAME.func = function(data){
   

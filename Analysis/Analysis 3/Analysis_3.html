@@ -212,6 +212,7 @@ print(y.factor[1:20]) #DO NOT CHANGE</code></pre>
 <div id="q3-4-points" class="section level3">
 <h3>Q3 <em>(4 Points)</em></h3>
 <p>Now that you understand the process, we want to create a function called <code>DAYNAME.func</code> that takes a single argument called <code>data</code>. This function should extract the appropriate numeric vector of days in April and output a factor vector of categorical day names. The content of this function should be very similar to the previous code. The final four lines of the code chunk will create the new variable <code>DAYNAME</code> in both datasets and then print the first 6 rows using <code>head()</code>.</p>
+<p>Code and Output:</p>
 <pre class="r"><code>DAYNAME.func = function(data){
   
   COMPLETE
@@ -235,7 +236,7 @@ plot=ggplot(data=SUB.DATA) +
       theme_minimal() + xlab(&quot;Time&quot;) + guides(color=guide_legend(title=&quot;Day in April&quot;))+
       ylab(&quot;L101&quot;) + ggtitle(paste(&quot;Plot for &quot;,&quot;M&quot;,sep=&quot;&quot;))
 plot</code></pre>
-<p>I want you to create a function called <code>DAYPLOT.func</code> which takes three arguments <code>data</code>, <code>sensor</code>, and <code>dayabbrev</code>. This function should allow a user to specify the tibble (<code>DATA1</code> or <code>DATA2</code>), the sensor location (“L101”,“L102”,“L103”,etc.), and the abbreviated weekday name (“M”,“T”,“W”,etc.)</p>
+<p>I want you to create a function called <code>DAYPLOT.func</code> which takes three arguments <code>data</code>, <code>sensor</code>, and <code>dayabbrev</code>. This function should allow a user to specify the tibble (<code>DATA1</code> or <code>DATA2</code>), the sensor location (“L101”,“L102”,“L103”,etc.), and the abbreviated weekday name (“M”,“T”,“W”,etc.). Your function <code>DAYPLOT.func()</code> should create the image above if you use arguments <code>data=DATA1</code>, <code>sensor=&quot;L101&quot;</code>, and <code>dayabbrev=&quot;M&quot;</code>.</p>
 <p>Code <em>(4 Points)</em>:</p>
 <pre class="r"><code>DAYPLOT.func=function(data,sensor,dayabbrev){
   
@@ -291,6 +292,7 @@ TRAFFICSUM.func(aprilday=10) #DO NOT CHANGE</code></pre>
 <div id="q2-4-points-1" class="section level3">
 <h3>Q2 <em>(4 Points)</em></h3>
 <p>For sensor “L103”, I want you to create a matrix called <code>OUTPUT.A</code> that contains three columns that contain the day of April, the median traffic volume, and IQR of traffic volume. The information in the output from the final line of the below code chunk should match the information provided in the preview of <code>OUTPUT</code> in the prompt for Part 2. To create this matrix, start with <code>OUTPUT.A=NULL</code> and use a <strong>for</strong> loop to add a row at a time using a combination of <code>rbind()</code> and your function <code>TRAFFICSUM.func()</code>. You don’t need to give this matrix column names or convert it to a tibble. Just make sure the content matches.</p>
+<p>Code and Output:</p>
 <pre class="r"><code>OUTPUT.A=NULL #DO NOT CHANGE
 
 for(k in unique(DATA2$DAY)){
@@ -304,6 +306,7 @@ head(OUTPUT.A) #DO NOT CHANGE</code></pre>
 <div id="q3-4-points-1" class="section level3">
 <h3>Q3 <em>(4 Points)</em></h3>
 <p>Now we will do the same thing that we did in the previous question except we will start by initiating a tibble full of missing values. Here we will call our final tibble <code>OUTPUT.B</code> which is initiated in the first line. The variable names of <code>OUTPUT.B</code> were created in the second line and chosen to match the variable names in <code>OUTPUT</code> from the prompt to Part 2. In order to make this loop work, you will need to use your created function <code>TRAFFICSUM.func()</code> and a thorough understanding of the function <code>which()</code>. The beauty of <code>which()</code> is that it can be used to link the unique days in April to the index. For example, April 3 is the first day for which we have data. Therefore, the volume median and IQR for this day should be in the first row. The function <code>which()</code> can be used to linke <em>3</em> to <em>1</em>, <em>4</em> to <em>2</em>, <em>5</em> to <em>3</em>, etc. This ensures that information is saved in its appropriate row. When you run this code, the output from <code>head(OUTPUT.B)</code> should be identical to <code>head(OUTPUT)</code>.</p>
+<p>Code and Output:</p>
 <pre class="r"><code>OUTPUT.B=as.tibble(matrix(NA,20,3)) #DO NOT CHANGE
 names(OUTPUT.B)=c(&quot;DAY&quot;,&quot;median&quot;,&quot;IQR&quot;) #DO NOT CHANGE
 
