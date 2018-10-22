@@ -64,7 +64,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 19|Fall Brizzeak||||[A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1fWNMY4sU67NZQXcrs9M_6yeIBIAQa8nU/view?usp=sharing))||A3|
 |Oct. 22|Programming IV|[Lecture 21](https://drive.google.com/file/d/1RFNzH1np2Ax276r7sz7PwBjecWoMgMFk/view?usp=sharing)||||||
 |Oct. 24|Regression I|||||||
-|Oct. 26|Regression II|||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd]())|||L6|
+|Oct. 26|Regression II|||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))|||L6|
 |Oct. 29||||||||
 |Oct. 31||||||||
 |Nov. 2|||||A4||A4|
