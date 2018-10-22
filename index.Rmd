@@ -62,7 +62,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 15|Programming II|[Lecture 19](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[T10](Tutorial/Tutorial 10/Tutorial_10.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|||||
 |Oct. 17|Programming III|[Lecture 20](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||||||
 |Oct. 19|Fall Brizzeak||||[A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1fWNMY4sU67NZQXcrs9M_6yeIBIAQa8nU/view?usp=sharing))||A3|
-|Oct. 22|Programming IV|[Lecture 21]()||||||
+|Oct. 22|Programming IV|[Lecture 21](https://drive.google.com/file/d/1RFNzH1np2Ax276r7sz7PwBjecWoMgMFk/view?usp=sharing)||||||
 |Oct. 24|Regression I|||||||
 |Oct. 26|Regression II||||L6||L6|
 |Oct. 29||||||||
@@ -87,40 +87,6 @@ This course is an application-driven introduction to data science. Statistical a
 |Dec. 12|Final Written Paper|||||||
 |||||||||
 
-<!-- |August 28 | ggplot Wrap-up and Workflow Basics| [Lecture 3](https://www.dropbox.com/s/403yr1vxniw7ave/STOR%20320%20Lecture%203%2008-28-17.pptx?dl=0) | [Reading for 8-28](http://rpubs.com/redrobincl/302494)| -->
-<!-- |August 30 | Data Transformations with Dplyr| [Lecture 4](https://www.dropbox.com/s/2so7c7nr4pc9cwb/STOR%20320%20Lecture%204%2008-30-17.pptx?dl=0) | [Homework for 8-30](http://rpubs.com/redrobincl/302710)| -->
-<!-- |Sept. 1 | Data Transformations with Dplyr| [Class Activity](https://www.dropbox.com/s/knonga5b5dzlu0h/STOR%20320%20%E2%80%93%20Class%20Activity%20090117.docx?dl=0) | [Homework for Sept 1](http://rpubs.com/redrobincl/303670)| -->
-<!-- |Sept. 6 | Data Transformations with Dplyr| [Still Lecture 4 ](https://www.dropbox.com/s/2so7c7nr4pc9cwb/STOR%20320%20Lecture%204%2008-30-17.pptx?dl=0) | [Homework for Sept 6](http://rpubs.com/redrobincl/303670)| -->
-<!-- |Sept. 8 | Workflow - Scripts, RMarkdown| [Lecture 5 ](https://www.dropbox.com/s/qzprzcyllm481mz/STOR%20320%20Lecture%204%2008-30-17.pptx?dl=0) | [Data Analysis 1](http://rpubs.com/redrobincl/305377)| -->
-<!-- |Sept. 11 | Exploratory Data Analysis| [Lecture 6 ](https://www.dropbox.com/s/6vjlvmvi39v79oj/STOR%20320%20Lecture%206%2009-14-17.pptx?dl=0) | | -->
-<!-- |Sept. 13 | Exploratory Data Analysis| [Lecture 7 ](https://www.dropbox.com/s/wmvimtcx3y35l8k/STOR%20320%20Lecture%207%2009-13-17.pptx?dl=0) |[Homework](http://rpubs.com/redrobincl/307274) | -->
-<!-- |Sept. 15 | Tibbles and R Projects| [Class Activity ](http://rpubs.com/redrobincl/307978) |[Activity as .rmd](https://www.dropbox.com/s/h5huqubm36052bo/September%2015%20Class%20activity.Rmd?dl=0) | -->
-<!-- |Sept. 18 | Importing Data| [Lecture 9 ](https://www.dropbox.com/s/gsscenxrw4ken4c/STOR%20320%20Lecture%209%2009-18-17.pptx?dl=0) |[heights.csv](https://www.dropbox.com/s/bjvbfman7i7qhu2/heights.csv?dl=0) | -->
-<!-- |Sept. 20 | Tidy Data| [Lecture 10 ](https://www.dropbox.com/s/hqjoiosey01jibs/STOR%20320%20Lecture%2010%2009-20-17.pptx?dl=0) |[MOMA_art.csv](https://drive.google.com/open?id=0B2lwGKhIFjYYb0NMSF92dTVGQ3c)  [MOMA_artists.csv](https://drive.google.com/open?id=0B2lwGKhIFjYYRktDeWtvWHcta3M) | -->
-<!-- |Sept. 22 | Tidy Data [Lecture 11 ](https://idc9.github.io/stor390/slides/joins.pdf) |[Joins Homework](https://www.dropbox.com/s/6ew8e0jud3tabsq/joins_lab.Rmd?dl=0) | -->
-<!-- |Sept. 25 | Tidy Data - Wrap-up| [Lecture 10 Redux ](https://www.dropbox.com/s/hqjoiosey01jibs/STOR%20320%20Lecture%2010%2009-20-17.pptx?dl=0) |[HW Due Weds.](https://www.dropbox.com/s/6vw4oo6v0cd7zgw/Homework%20Assigned%20Sept%2025%20.Rmd?dl=0) [Script last class](https://www.dropbox.com/s/37dk92fqnkagnq1/Commands_from_Wed_920.R?dl=0)|  -->
-<!-- |Sept. 27 | Owning Strings| [Notes ](https://www.dropbox.com/s/43iu67q9iy08x1w/Regex_notes.Rmd?dl=0) |[Slides_______](https://www.dropbox.com/s/2o87qjlm9t2qwew/regex_slides.html?dl=0)     [HW for Friday](http://rpubs.com/redrobincl/312852)|  -->
-<!-- |Sept. 29 | Owning Strings| [Slides as Rmd](https://www.dropbox.com/s/b7pdmt2cvlhyo9f/regex_slides.Rmd?dl=0) |[Data Analysis 2](http://rpubs.com/redrobincl/313107)| -->
-<!-- |Oct. 2 | Factors| [Slides Lecture 12 ](https://www.dropbox.com/s/3c8naqpeky1yaxk/STOR%20320%20Lecture%2012%2010-02-17.pptx?dl=0) ||  -->
-<!-- |Oct. 4 | Programming and Vectors| [Notes L13](http://rpubs.com/redrobincl/314665) |[Slides](http://rpubs.com/redrobincl/315843)| -->
-<!-- |Oct. 6 | Programming Lab| [Lab](http://rpubs.com/redrobincl/315815) || -->
-<!-- |Oct. 9 | Lists and Loops| [Slides](https://www.dropbox.com/s/d3tvv925un6adla/STOR%20320%20Lecture%2014%2010-09-17.pptx?dl=0) |[HW](https://www.dropbox.com/s/vpebg17uampf706/HW%20for%20Lecture%2014.pptx?dl=0)| -->
-<!-- |Oct. 11 | Lists and Loops|[Slides](https://www.dropbox.com/s/d3tvv925un6adla/STOR%20320%20Lecture%2014%2010-09-17.pptx?dl=0) |[Loops HW](http://rpubs.com/redrobincl/316969)| -->
-<!-- |Oct. 13 | Intro to Models|[Slides](https://www.dropbox.com/s/svh1yb2cvkgwdz0/STOR%20320%20Lecture%2015%2010-13-17.pptx?dl=0) |[Reading](http://rpubs.com/redrobincl/318157)| -->
-<!-- |Oct. 16 | Intro to Models|[Slides](https://www.dropbox.com/s/svh1yb2cvkgwdz0/STOR%20320%20Lecture%2015%2010-13-17.pptx?dl=0) |[HW Due 10-23](http://rpubs.com/redrobincl/319124)| -->
-<!-- |Oct. 23 | Intro to Shiny|[Shiny Notes](http://rpubs.com/redrobincl/321857) [Shiny Rmd](https://www.dropbox.com/s/6ndqep5kresuolo/shiny.Rmd?dl=0) |[Apps for Class](https://www.dropbox.com/s/ba3zzm8sny8tuge/beer2burpees.zip?dl=0)| -->
-<!-- |Oct. 25 | Data Ethics|[Lecture](https://drive.google.com/open?id=0B2lwGKhIFjYYbVhrcUE5TnJzYTQ)|[data privacy](http://erichorvitz.com/data_privacy_greater_good.pdf)   [_____NYT Uber](https://www.nytimes.com/2017/04/24/technology/personal-data-firm-slice-unroll-me-backlash-uber.html?hp&action=click&pgtype=Homepage&clickSource=story-heading&module=second-column-region&region=top-news&WT.nav=top-news&_r=0) [Oneill Big Data](https://qz.com/819245/data-scientist-cathy-oneil-on-the-cold-destructiveness-of-big-data/)| -->
-<!-- |Oct. 27 | Visualizing Models|[Lecture](https://www.dropbox.com/s/6ut8ki4eynur9ui/STOR%20320%20Lecture%2018%2010-27-17.pptx?dl=0)|[Final Proj Gps](https://www.dropbox.com/s/ukmsxet3gcfkdtl/Final%20Project%20Groups.xls?dl=0) [Final Project](https://www.dropbox.com/s/8i8u8tvla68stpm/description.Rmd?dl=0)|  -->
-<!-- |Oct. 30 | Visualizing Models|[Lecture](https://www.dropbox.com/s/6ut8ki4eynur9ui/STOR%20320%20Lecture%2018%2010-27-17.pptx?dl=0)|| -->
-<!-- |Nov. 01 | Interaction|[Commands](https://www.dropbox.com/s/ogtcr2e2k4wgfxk/Class%20Commands%20to%20Start%2011-1-17.R?dl=0)|[Homework](http://rpubs.com/redrobincl/325417)| -->
-<!-- |Nov. 03 | Interaction (ctd)|[Lecture](https://www.dropbox.com/s/a3uwyj0tsiulq0d/STOR%20320%20Lecture%2018%2011-3-17.pptx?dl=0)|| -->
-<!-- |Nov. 06 | Modeling Real Data  |[Activity](https://www.dropbox.com/s/jovc3qvihsbrjnh/STOR%20320%20%E2%80%93%20Diamond%20Activity%20110517.docx?dl=0)|| -->
-<!-- |Nov. 10 | Predictive Modeling |[Lecture](https://www.dropbox.com/s/gjnryjbicguu6vt/predictive_modeling.Rmd?dl=0)|[Project Exp An](https://www.dropbox.com/s/q1kzmyvbghvycq2/exploratory_analysis.Rmd?dl=0) [Data Analysis 3](https://www.dropbox.com/s/u50jdu4bsltiy9d/bike_sharing.Rmd?dl=0)| -->
-<!-- |Nov. 13 | Get an A on the Project |[Lecture](https://www.dropbox.com/s/0umu2lhlh8gp7u2/communication.key?dl=0)|[Lecture as ppt](https://www.dropbox.com/s/qvupk35xpdj7vo2/communication.pptx?dl=0)| -->
-<!-- |Nov. 15 | Classification |[Slides](https://www.dropbox.com/s/vhe5qmad23aawab/slides_classification_md_knn.Rmd?dl=0)|[Everything](https://www.dropbox.com/s/n0qobdswnsrvmse/classification.zip?dl=0)| -->
-<!-- |Nov. 20 | Donner Destiny |[Slides](https://www.dropbox.com/s/v5240dew6iif2n7/Donner_Party.Rmd?dl=0)|[Classification Folder   ](https://www.dropbox.com/s/z8ao35ggv2yp2af/classification.zip?dl=0)   [Classification Activity](https://www.dropbox.com/s/d59z1uw6xtzuykr/STOR%20320%20%E2%80%93%20Classification%20Activity%20112017.docx?dl=0)| -->
-<!-- |Dec. 4 | Project Presentations and Donners |[Surveys](https://www.dropbox.com/s/eio7oxuyz5n5qsv/Survey%20Links%20for%20Presentations%2012-04-17.docx?dl=0)|[Donner_Modified](https://www.dropbox.com/s/8j7wgalok1f61j5/Donner_Party_update.Rmd?dl=0)  | -->
-<!-- |Dec. 4 | Project Presentations and Donners |[Surveys for Exam Day](https://www.dropbox.com/s/heden10bejim063/Survey%20Links%20for%20Presentations%2012-15-17.docx?dl=0)|| -->
 
 # **Assignment Tracker**
 
