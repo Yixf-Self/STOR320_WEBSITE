@@ -100,7 +100,7 @@ Start by examing the tables `CHOL1b` and `CHOL2a` and answering the following qu
 
 Is the variable `ID` in `CHOL1b` a primary key? 
 
-Answer *(1 Point)*: Yes
+Answer *(1 Point)*: No
 
 Is the variable, `Margarine` in `CHOL1b` a primary key?
 
