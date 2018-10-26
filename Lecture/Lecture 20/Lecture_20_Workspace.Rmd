@@ -73,7 +73,7 @@ a=0.05
 ttest = function(ob,h0,a){
   n=length(ob)
   ts=(mean(ob,na.rm=T)-h0)/(sd(ob,na.rm=T)/sqrt(n))
-  pval=2*pt(ts,df=n-1)
+  pval=2*pt(-abs(ts),df=n-1)
   conclusion = if(pval<a){
                   "Reject Null Hypothesis"
                 } else{

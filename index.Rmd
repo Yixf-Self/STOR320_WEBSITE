@@ -64,8 +64,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 19|Fall Brizzeak||||[A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1fWNMY4sU67NZQXcrs9M_6yeIBIAQa8nU/view?usp=sharing))||A3|
 |Oct. 22|Programming IV|[Lecture 21](https://drive.google.com/file/d/1RFNzH1np2Ax276r7sz7PwBjecWoMgMFk/view?usp=sharing)||||||
 |Oct. 24|Modeling I|[Lecture 22](https://drive.google.com/file/d/1LD_DID4EBSo-SCWB9wb6Iq0sTLKCox61/view?usp=sharing)||||||
-|Oct. 26|A/B Testing|||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))|||L6|
-|Oct. 29||||||||
+|Oct. 26|A/B Testing|[Guest 1](https://drive.google.com/file/d/1c-fDHnchPBeA-Pd5Sz86TXM-A3T3Ci6P/view?usp=sharing)||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))|||L6|
+|Oct. 29|Modeling II|||||||
 |Oct. 31||||||||
 |Nov. 2|||||A4||A4|
 |Nov. 5||||||||
@@ -147,7 +147,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 * P3: Final Presentation *(30 Points)*
 
 * P4: Final Written Paper *(40 Points)*
-    + Template (.Rmd)
+    + [Template](Final Project/Final_Paper_Template.html) ([.Rmd](https://drive.google.com/file/d/16kLjQmszVA5nJyUPwwPy94BltOog6YSO/view?usp=sharing))
 
 ## Due Dates of Individual Parts
 
