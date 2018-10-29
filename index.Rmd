@@ -65,9 +65,9 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 22|Programming IV|[Lecture 21](https://drive.google.com/file/d/1RFNzH1np2Ax276r7sz7PwBjecWoMgMFk/view?usp=sharing)||||||
 |Oct. 24|Modeling I|[Lecture 22](https://drive.google.com/file/d/1LD_DID4EBSo-SCWB9wb6Iq0sTLKCox61/view?usp=sharing)||||||
 |Oct. 26|A/B Testing|[Guest 1](https://drive.google.com/file/d/1c-fDHnchPBeA-Pd5Sz86TXM-A3T3Ci6P/view?usp=sharing)||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))|||L6|
-|Oct. 29|Modeling II|||||||
+|Oct. 29|Modeling II|[Lecture 23](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[T11](Tutorial/Tutorial 11/Tutorial_11.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))|||||
 |Oct. 31||||||||
-|Nov. 2|||||A4||A4|
+|Nov. 2||||[L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing))|||L7|
 |Nov. 5||||||||
 |Nov. 7||||||||
 |Nov. 9||||||||
@@ -78,7 +78,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 21|Thanksgiving|||||||
 |Nov. 23|Thanksgiving|||||||
 |Nov. 26||||||||
-|Nov. 28|||||||||
+|Nov. 28|Communication|Guest 3||||P3, P4||
 |Nov. 30||||||||
 |Dec. 3||||||||
 |Dec. 5||||||||
@@ -103,7 +103,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | October 12 | L5 |  | October 22 (5PM)|
 | October 19 | | A3  |October 26 (5PM)|
 | October 26 | L6 | |November 2 (5PM)|
-| November 2 | | A4  | November 9 (5PM) |
+| November 2 | L7 |   | November 9 (5PM) |
 |          |        |             |           |
 
 # **Final Project Details**
