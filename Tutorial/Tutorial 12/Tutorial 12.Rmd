@@ -1,5 +1,5 @@
 ---
-title: "STOR 320 Tutorial 11"
+title: "STOR 320 Tutorial 12"
 author: "Mario Giacomazzo"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
@@ -35,20 +35,24 @@ ggplot(data=DATA) +
 
 ##Chunk 2: Location-Specific Relationship
 
-```{r,echo=F,eval=F}
-Location = 103
+```{r,echo=F,eval=T}
+WAPLOT.func=function(Location){
 
-DATA %>% filter(L==Location) %>%
-  ggplot()+
+  DATA %>% filter(L == Location) %>%
+    ggplot()+
     geom_point(aes(x=A,y=W),alpha=0.3)+
     geom_smooth(aes(x=A,y=W)) +
     theme_minimal()
-  
+}
+
+WAPLOT.func(103)
+WAPLOT.func(105)
+WAPLOT.func(918)
 ```
 
 ##Chunk 3: Split Data into Train and Test Sets
-```{r,eval=F}
-set.seed(INTEGER)
+```{r,eval=T}
+set.seed(216)
 TEST.LOCATIONS=sample(x=unique(DATA$L),size=3,replace=F)
 
 TRAIN = anti_join(DATA,tibble(L=TEST.LOCATIONS),by="L")
@@ -56,7 +60,7 @@ TEST = semi_join(DATA,tibble(L=TEST.LOCATIONS),by="L")
 ```
 
 ##Chunk 4: Plots of Relationship for Train and Test Data
-```{r,echo=F,eval=F}
+```{r,echo=F,eval=T}
 WAPLOT2.func=function(DATA){
   ggplot(data=DATA)+
     geom_point(aes(x=A,y=W),alpha=0.3)+
@@ -72,7 +76,7 @@ WAPLOT2.func(TEST)
 #Part 2: Linear Regression Model
 
 ##Chunk 1: Fitting Linear Model to Train Data
-```{r,echo=F,eval=F}
+```{r,echo=F,eval=T}
 linmod=lm(W~A,data=TRAIN)
 summary(linmod)
 ```
