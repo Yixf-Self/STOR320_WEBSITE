@@ -41,7 +41,6 @@ WAPLOT2.func=function(DATA){
 WAPLOT2.func(TRAIN)
 WAPLOT2.func(TEST)
 
-
 #2.1
 linmod=lm(W~A,data=TRAIN)
 summary(linmod)
@@ -122,8 +121,10 @@ TRAIN6=TRAIN5 %>% mutate(logpred=logistic.model(COEF=logistic.mod$par,DATA=TRAIN
 TEST6=TEST5 %>% mutate(logpred=logistic.model(COEF=logistic.mod$par,DATA=TEST5),
                          logres=W-logpred)
 
+
 #Intermission
 save.image("Tutorial11.Rdata")
+
 
 #5.1
 TEST6 %>%
@@ -183,9 +184,44 @@ TEST6 %>%
   theme_minimal()+facet_grid(L~.)
 
 
+#6.1
+bias.func=function(res){
+  bias=mean(res,na.rm=T)
+  return(bias)
+}
 
+mae.func=function(res){
+  mae=mean(abs(res),na.rm=T)
+  return(mae)
+}
 
+rmse.func=function(res){
+  mse=mean(res^2,na.rm=T)
+  rmse=sqrt(mse)
+  return(rmse)
+}
 
+#6.2
+ex.res=TEST6$linres
+c(bias.func(ex.res),mae.func(ex.res),rmse.func(ex.res))
 
+ex.res.mat=TEST6 %>% select(linres,poly2res,poly3res,poly4res,logres)
+apply(ex.res.mat,2,bias.func)
+apply(ex.res.mat,2,mae.func)
+apply(ex.res.mat,2,rmse.func)
 
+#6.3
+SUMM1=TEST6 %>%
+  select(L,A,W,TIME,linres,poly2res,poly3res,poly4res,logres)%>%
+  rename(Linear=linres,`Poly(2)`=poly2res,`Poly(3)`=poly3res,`Poly(4)`=poly4res,Logistic=logres)%>%
+  gather(Linear:Logistic,key="Model",value="Residual",factor_key=T)
+SUMM2= SUMM1 %>% 
+  group_by(Model) %>%
+  summarize(MB=bias.func(Residual),
+            MAE=mae.func(Residual),
+            RMSE=rmse.func(Residual))
+print(SUMM2)
 
+#6.4
+SUMM3=xtable(SUMM2,digits=4,align=c("l","l","r","r","r"))
+print(SUMM3,include.rownames=F,type="html")

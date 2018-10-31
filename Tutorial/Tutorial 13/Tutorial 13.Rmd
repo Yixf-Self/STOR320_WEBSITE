@@ -1,0 +1,33 @@
+---
+title: "STOR 320 Tutorial 12"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)       #Helpful Functions in Modeling
+library(xtable)
+DATA=read_csv("AirWaterTemp.csv",col_types=cols()) #River Data
+```
+
+# Introduction
+
+We will continue our work with daily water temperature and air temperature data observed for `r length(unique(DATA$L))` rivers in Spain. In the preview below, `W` represents the daily maximum water temperature and `A` represents the daily maximum air temperature. The data contains almost a full year of data for each of the `r length(unique(DATA$L))` different rivers.
+
+```{r,echo=F}
+head(DATA)
+```
+
+Using the data, we seek to identify the best model for predicting the maximum water temperature given the maximum air temperature. Previously, we randomly selected 3 rivers to act as a test set. All models were evaluated based on the randomly selected test set. In this tutorial, we explore approaches that ensure that all data is used for both model training and model testing.
+
+#Part 1: Intelligent Use of Locations for Cross-Validation
+
+##Chunk 1: Overall Relationship
+```{r,eval=T,message=F}
+NEST.DATA = DATA %>% group_by(L) %>% nest()
+head(NEST.DATA)
+```

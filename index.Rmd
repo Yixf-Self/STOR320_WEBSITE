@@ -66,7 +66,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 24|Modeling I|[Lecture 22](https://drive.google.com/file/d/1LD_DID4EBSo-SCWB9wb6Iq0sTLKCox61/view?usp=sharing)||||||
 |Oct. 26|A/B Testing|[Guest 1](https://drive.google.com/file/d/1c-fDHnchPBeA-Pd5Sz86TXM-A3T3Ci6P/view?usp=sharing)||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))|||L6|
 |Oct. 29|Modeling II|[Lecture 23](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[T11](Tutorial/Tutorial 11/Tutorial_11.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))|||||
-|Oct. 31|Modeling III|||||||
+|Oct. 31|Modeling III|[Lecture 24](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)|[T12](Tutorial/Tutorial 12/Tutorial_12.html) ([.zip](https://drive.google.com/file/d/1w92U22YHiUd9agVaQuKnweirOwrLIOj-/view?usp=sharing))|||||
 |Nov. 2|Modeling IV|||[L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing))|||L7|
 |Nov. 5||||||||
 |Nov. 7||||||||
