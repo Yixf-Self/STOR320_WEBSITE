@@ -1,6 +1,8 @@
 options(scipen=999)
 library(tidyverse)    #Essential Functions
 library(modelr)
+library(purrr)
+library(broom)
 DATA=read_csv("AirWaterTemp.csv",col_types=cols()) #River Data
 
 #1.1
@@ -45,4 +47,44 @@ RMSE.func=function(actual,predict){
   return(rmse)
 }
 RMSE.func(actual=DATA2$W,predict=DATA2$linpred)
+
+
+#2.1
+ggplot(data=DATA) +
+  geom_point(aes(x=JULIAN_DAY,y=W,color=A),alpha=0.3) + 
+  xlab("Day of Year") + ylab("Max Water Temperature") +
+  guides(color=guide_legend(title="Max Air \nTemperature")) +
+  theme_minimal()
+
+#2.2
+polymodel=lm(W~poly(A,4)+poly(JULIAN_DAY,3),data=na.omit(DATA))
+tidy(polymodel)
+glance(polymodel)
+
+
+#2.3
+DATA3=na.omit(DATA) %>% crossv_kfold(10)
+head(DATA3)
+
+#2.4
+train.model.func=function(data,i,j){
+  mod=lm(W~poly(A,i)+poly(JULIAN_DAY,j),data=data)
+  return(mod)
+}
+
+i=4
+j=3
+
+DATA4=DATA3 %>% 
+       mutate(tr.model=map(train,train.model.func,i=i,j=j))
+head(DATA4)
+
+
+#2.5
+DATA4.PREDICT = DATA4 %>% 
+          mutate(predict=map2(test,tr.model,~augment(.y,newdata=.x))) %>%
+          select(predict) %>%
+          unnest()
+head(DATA4.PREDICT)
+RMSE.func(actual=DATA4.PREDICT$W,predict=DATA4.PREDICT$.fitted)
 
