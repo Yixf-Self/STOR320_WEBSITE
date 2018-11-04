@@ -1,5 +1,5 @@
 ---
-title: '**Project Proposal**'
+title: '**Final Presentation**'
 geometry: margin=2
 output:
   html_document:
@@ -20,26 +20,32 @@ output:
 
 # **Purpose**
 
-The purpose of the project proposal is to demonstrate your ability to find relevant and interesting data and to propose many thoughtful and creative questions about that data. This is the first stage in your final project, and the data you select will be heavily explored for the remainder of the project. Work as a team to find data that intrigues the entire team and develop questions that are valuable for exploration.
+The purpose of the final presentation is to verbally communicate your group's process to answer a question using data. A slideshow with appropriate visuals and text should be utilized. This is your group's opportunity to enthusiastically share your findings with your classmates.
 
 # **Requirements**
-All members of the group should be involved in the selection of the data. The data should have at least 5 variables that are not identifiers and will be studied in depth. Out of all the variables, at least 2 should be categorical. If your data only contains numeric variables, your group should decide on how to treat at least two of the variables as categorical. You are able to use multiple datasets in your project, but these will need to be merged at some point. To ensure future parts of the final project go smoothly, I recommend finding a dataset that contains more than 10 variables. To ensure your group is free of plagiarism, I recommend selecting datasets that are not attached to many online analyses. 
 
-Each member of the group is required to design at least two initial questions. These questions can be very general but should not be trivial. I recommend discussing the data as a group, design questions together, and then delegate the questions for future use. In later project parts, your group will be required to investigate these questions and then devise new follow-up questions for future analysis. Think generally about these initial questions so there is room for growth. Choose questions that have not been analyzed online for the data you have selected.
+In 3 to 5 minutes, you will focus your presentation on a single question. Ideally, this should be 1 of the 2 questions you will write about in your final paper. A slideshow should be used to organize the information. First, you should creatively introduce the question and orally defend why your group found this particular question interesting. Next, you should briefly discuss the data your group used to answer this question. The original source of the data should be given. The source is not the website where you found the data, but who is responsible for gathering the original data. Figures and tables can be used to highlight variables of interest. Last, you should explain the statistical methods you employed to answer the question and the results you discovered. I recommend using multiple modeling techniques.
 
-The Creator should schedule a 5 minute meeting during office hours of either the Instructor or Instructional Assistant (IA). To reserve your 5 minute time slot, email ahead of time. Time slots will be priortized according to email and posted on a google spreadsheet linked on the website. I highly recommend scheduling your project proposal as soon as possible to ensure you have a spot before the deadline. If your Creator fails to schedule the project proposal meeting before the deadline, a minimum 2 point penalty will be given. This penalty applies to your entire group.
+During the presentation, I will subjectively assess how well the question is explained, how well the methods are explained, and how well the content is organized on a scale from 1 to 3. The quality of slides will also be subjectively scored on a scale from 1 to 3. Slides should not be cluttered, too wordy, unreadable, or plain. A minimum of 4 visuals is required. Eye contact and body language will also be subjectively assessed on a scale from 1 to 3. The Orator should not be reading the slides. This is a short presentation that should be well rehearsed.
 
-In this meeting, the Creator should come prepared with the dataset downloaded and ready to display on a laptop. The Creator will tell the Instructor or IA where there group found the data and a summary about the variables contained in the data. The Creator should mention how many variables are of interest for future analyses, which of the variables are numerical, which of the variables are categorical or will be treated as categorical, and state all the questions your group will start to explore. The Creator should also communicate to the Instructor or IA what roles the other members of the group are taking. I will need full names and roles to update the google spreadsheets linked on the website. If your reasearch group has four members, each of the remaining 3 members should be assigned to the roles of Interpreter, Orator, and Deliverer. If your research group has five members, there should be 2 Orators responsible for the final presentation.
+The Orator is solely responsible for giving the presentation. All members should help develop the slides, organize the information, and provide an audience for the Orator to practice. Everyone should proofread the slides since grammatical and spelling errors will result in a loss of points. While the Orator is presenting, the other members are free to either stand in front of the class or remain seated. All members are free to assist the Orator in answering questions from the audience. 
+
+The final presentations will take place on the final exam day as scheduled by the university. Presentations will be ordered according to the group's number. Attendance of all members is required. Each member that fails to attend will automatically lose five points from their individual grade. After 5 minutes, I will abruptly cut off your presentation, and then allow the audience to ask 1 or 2 questions.
 
 
 # **Rubric**
 
 |Requirement|Points|
 |-------|------:|
-|Source of Data Given|1 Point|
-|Data has 5 Variables with 2 Categorical|2 Points|
-|Effective Communcation of Data Content|3 Points|
-|At Least 2 Questions Per Group Member|3 Points|
-|Roles of Other Members Assigned|1 Point|
-|**Total**|**10 Points**|
+|Explanation of Question of Interest|3 Points|
+|Explanation of Methods|3 Points|
+|Organization of Content|3 Points|
+|Eye Contact and Body Language|3 Points|
+|Quality of Slides|3 Points|
+|4 Visuals|4 Points|
+|Ability to Answer Questions|2 Points|
+|Grammatical and/or Spelling Errors|2 Points|
+|Between 3 and 5 Minutes|2 Points|
+|Attendance| 5 Points|
+|**Total**|**30 Points**|
 |||
