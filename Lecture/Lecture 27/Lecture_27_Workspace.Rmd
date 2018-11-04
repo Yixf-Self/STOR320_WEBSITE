@@ -1,0 +1,81 @@
+---
+title: "Lecture 27 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)
+library(broom)
+CONDIMENT=read_csv("Condiments.csv")
+```
+
+```{r}
+ggplot(CONDIMENT) +
+  geom_histogram(aes(x=Enjoyment),fill="lightskyblue2") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(CONDIMENT) +
+  geom_bar(aes(x=Food),fill="lightskyblue2") +
+  theme_minimal(base_size=18)
+```
+
+```{r}
+ggplot(CONDIMENT) +
+  geom_bar(aes(x=Condiment),fill="lightskyblue2") +
+  theme_minimal(base_size=18)
+```
+
+
+```{r}
+EvsF.Model=lm(Enjoyment~Food,data=CONDIMENT)
+tidy(EvsF.Model)
+```
+
+```{r}
+EvsC.Model=lm(Enjoyment~Condiment,data=CONDIMENT)
+tidy(EvsC.Model)
+```
+
+```{r}
+CONDIMENT$Food[1:6]
+head(model_matrix(CONDIMENT, Enjoyment~Food))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+CONDIMENT %>% gather(Food:Condiment,key="Group",)
+```
+
