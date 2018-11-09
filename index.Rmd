@@ -69,10 +69,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 31|Modeling III|[Lecture 24](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)|[T12](Tutorial/Tutorial 12/Tutorial_12.html) ([.zip](https://drive.google.com/file/d/1w92U22YHiUd9agVaQuKnweirOwrLIOj-/view?usp=sharing))|||||
 |Nov. 2|Modeling IV|[Lecture 25](https://drive.google.com/file/d/1mLsr4T--AX2fK3H8buAYNQGb1sT7Bpzc/view?usp=sharing)|[T13](Tutorial/Tutorial 13/Tutorial_13.html) ([.zip](https://drive.google.com/file/d/1f8D4xLKPwavJWy93d5DDJU2yr1B6gPt4/view?usp=sharing))|[L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing))|||L7|
 |Nov. 5|Final Project II|[Lecture 26](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)||||P3, P4||
-|Nov. 7|Modeling V|||||||
-|Nov. 9|||||[A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1InlLQ5RVT9Uz99No3VCClLeDuV6qGKvl/view?usp=sharing))||A4|
-|Nov. 12||||||||
-|Nov. 14||||||||
+|Nov. 7|My Water Broke|||||||
+|Nov. 9|Model V|[Lecture 27](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)|||[A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1InlLQ5RVT9Uz99No3VCClLeDuV6qGKvl/view?usp=sharing))||A4|
+|Nov. 12|Model VI|||||||
+|Nov. 14|Model VII|||||||
 |Nov. 16||||||||
 |Nov. 19||||||||
 |Nov. 21|Thanksgiving|||||||
