@@ -283,15 +283,15 @@ print(RESULTS3)</code></pre>
     Model=c(&quot;3 Way&quot;,&quot;No Way&quot;),
     Sensitivity=c(RESULTS1[1,1]/sum(RESULTS1[1,]),RESULTS3[1,1]/sum(RESULTS3[1,])),
     Specificity=c(RESULTS1[2,2]/sum(RESULTS1[2,]),RESULTS3[2,2]/sum(RESULTS3[2,])),
-    FPR=c(RESULTS1[1,2]/sum(RESULTS1[1,]),RESULTS3[1,2]/sum(RESULTS3[1,])),
-    FNR=c(RESULTS1[2,1]/sum(RESULTS1[2,]),RESULTS3[2,1]/sum(RESULTS3[2,]))
+    FPR=c(RESULTS1[2,1]/sum(RESULTS1[2,]),RESULTS3[2,1]/sum(RESULTS3[2,])),
+    FNR=c(RESULTS1[1,2]/sum(RESULTS1[1,]),RESULTS3[1,2]/sum(RESULTS3[1,]))
 )
 print(ERROR.RESULTS)</code></pre>
 <pre><code>## # A tibble: 2 x 5
 ##   Model  Sensitivity Specificity   FPR   FNR
 ##   &lt;chr&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1 3 Way        0.701       0.855 0.299 0.145
-## 2 No Way       0.716       0.855 0.284 0.145</code></pre>
+## 1 3 Way        0.701       0.855 0.145 0.299
+## 2 No Way       0.716       0.855 0.145 0.284</code></pre>
 
 
 
