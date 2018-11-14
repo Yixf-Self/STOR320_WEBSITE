@@ -72,7 +72,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 7|My Water Broke|||||||
 |Nov. 9|Model V|[Lecture 27](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)|||[A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1InlLQ5RVT9Uz99No3VCClLeDuV6qGKvl/view?usp=sharing))||A4|
 |Nov. 12|Model VI|[Lecture 28](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||||||
-|Nov. 14|Model VII|||||||
+|Nov. 14|Model VII|[Lecture 29](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[T14](Tutorial/Tutorial 14/Tutorial_14.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|||||
 |Nov. 16||||||||
 |Nov. 19||||||||
 |Nov. 21|Thanksgiving|||||||
