@@ -73,8 +73,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 9|Model V|[Lecture 27](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)|||[A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1InlLQ5RVT9Uz99No3VCClLeDuV6qGKvl/view?usp=sharing))||A4|
 |Nov. 12|Model VI|[Lecture 28](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||||||
 |Nov. 14|Model VII|[Lecture 29](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[T14](Tutorial/Tutorial 14/Tutorial_14.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|||||
-|Nov. 16||||||||
-|Nov. 19||||||||
+|Nov. 16|Model VIII|[Lecture 30](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[T15](Tutorial/Tutorial 15/Tutorial_15.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|||||
+|Nov. 19|API|Guest 2||||||
 |Nov. 21|Thanksgiving|||||||
 |Nov. 23|Thanksgiving|||||||
 |Nov. 26||||||||
@@ -188,6 +188,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 - **[Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)**
 
 - **[Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)**
+
+- **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
 
 # **Miscellaneous**
 

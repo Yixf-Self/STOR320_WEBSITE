@@ -41,7 +41,7 @@ For more education on $k$-nearest neighbors, check out these killer links:
 
 For more motivation, consider these killer quotes:
 
-> I won't go down with this ship. I won't put my hands up and surrender.
+> I will go down with this ship. I won't put my hands up and surrender.
 >
 > There will be no white flag above my door. I'm in love with k-NN and always will be.
 >
