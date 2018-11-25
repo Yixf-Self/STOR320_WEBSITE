@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2018-11-16" />
+<meta name="date" content="2018-11-25" />
 
 <title>STOR 320 Tutorial 15</title>
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">STOR 320 Tutorial 15</h1>
 <h4 class="author"><em>Mario Giacomazzo</em></h4>
-<h4 class="date"><em>November 16, 2018</em></h4>
+<h4 class="date"><em>November 25, 2018</em></h4>
 
 </div>
 
@@ -242,115 +242,27 @@ ggplot(param.lm[11:(dim(param.lm)[1]),]) +
 </div>
 <div id="part-2-shrinkage-estimation-and-more-meditation" class="section level1">
 <h1>Part 2: Shrinkage Estimation and More Meditation</h1>
-<div id="chunk-1-penalized-estimation" class="section level2">
-<h2>Chunk 1: Penalized Estimation</h2>
+<div id="chunk-1-penalized-estimation-path-for-ridge" class="section level2">
+<h2>Chunk 1: Penalized Estimation Path for Ridge</h2>
 <pre class="r"><code>library(glmnet)
 ridge.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=0)
-plot(ridge.mod,xvar=&quot;lambda&quot;)
-lasso.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
+plot(ridge.mod,xvar=&quot;lambda&quot;)</code></pre>
+</div>
+<div id="chunk-2-penalized-estimation-path-for-lasso" class="section level2">
+<h2>Chunk 2: Penalized Estimation Path for Lasso</h2>
+<pre class="r"><code>lasso.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=1)
-plot(lasso.mod,xvar=&quot;lambda&quot;)
-enet.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
+plot(lasso.mod,xvar=&quot;lambda&quot;)</code></pre>
+</div>
+<div id="chunk-3-penalized-estimation-path-for-elastic-net" class="section level2">
+<h2>Chunk 3: Penalized Estimation Path for Elastic Net</h2>
+<pre class="r"><code>enet.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=1/2)
 plot(enet.mod,xvar=&quot;lambda&quot;)</code></pre>
-</div>
-<div id="chunk-2-using-10-fold-cv-for-selection-of-alpha-and-lambda" class="section level2">
-<h2>Chunk 2: Using 10-Fold CV for Selection of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\lambda\)</span></h2>
-<pre class="r"><code>set.seed(216)
-in.train=sample(1:500,floor(0.66*500))
-SIM.TRAIN=SIM.DATA[in.train,]
-SIM.TEST=SIM.DATA[-in.train,]
-
-#Default: 10 Fold Cross Validation
-RESULT=NULL
-for (i in 0:10) {
-    cv.out = cv.glmnet(x=as.matrix(SIM.TRAIN[,-1]),
-                       y=as.vector(SIM.TRAIN[,1]),
-                       type.measure=&quot;mse&quot;, 
-                       alpha=i/10)
-    alpha=i/10
-    best.lambda=cv.out$lambda.1se
-    y.test=predict(cv.out,s=best.lambda,newx=as.matrix(SIM.TEST[,-1]))
-    out.mse=mean((SIM.TEST$y-y.test)^2)
-    RESULT=rbind(RESULT,c(alpha,best.lambda,out.mse))
-}
-colnames(RESULT)=c(&quot;alpha&quot;,&quot;lambda&quot;,&quot;MSE&quot;)
-print(RESULT)</code></pre>
-</div>
-</div>
-<div id="part-3-less-meditation-and-more-application" class="section level1">
-<h1>Part 3: Less Meditation and More Application</h1>
-<div id="chunk-1-data-in-mpg" class="section level2">
-<h2>Chunk 1: Data in <code>mpg</code></h2>
-<pre class="r"><code>DATA=mpg
-DATA2=DATA[,c(&quot;year&quot;,&quot;displ&quot;,&quot;cyl&quot;,&quot;drv&quot;,&quot;cty&quot;,&quot;hwy&quot;,&quot;fl&quot;,&quot;class&quot;)]
-head(DATA2)
-
-y=DATA2$hwy
-X=model_matrix(DATA2,hwy~.*.)[,-1]
-var.names=names(X)
-dim(X)</code></pre>
-</div>
-<div id="chunk-2-multiple-regularized-models" class="section level2">
-<h2>Chunk 2: Multiple Regularized Models</h2>
-<pre class="r"><code>set.seed(216)
-cvmod.0=cv.glmnet(y=y,x=as.matrix(X),alpha=0)
-set.seed(216)
-cvmod.25=cv.glmnet(y=y,x=as.matrix(X),alpha=0.25)
-set.seed(216)
-cvmod.5=cv.glmnet(y=y,x=as.matrix(X),alpha=0.5)
-set.seed(216)
-cvmod.75=cv.glmnet(y=y,x=as.matrix(X),alpha=0.75)
-set.seed(216)
-cvmod.1=cv.glmnet(y=y,x=as.matrix(X),alpha=1)
-
-CV.0.ERROR=cvmod.0$cvm[which(cvmod.0$lambda==cvmod.0$lambda.1se)]
-CV.25.ERROR=cvmod.25$cvm[which(cvmod.25$lambda==cvmod.25$lambda.1se)]
-CV.5.ERROR=cvmod.5$cvm[which(cvmod.5$lambda==cvmod.5$lambda.1se)]
-CV.75.ERROR=cvmod.75$cvm[which(cvmod.75$lambda==cvmod.75$lambda.1se)]
-CV.1.ERROR=cvmod.1$cvm[which(cvmod.1$lambda==cvmod.1$lambda.1se)]
-
-MOD.RESULT=tibble(alpha=c(0,0.25,0.5,0.75,1),
-                  lambda=c(cvmod.0$lambda.1se,cvmod.25$lambda.1se,
-                           cvmod.5$lambda.1se,cvmod.75$lambda.1se,
-                           cvmod.1$lambda.1se),
-                  CV.Error=c(CV.0.ERROR,CV.25.ERROR,CV.5.ERROR,
-                             CV.75.ERROR,CV.1.ERROR))
-print(MOD.RESULT)</code></pre>
-</div>
-<div id="chunk-3-using-the-best-model" class="section level2">
-<h2>Chunk 3: Using the Best Model</h2>
-<pre class="r"><code>best.alpha=MOD.RESULT$alpha[which.min(MOD.RESULT$CV.Error)]
-best.lambda=MOD.RESULT$lambda[which.min(MOD.RESULT$CV.Error)]
-
-best.mod=glmnet(y=y,x=as.matrix(X),nlambda=1,lambda=best.lambda,alpha=best.alpha)
-best.coef=as.tibble(as.matrix(coef(best.mod)))
-best.coef2=best.coef %&gt;% 
-              mutate(Parameter=c(&quot;Int&quot;,var.names)) %&gt;%
-              rename(Estimate=s0) %&gt;%
-              select(Parameter,Estimate)
-nonzero.best.coef=best.coef2 %&gt;%
-                    filter(Estimate!=0)
-print(nonzero.best.coef,n=1e3)
-
-DATA2$hwy.hat=predict(best.mod,newx=as.matrix(X))
-
-ggplot(DATA2) +
-  geom_point(aes(x=hwy,y=hwy.hat),color=&quot;lightskyblue2&quot;) +
-  geom_abline(a=0,b=1,linetype=&quot;dashed&quot;) +
-  theme_minimal() +
-  ylab(&quot;Predicted Highway MPG&quot;) +
-  xlab(&quot;Actual Highway MPG&quot;)
-
-ggplot(DATA2) +
-  geom_histogram(aes(x=hwy-hwy.hat),fill=&quot;lightskyblue2&quot;) +
-  theme_minimal() +
-  xlab(&quot;Residuals&quot;) +
-  ylab(&quot;Frequency&quot;)</code></pre>
 </div>
 </div>
 

@@ -110,15 +110,101 @@ ridge.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=0)
 plot(ridge.mod,xvar="lambda")
-
-#2.2
 lasso.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=1)
 plot(lasso.mod,xvar="lambda")
-
-#2.3
 enet.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                 y=as.vector(SIM.DATA[,1]),
                 alpha=1/2)
 plot(enet.mod,xvar="lambda")
+
+#2.2
+set.seed(216)
+in.train=sample(1:500,floor(0.66*500))
+SIM.TRAIN=SIM.DATA[in.train,]
+SIM.TEST=SIM.DATA[-in.train,]
+
+#Default: 10 Fold Cross Validation
+RESULT=NULL
+for (i in 0:10) {
+  set.seed(216)
+  cv.out = cv.glmnet(x=as.matrix(SIM.TRAIN[,-1]),
+                     y=as.vector(SIM.TRAIN[,1]),
+                     type.measure="mse", 
+                     alpha=i/10)
+  alpha=i/10
+  best.lambda=cv.out$lambda.1se
+  y.test=predict(cv.out,s=best.lambda,newx=as.matrix(SIM.TEST[,-1]))
+  out.mse=mean((SIM.TEST$y-y.test)^2)
+  RESULT=rbind(RESULT,c(alpha,best.lambda,out.mse))
+}
+colnames(RESULT)=c("alpha","lambda","MSE")
+print(RESULT)
+
+#3.1
+DATA=mpg
+DATA2=DATA[,c("year","displ","cyl","drv","cty","hwy","fl","class")]
+head(DATA2)
+
+y=DATA2$hwy
+X=model_matrix(DATA2,hwy~.*.)[,-1]
+var.names=names(X)
+dim(X)
+
+#3.2
+set.seed(216)
+cvmod.0=cv.glmnet(y=y,x=as.matrix(X),alpha=0)
+set.seed(216)
+cvmod.25=cv.glmnet(y=y,x=as.matrix(X),alpha=0.25)
+set.seed(216)
+cvmod.5=cv.glmnet(y=y,x=as.matrix(X),alpha=0.5)
+set.seed(216)
+cvmod.75=cv.glmnet(y=y,x=as.matrix(X),alpha=0.75)
+set.seed(216)
+cvmod.1=cv.glmnet(y=y,x=as.matrix(X),alpha=1)
+
+CV.0.ERROR=cvmod.0$cvm[which(cvmod.0$lambda==cvmod.0$lambda.1se)]
+CV.25.ERROR=cvmod.25$cvm[which(cvmod.25$lambda==cvmod.25$lambda.1se)]
+CV.5.ERROR=cvmod.5$cvm[which(cvmod.5$lambda==cvmod.5$lambda.1se)]
+CV.75.ERROR=cvmod.75$cvm[which(cvmod.75$lambda==cvmod.75$lambda.1se)]
+CV.1.ERROR=cvmod.1$cvm[which(cvmod.1$lambda==cvmod.1$lambda.1se)]
+
+MOD.RESULT=tibble(alpha=c(0,0.25,0.5,0.75,1),
+                  lambda=c(cvmod.0$lambda.1se,cvmod.25$lambda.1se,
+                           cvmod.5$lambda.1se,cvmod.75$lambda.1se,
+                           cvmod.1$lambda.1se),
+                  CV.Error=c(CV.0.ERROR,CV.25.ERROR,CV.5.ERROR,
+                             CV.75.ERROR,CV.1.ERROR))
+print(MOD.RESULT)
+
+#3.3
+best.alpha=MOD.RESULT$alpha[which.min(MOD.RESULT$CV.Error)]
+best.lambda=MOD.RESULT$lambda[which.min(MOD.RESULT$CV.Error)]
+
+best.mod=glmnet(y=y,x=as.matrix(X),nlambda=1,lambda=best.lambda,alpha=best.alpha)
+best.coef=as.tibble(as.matrix(coef(best.mod)))
+best.coef2=best.coef %>% 
+  mutate(Parameter=c("Int",var.names)) %>%
+  rename(Estimate=s0) %>%
+  select(Parameter,Estimate)
+nonzero.best.coef=best.coef2 %>%
+  filter(Estimate!=0)
+print(nonzero.best.coef,n=1e3)
+
+DATA2$hwy.hat=predict(best.mod,newx=as.matrix(X))
+
+ggplot(DATA2) +
+  geom_point(aes(x=hwy,y=hwy.hat),color="lightskyblue2") +
+  geom_abline(a=0,b=1,linetype="dashed") +
+  theme_minimal() +
+  ylab("Predicted Highway MPG") +
+  xlab("Actual Highway MPG")
+
+ggplot(DATA2) +
+  geom_histogram(aes(x=hwy-hwy.hat),fill="lightskyblue2") +
+  theme_minimal() +
+  xlab("Residuals") +
+  ylab("Frequency")
+
+
