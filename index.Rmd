@@ -77,7 +77,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 19|API|[Guest 2](https://drive.google.com/file/d/15xoAnwAnFz-w__UrY6VZal1rwWsBMhSE/view?usp=sharing)|[G2T](Tutorial/Guest 2 Tutorial/APIs) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))|||||
 |Nov. 21|Thanksgiving|||||||
 |Nov. 23|Thanksgiving|||||||
-|Nov. 26|Modeling IX|[Lecture 31]()|[T16]() ([.Rmd]())|||||
+|Nov. 26|Modeling IX|[Lecture 31](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[T16](Tutorial/Tutorial 16/Tutorial_16.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|||||
 |Nov. 28|Communication|Guest 3||||||
 |Nov. 30||||||||
 |Dec. 3||||||||

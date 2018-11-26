@@ -110,16 +110,20 @@ ridge.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=0)
 plot(ridge.mod,xvar="lambda")
+
+#2.2
 lasso.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=1)
 plot(lasso.mod,xvar="lambda")
+
+#2.3
 enet.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                 y=as.vector(SIM.DATA[,1]),
                 alpha=1/2)
 plot(enet.mod,xvar="lambda")
 
-#2.2
+#2.4
 set.seed(216)
 in.train=sample(1:500,floor(0.66*500))
 SIM.TRAIN=SIM.DATA[in.train,]
@@ -141,6 +145,26 @@ for (i in 0:10) {
 }
 colnames(RESULT)=c("alpha","lambda","MSE")
 print(RESULT)
+
+#2.5
+RESULT2=as.data.frame(RESULT) %>% filter(rank(MSE)<=4)
+head(RESULT2)
+RESULT3=NULL
+for(k in 1:4){
+  fit=glmnet(x=as.matrix(SIM.DATA[,-1]),y=as.matrix(SIM.DATA[,1]),alpha=RESULT2$alpha[k])
+  RESULT3=rbind(RESULT3,cbind(k,1:201,as.numeric(coef(fit,s=RESULT2$lambda[k])),c(0,beta)))
+}
+colnames(RESULT3)=c("Model","Parameter","Estimate","Actual")
+RESULT3=as.data.frame(RESULT3)
+
+RESULT3 %>% 
+  ggplot() +
+  geom_point(aes(x=Parameter,y=Estimate,color=as.factor(Model)),size=2) +
+  geom_line(aes(x=Parameter,y=Actual),linetype="dashed",size=1.25,alpha=0.4) +
+  theme_minimal() +
+  facet_grid(as.factor(Model)~.) +
+  guides(color=FALSE)
+  
 
 #3.1
 DATA=mpg
@@ -207,4 +231,59 @@ ggplot(DATA2) +
   xlab("Residuals") +
   ylab("Frequency")
 
+#3.4
+library(Ecdat)
+Part=Participation
+dim(Part)
+head(Part)
+Part$lfp=ifelse(Part$lfp=="yes",1,0)
+Part$foreign=ifelse(Part$foreign=="yes",1,0)
 
+#3.5
+set.seed(216)
+cvmod.0=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0,
+                  family="binomial",type.measure="class")
+set.seed(216)
+cvmod.25=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0.25,
+                   family="binomial",type.measure="class")
+set.seed(216)
+cvmod.5=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0.5,
+                  family="binomial",type.measure="class")
+set.seed(216)
+cvmod.75=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0.75,
+                   family="binomial",type.measure="class")
+set.seed(216)
+cvmod.1=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=1,
+                  family="binomial",type.measure="class")
+
+CV.0.ERROR=cvmod.0$cvm[which(cvmod.0$lambda==cvmod.0$lambda.1se)]
+CV.25.ERROR=cvmod.25$cvm[which(cvmod.25$lambda==cvmod.25$lambda.1se)]
+CV.5.ERROR=cvmod.5$cvm[which(cvmod.5$lambda==cvmod.5$lambda.1se)]
+CV.75.ERROR=cvmod.75$cvm[which(cvmod.75$lambda==cvmod.75$lambda.1se)]
+CV.1.ERROR=cvmod.1$cvm[which(cvmod.1$lambda==cvmod.1$lambda.1se)]
+
+MOD.RESULT=tibble(alpha=c(0,0.25,0.5,0.75,1),
+                  lambda=c(cvmod.0$lambda.1se,cvmod.25$lambda.1se,
+                           cvmod.5$lambda.1se,cvmod.75$lambda.1se,
+                           cvmod.1$lambda.1se),
+                  CV.Error=c(CV.0.ERROR,CV.25.ERROR,CV.5.ERROR,
+                             CV.75.ERROR,CV.1.ERROR))
+print(MOD.RESULT)
+
+#3.6
+best.alpha=MOD.RESULT$alpha[which.min(MOD.RESULT$CV.Error)]
+best.lambda=MOD.RESULT$lambda[which.min(MOD.RESULT$CV.Error)]
+
+best.mod=glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),
+                nlambda=1,lambda=best.lambda,alpha=best.alpha,
+                family="binomial")
+best.coef=as.matrix(coef(best.mod))
+head(best.coef)
+
+Part$Predict=predict(best.mod,newx=as.matrix(Part[,-1]),type="class")
+Part$lfp=ifelse(Part$lfp==1,"Yes","No")
+Part$Predict=ifelse(Part$Predict=="1","Yes","No")
+
+table(Part[,c("lfp","Predict")])
+sum(Part$lfp=="Yes")
+sum(Part$Predict=="Yes")

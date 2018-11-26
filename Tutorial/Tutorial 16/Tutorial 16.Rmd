@@ -1,5 +1,5 @@
 ---
-title: "STOR 320 Tutorial 15"
+title: "STOR 320 Tutorial 16"
 author: "Mario Giacomazzo"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
@@ -25,7 +25,7 @@ Suppose we have a response variable $Y$ and $p=1000$ predictor variables. It is 
 #Part 1: Simulate and Meditate
 
 ##Chunk 1: Simulate Data
-```{r,eval=F}
+```{r,eval=T}
 set.seed(216)
 X=matrix(rnorm(100000),500,200)
 beta=c(rep(5,5),rep(-2,5),rep(0,190))
@@ -37,7 +37,7 @@ SIM.DATA=data.frame(y=y,X=X)
 ```
 
 ##Chunk 2: Fit Linear Model
-```{r,eval=F}
+```{r,eval=T}
 lm.model=lm(y~.,data=SIM.DATA)
 glance(lm.model)
 param.est=lm.model$coefficients
@@ -65,7 +65,7 @@ ggplot(param.lm[11:200,]) +
 ```
 
 ##Chunk 3: Linear Model for Each Potential Predictor
-```{r,eval=F}
+```{r,eval=T}
 COEF=rep(NA,200)
 P.VAL=rep(NA,200)
 for(j in 1:200){
@@ -89,8 +89,8 @@ tibble(ACTUAL=ACTUAL,KEEP=KEEP) %>%
 ```
 
 ##Chunk 4: Modifying the Cutoff For P-Values
-```{r,eval=F}
-Cutoff = CHOICE
+```{r,eval=T}
+Cutoff = 0.2
 
 COEF=rep(NA,200)
 P.VAL=rep(NA,200)
@@ -134,24 +134,32 @@ ggplot(param.lm[11:(dim(param.lm)[1]),]) +
 
 # Part 2: Shrinkage Estimation and More Meditation
 
-## Chunk 1: Penalized Estimation
-```{r,eval=F}
+## Chunk 1: Penalized Estimation Path for Ridge
+```{r,eval=T}
 library(glmnet)
 ridge.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=0)
 plot(ridge.mod,xvar="lambda")
+```
+
+## Chunk 2: Penalized Estimation Path for Lasso
+```{r,eval=T}
 lasso.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=1)
 plot(lasso.mod,xvar="lambda")
+```
+
+## Chunk 3: Penalized Estimation Path for Elastic Net
+```{r,eval=T}
 enet.mod=glmnet(x=as.matrix(SIM.DATA[,-1]),
                  y=as.vector(SIM.DATA[,1]),
                  alpha=1/2)
 plot(enet.mod,xvar="lambda")
 ```
 
-## Chunk 2: Using 10-Fold CV for Selection of $\alpha$ and $\lambda$ 
+## Chunk 4: Using 10-Fold CV for Selection of $\alpha$ and $\lambda$ 
 ```{r,eval=F}
 set.seed(216)
 in.train=sample(1:500,floor(0.66*500))
@@ -175,6 +183,26 @@ colnames(RESULT)=c("alpha","lambda","MSE")
 print(RESULT)
 ```
 
+## Chunk 5: Visualizing the Top 4 Models
+```{r,eval=F}
+RESULT2=as.data.frame(RESULT) %>% filter(rank(MSE)<=4)
+head(RESULT2)
+RESULT3=NULL
+for(k in 1:4){
+  fit=glmnet(x=as.matrix(SIM.DATA[,-1]),y=as.matrix(SIM.DATA[,1]),alpha=RESULT2$alpha[k])
+  RESULT3=rbind(RESULT3,cbind(k,1:201,as.numeric(coef(fit,s=RESULT2$lambda[k])),c(0,beta)))
+}
+colnames(RESULT3)=c("Model","Parameter","Estimate","Actual")
+RESULT3=as.data.frame(RESULT3)
+
+RESULT3 %>% 
+  ggplot() +
+  geom_point(aes(x=Parameter,y=Estimate,color=as.factor(Model)),size=2) +
+  geom_line(aes(x=Parameter,y=Actual),linetype="dashed",size=1.25,alpha=0.4) +
+  theme_minimal() +
+  facet_grid(as.factor(Model)~.) +
+  guides(color=FALSE)
+```
 
 # Part 3: Less Meditation and More Application
 
@@ -219,7 +247,6 @@ print(MOD.RESULT)
 ```
 
 ##Chunk 3: Using the Best Model
-
 ```{r,eval=F}
 best.alpha=MOD.RESULT$alpha[which.min(MOD.RESULT$CV.Error)]
 best.lambda=MOD.RESULT$lambda[which.min(MOD.RESULT$CV.Error)]
@@ -250,7 +277,71 @@ ggplot(DATA2) +
   ylab("Frequency")
 ```
 
+## Chunk 4: Data in `Participation`
+```{r,eval=F}
+library(Ecdat)
+Part=Participation
+dim(Part)
+head(Part)
+Part$lfp=ifelse(Part$lfp=="yes",1,0)
+Part$foreign=ifelse(Part$foreign=="yes",1,0)
+```
 
+## Chunk 5: Multiple Regularized Models
+```{r,eval=F}
+set.seed(216)
+cvmod.0=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0,
+                  family="binomial",type.measure="class")
+set.seed(216)
+cvmod.25=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0.25,
+                   family="binomial",type.measure="class")
+set.seed(216)
+cvmod.5=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0.5,
+                  family="binomial",type.measure="class")
+set.seed(216)
+cvmod.75=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=0.75,
+                   family="binomial",type.measure="class")
+set.seed(216)
+cvmod.1=cv.glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),alpha=1,
+                  family="binomial",type.measure="class")
+
+CV.0.ERROR=cvmod.0$cvm[which(cvmod.0$lambda==cvmod.0$lambda.1se)]
+CV.25.ERROR=cvmod.25$cvm[which(cvmod.25$lambda==cvmod.25$lambda.1se)]
+CV.5.ERROR=cvmod.5$cvm[which(cvmod.5$lambda==cvmod.5$lambda.1se)]
+CV.75.ERROR=cvmod.75$cvm[which(cvmod.75$lambda==cvmod.75$lambda.1se)]
+CV.1.ERROR=cvmod.1$cvm[which(cvmod.1$lambda==cvmod.1$lambda.1se)]
+
+MOD.RESULT=tibble(alpha=c(0,0.25,0.5,0.75,1),
+                  lambda=c(cvmod.0$lambda.1se,cvmod.25$lambda.1se,
+                           cvmod.5$lambda.1se,cvmod.75$lambda.1se,
+                           cvmod.1$lambda.1se),
+                  CV.Error=c(CV.0.ERROR,CV.25.ERROR,CV.5.ERROR,
+                             CV.75.ERROR,CV.1.ERROR))
+print(MOD.RESULT)
+```
+
+## Chunk 6: Using the Best Model
+```{r,eval=F}
+best.alpha=MOD.RESULT$alpha[which.min(MOD.RESULT$CV.Error)]
+best.lambda=MOD.RESULT$lambda[which.min(MOD.RESULT$CV.Error)]
+
+best.mod=glmnet(y=as.factor(Part$lfp),x=as.matrix(Part[,-1]),
+                nlambda=1,lambda=best.lambda,alpha=best.alpha,
+                family="binomial")
+best.coef=as.matrix(coef(best.mod))
+head(best.coef)
+
+Part$Predict=predict(best.mod,newx=as.matrix(Part[,-1]),type="class")
+Part$lfp=ifelse(Part$lfp==1,"Yes","No")
+Part$Predict=ifelse(Part$Predict=="1","Yes","No")
+
+table(Part[,c("lfp","Predict")])
+
+#Write Code that Counts the Number of Married Women Participating in the Workforce
+
+#Write Code that Counts the Predicted Number of Married Women Participating in the Workforce
+
+```
 
 
 
