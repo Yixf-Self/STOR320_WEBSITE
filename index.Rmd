@@ -78,7 +78,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 21|Thanksgiving|||||||
 |Nov. 23|Thanksgiving|||||||
 |Nov. 26|Modeling IX|[Lecture 31](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[T16](Tutorial/Tutorial 16/Tutorial_16.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|||||
-|Nov. 28|Communication|Guest 3||||||
+|Nov. 28|Communication|[Guest 3](https://drive.google.com/file/d/1Ydo2XCIMQDF3tm-KeqVrjYnkJUlQOEej/view?usp=sharing)|[GT3](Tutorial/Guest 3 Tutorial/communication) ([.zip](https://drive.google.com/file/d/1HCN66SqqF6eMlX-ZfLBfwy8fD5IGE68i/view?usp=sharing))|||||
 |Nov. 30||||||||
 |Dec. 3||||||||
 |Dec. 5||||||||
