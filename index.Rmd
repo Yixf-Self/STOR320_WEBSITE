@@ -34,7 +34,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 # **Course Material**
 
-| Date | Lecture | Slides | Tutorial(T) | Lab(L) | Analysis(A)| Project(P)| Solutions  |
+| Date | Lecture | Slides | Tutorial (T) | Lab (L) | Analysis (A)| Project (P)| Solutions  |
 |------|---------|--------|---------|:---:|:------------:|:------------:|-----------:|
 |Aug. 22|Course Overview, Install R | [Lecture 1](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| ||
 |Aug. 24|Data Visualization | [Lecture 2](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Tutorial/Tutorial 1/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||[L1](Lab/Lab 1/Solutions_1.html)|
@@ -81,7 +81,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 28|Communication|[Guest 3](https://drive.google.com/file/d/1Ydo2XCIMQDF3tm-KeqVrjYnkJUlQOEej/view?usp=sharing)|[GT3](Tutorial/Guest 3 Tutorial/communication) ([.zip](https://drive.google.com/file/d/1HCN66SqqF6eMlX-ZfLBfwy8fD5IGE68i/view?usp=sharing))|||||
 |Nov. 30|Data Ethics|[Lecture 32](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||||||
 |Dec. 3|Down with the Sickness|||||||
-|Dec. 5|R Shiny|[Lecture 33]()|[T16]|||||
+|Dec. 5|R Shiny|[Lecture 33](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|T17 ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
 |Dec. 10|STOR 320.01 Final Presentation|||||||
 |Dec. 11|STOR 320.02 Final Presentation|||||||
 |Dec. 12|Final Written Paper|||||||
@@ -92,7 +92,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. 
 
-| Assigned | Lab(L) | Analysis(A) | Due Date (Time) |
+| Assigned | Lab (L) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:-------------:|----------------:|
 | August 24| L1     |              |August 31 (5 PM)|
 | August 31| L2     |             |September 7 (5 PM)|

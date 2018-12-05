@@ -1,3 +1,4 @@
 
 *.driveupload
 .Rhistory
+.Rproj.user
