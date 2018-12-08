@@ -13,15 +13,60 @@ output:
 ---
 
 <style type="text/css">
+
+div {
+color: #13294B;
+}
+
+#TOC {
+  color: #4B9CD3;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  color: #4B9CD3;
+  background-color: #13294B;
+}
+
+a:link {
+    color: #4B9CD3;
+    text-decoration: none;
+
+
+}
+
+a:visited {
+        text-decoration: none;
+color: #4B9CD3;
+
+}
+a:hover {
+color: #4B9CD3;
+background-color: #13294B;
+}
+
 .main-container {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
 </style>
 
 This course is an application-driven introduction to data science. Statistical and computational tools are valued throughout the modern workplace from Silicon Valley startups, to marine biology labs, to Wall Street firms. These tools require technical skills such as programming and statistics. They also require professional skills such as communication, teamwork, problem solving, and critical thinking.
 
+<div class="row">
+  <div class="column">
 
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
@@ -30,6 +75,12 @@ This course is an application-driven introduction to data science. Statistical a
 - STOR 320.01 **[Course Syllabus](https://drive.google.com/file/d/18gI5ak5Kdrl6TY2bFfzZA7H2l8uNrXGu/view?usp=sharing)**
 
 - STOR 320.02 **[Course Syllabus](https://drive.google.com/file/d/1h92pSV7o2hzbLCah82hiF9O4ak2IAFRo/view?usp=sharing)**
+
+  </div>
+  <div class="column">
+  <img src="UNC_Logo.png" width="140px" height="auto">
+  </div>
+</div> 
 
 
 # **Course Material**
