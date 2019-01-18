@@ -143,6 +143,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | Assigned | Lab (L) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:-------------:|----------------:|
 | January 11 | L1     |              |January 18 (5 PM)|
+| January 18 | L2     |              |January 25 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**
