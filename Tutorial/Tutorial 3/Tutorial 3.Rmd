@@ -91,10 +91,10 @@ Now we can create true delay variables, measured in hours, for both departure an
 ```{r,eval=F}
 f2b=mutate(f2a,
            dep_delay_hr=TRANSFORMATION,
-           dep_arr_hr=TRANSFORMATION)
+           arr_delay_hr=TRANSFORMATION)
 ```
 
-Next, use `mutate()` again to create a new variable called "gain_hr" which is the difference between "dep_arr_hr" and "dep_delay_hr", measured in hours. Within the same step, use the function `percent_rank()` to create a new variable "percent_gain_hr" which represents the percentiles of the previously variable you created. Notice that you can develop variables based on recently transformed variables in the same iteration of `mutate()`, but be careful little buddy because order matters. Name the new dataset `f2c`.
+Next, use `mutate()` again to create a new variable called "gain_hr" which is the difference between "arr_delay_hr" and "dep_delay_hr", measured in hours. Within the same step, use the function `percent_rank()` to create a new variable "percent_gain_hr" which represents the percentiles of the previously variable you created. Notice that you can develop variables based on recently transformed variables in the same iteration of `mutate()`, but be careful little buddy because order matters. Name the new dataset `f2c`.
 ```{r,eval=F}
 f2c=mutate(f2b,
            gain_hr=TRANSFORMATION,

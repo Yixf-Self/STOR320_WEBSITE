@@ -178,8 +178,8 @@ head(TIBBLE,5)</code></pre>
 <p>Now we can create true delay variables, measured in hours, for both departure and arrival. Using <code>mutate()</code>, create a new variable “dep_delay_hr” which equals the difference between “dep_hr” and “sched_dep_hr”. Analogously, perform the same operation for arrival. Call the new dataset <code>f2b</code>.</p>
 <pre class="r"><code>f2b=mutate(f2a,
            dep_delay_hr=TRANSFORMATION,
-           dep_arr_hr=TRANSFORMATION)</code></pre>
-<p>Next, use <code>mutate()</code> again to create a new variable called “gain_hr” which is the difference between “dep_arr_hr” and “dep_delay_hr”, measured in hours. Within the same step, use the function <code>percent_rank()</code> to create a new variable “percent_gain_hr” which represents the percentiles of the previously variable you created. Notice that you can develop variables based on recently transformed variables in the same iteration of <code>mutate()</code>, but be careful little buddy because order matters. Name the new dataset <code>f2c</code>.</p>
+           arr_delay_hr=TRANSFORMATION)</code></pre>
+<p>Next, use <code>mutate()</code> again to create a new variable called “gain_hr” which is the difference between “arr_delay_hr” and “dep_delay_hr”, measured in hours. Within the same step, use the function <code>percent_rank()</code> to create a new variable “percent_gain_hr” which represents the percentiles of the previously variable you created. Notice that you can develop variables based on recently transformed variables in the same iteration of <code>mutate()</code>, but be careful little buddy because order matters. Name the new dataset <code>f2c</code>.</p>
 <pre class="r"><code>f2c=mutate(f2b,
            gain_hr=TRANSFORMATION,
            percent_gain_hr=percent_rank(gain_hr))</code></pre>
