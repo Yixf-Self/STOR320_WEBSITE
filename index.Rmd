@@ -92,7 +92,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Jan. 18|Data Transformation II|[Lecture 5](https://drive.google.com/file/d/1W35ZO5yKH0k-yI3ogr7ilN0r5Fn85Rat/view?usp=sharing)|[T3](Tutorial/Tutorial 3/Tutorial_3.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|[L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||L2|
 |Jan. 21|MLK|||||||
 |Jan. 23|Data Transformation III|[Lecture 6](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||||||
-|Jan. 25|Data Transformation IV|[Lecture 7](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[T4](Tutorial/Tutorial 4/Tutorial_4.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))||[A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))||A1|
+|Jan. 25|Data Transformation IV|[Lecture 7](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[T4](Tutorial/Tutorial 4/Tutorial_4.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))||A1||A1|
 |Jan. 28|Exploratory Data Analysis I|[Lecture 8](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||||||
 |Jan. 30|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[T5](Tutorial/Tutorial 5/Tutorial_5.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|||||
 |Feb. 1|Traveling to the 216||||||
