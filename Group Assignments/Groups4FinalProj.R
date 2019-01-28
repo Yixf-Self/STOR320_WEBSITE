@@ -2,8 +2,7 @@ library(tidyverse)
 library(readxl)
 
 #Read Rosters
-Section1=read_excel("STOR320_001_FA18_Roster.xlsx")
-Section2=read_excel("STOR320_002_FA18_Roster.xlsx")
+Section=read_excel("STOR320_001_SP19_Roster.xlsx")
 
 #Function to Divide Sections into Groups
 Group.select.func<-function(data){
@@ -20,9 +19,7 @@ Group.select.func<-function(data){
 }
 
 #Application of the Function
-Final.Section1=Group.select.func(Section1)
-Final.Section2=Group.select.func(Section2)
+Final.Section=Group.select.func(Section)
 
 #Save Datasets
-write_csv(Final.Section1,path=str_c(getwd(),"/STOR320.01 Group Assignments.csv"))
-write_csv(Final.Section2,path=str_c(getwd(),"/STOR320.02 Group Assignments.csv"))
+write_csv(Final.Section,path=str_c(getwd(),"/STOR320.001 Group Assignments.csv"))
