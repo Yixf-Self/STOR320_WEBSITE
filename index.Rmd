@@ -95,38 +95,38 @@ This course is an application-driven introduction to data science. Statistical a
 |Jan. 25|Data Transformation IV|[Lecture 7](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[T4](Tutorial/Tutorial 4/Tutorial_4.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))||[A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))||A1|
 |Jan. 28|Exploratory Data Analysis I|[Lecture 8](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||||||
 |Jan. 30|Exploratory Data Analysis II|[Lecture 9](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[T5](Tutorial/Tutorial 5/Tutorial_5.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|||||
-|Feb. 1|Traveling to the 216||||||
-|Feb. 4|Final Project I|[Lecture 10](https://drive.google.com/file/d/1McGiOljDvGVYgK6CM28d_Ic_mNzQ5SLl/view?usp=sharing)||||P1, P2||
-|Feb. 6|Data Import|[Lecture 11](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||||||
-|Feb. 8|Tidy Data I|[Lecture 12](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||L3|
-|Feb. 11|Tidy Data II|[Lecture 13](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[T6](Tutorial/Tutorial 6/Tutorial_6.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|||||
-|Feb. 13|Joins|[Lecture 14](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||||||
-|Feb. 15|Web Scraping I|[Lecture 15](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[T7](Tutorial/Tutorial 7/Tutorial_7.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|[L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||L4|
-|Feb. 18|Web Scraping II|[Lecture 16](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[T8](Tutorial/Tutorial 8/Tutorial_8.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|||||
-|Feb. 20|Factors|[Lecture 17](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||||||
-|Feb. 22|Programming I|[Lecture 18](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[T9](Tutorial/Tutorial 9/Tutorial_9.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))||A2||A2|
-|Feb. 25|Programming II|[Lecture 19](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[T10](Tutorial/Tutorial 10/Tutorial_10.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|||||
-|Feb. 27|Programming III|[Lecture 20](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||||||
-|Mar. 1|Programming IV|[Lecture 21](https://drive.google.com/file/d/1RFNzH1np2Ax276r7sz7PwBjecWoMgMFk/view?usp=sharing)||[L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||L5|
-|Mar. 4|Modeling I|[Lecture 22](https://drive.google.com/file/d/1LD_DID4EBSo-SCWB9wb6Iq0sTLKCox61/view?usp=sharing)||||||
-|Mar. 6|A/B Testing|[Guest 1](https://drive.google.com/file/d/1c-fDHnchPBeA-Pd5Sz86TXM-A3T3Ci6P/view?usp=sharing)||||||
-|Mar. 8|Modeling II|[Lecture 23](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[T11](Tutorial/Tutorial 11/Tutorial_11.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))||A3||A3|
+|Feb. 1|Final Project I|[Lecture 10](https://drive.google.com/file/d/1McGiOljDvGVYgK6CM28d_Ic_mNzQ5SLl/view?usp=sharing)||||P1, P2||
+|Feb. 4|Data Import|[Lecture 11](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||||||
+|Feb. 6|Tidy Data I|[Lecture 12](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||||||
+|Feb. 8|Tidy Data II|[Lecture 13](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[T6](Tutorial/Tutorial 6/Tutorial_6.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|[L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||L3|
+|Feb. 11|Joins|[Lecture 14](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||||||
+|Feb. 13|Web Scraping I|[Lecture 15](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[T7](Tutorial/Tutorial 7/Tutorial_7.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|||||
+|Feb. 15|Web Scraping II|[Lecture 16](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[T8](Tutorial/Tutorial 8/Tutorial_8.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|[L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||L4|
+|Feb. 18|Factors|[Lecture 17](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||||||
+|Feb. 20|Programming I|[Lecture 18](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[T9](Tutorial/Tutorial 9/Tutorial_9.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|||||
+|Feb. 22|Programming II|[Lecture 19](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[T10](Tutorial/Tutorial 10/Tutorial_10.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))||A2||A2|
+|Feb. 25|Programming III|[Lecture 20](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||||||
+|Feb. 27|Programming IV|[Lecture 21](https://drive.google.com/file/d/1RFNzH1np2Ax276r7sz7PwBjecWoMgMFk/view?usp=sharing)||||||
+|Mar. 1|Modeling I|[Lecture 22](https://drive.google.com/file/d/1LD_DID4EBSo-SCWB9wb6Iq0sTLKCox61/view?usp=sharing)||[L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||L5|
+|Mar. 4|A/B Testing|[Guest 1](https://drive.google.com/file/d/1c-fDHnchPBeA-Pd5Sz86TXM-A3T3Ci6P/view?usp=sharing)||||||
+|Mar. 6|Modeling II|[Lecture 23](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[T11](Tutorial/Tutorial 11/Tutorial_11.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))|||||
+|Mar. 8|Modeling III|[Lecture 24](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)|[T12](Tutorial/Tutorial 12/Tutorial_12.html) ([.zip](https://drive.google.com/file/d/1w92U22YHiUd9agVaQuKnweirOwrLIOj-/view?usp=sharing))||A3||A3|
 |Mar. 11|Spring Break||||||
 |Mar. 13|Spring Break||||||
 |Mar. 15|Spring Break||||||
-|Mar. 18|Modeling III|[Lecture 24](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)|[T12](Tutorial/Tutorial 12/Tutorial_12.html) ([.zip](https://drive.google.com/file/d/1w92U22YHiUd9agVaQuKnweirOwrLIOj-/view?usp=sharing))|||||
-|Mar. 20|Modeling IV|[Lecture 25](https://drive.google.com/file/d/1mLsr4T--AX2fK3H8buAYNQGb1sT7Bpzc/view?usp=sharing)|[T13](Tutorial/Tutorial 13/Tutorial_13.html) ([.zip](https://drive.google.com/file/d/1f8D4xLKPwavJWy93d5DDJU2yr1B6gPt4/view?usp=sharing))|||||
-|Mar. 22|Final Project II|[Lecture 26](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))||P3, P4|L6|
-|Mar. 25|Modeling V|[Lecture 27](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||||||
-|Mar. 27|Modeling VI|[Lecture 28](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||||||
-|Mar. 29|Modeling VII|[Lecture 29](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[T14](Tutorial/Tutorial 14/Tutorial_14.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|[L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing))|||L7|
-|Apr. 1|Modeling VIII|[Lecture 30](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[T15](Tutorial/Tutorial 15/Tutorial_15.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|||||
-|Apr. 3|API|[Guest 2](https://drive.google.com/file/d/15xoAnwAnFz-w__UrY6VZal1rwWsBMhSE/view?usp=sharing)|[G2T](Tutorial/Guest 2 Tutorial/APIs) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))|||||
-|Apr. 5|Modeling IX|[Lecture 31](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[T16](Tutorial/Tutorial 16/Tutorial_16.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))||A4||A4|
-|Apr. 8|Communication|[Guest 3](https://drive.google.com/file/d/1Ydo2XCIMQDF3tm-KeqVrjYnkJUlQOEej/view?usp=sharing)|[GT3](Tutorial/Guest 3 Tutorial/communication) ([.zip](https://drive.google.com/file/d/1HCN66SqqF6eMlX-ZfLBfwy8fD5IGE68i/view?usp=sharing))|||||
-|Apr. 10|Data Ethics|[Lecture 32](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||||||
-|Apr. 12|R Shiny|[Lecture 33](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[T17](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
-|Apr. 15|R Shiny 2||||||
+|Mar. 18|Modeling IV|[Lecture 25](https://drive.google.com/file/d/1mLsr4T--AX2fK3H8buAYNQGb1sT7Bpzc/view?usp=sharing)|[T13](Tutorial/Tutorial 13/Tutorial_13.html) ([.zip](https://drive.google.com/file/d/1f8D4xLKPwavJWy93d5DDJU2yr1B6gPt4/view?usp=sharing))|||||
+|Mar. 20|Final Project II|[Lecture 26](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)||||P3, P4||
+|Mar. 22|Modeling V|[Lecture 27](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||[L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))|||L6|
+|Mar. 25|Modeling VI|[Lecture 28](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||||||
+|Mar. 27|Modeling VII|[Lecture 29](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[T14](Tutorial/Tutorial 14/Tutorial_14.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|||||
+|Mar. 29|Modeling VIII|[Lecture 30](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[T15](Tutorial/Tutorial 15/Tutorial_15.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|[L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing))|||L7|
+|Apr. 1|API|[Guest 2](https://drive.google.com/file/d/15xoAnwAnFz-w__UrY6VZal1rwWsBMhSE/view?usp=sharing)|[G2T](Tutorial/Guest 2 Tutorial/APIs) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))|||||
+|Apr. 3|Modeling IX|[Lecture 31](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[T16](Tutorial/Tutorial 16/Tutorial_16.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|||||
+|Apr. 5|Communication|[Guest 3](https://drive.google.com/file/d/1Ydo2XCIMQDF3tm-KeqVrjYnkJUlQOEej/view?usp=sharing)|[GT3](Tutorial/Guest 3 Tutorial/communication) ([.zip](https://drive.google.com/file/d/1HCN66SqqF6eMlX-ZfLBfwy8fD5IGE68i/view?usp=sharing))||A4||A4|
+|Apr. 8|Data Ethics|[Lecture 32](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||||||
+|Apr. 10|R Shiny|[Lecture 33](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[T17](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
+|Apr. 12|R Shiny 2||||||
+|Apr. 15|TBD||||||
 |Apr. 17|TBD||||||
 |Apr. 19|Good Friday||||||
 |Apr. 22|TBD||||||
