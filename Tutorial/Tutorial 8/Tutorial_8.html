@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2018-10-04" />
+<meta name="date" content="2019-02-14" />
 
 <title>STOR 320 Tutorial 8</title>
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">STOR 320 Tutorial 8</h1>
 <h4 class="author"><em>Mario Giacomazzo</em></h4>
-<h4 class="date"><em>October 04, 2018</em></h4>
+<h4 class="date"><em>February 14, 2019</em></h4>
 
 </div>
 
@@ -161,31 +161,31 @@ ABBREV=read_csv(&quot;FINAL_STATE_ABBREV.CSV&quot;)</code></pre>
 </div>
 <div id="part-1-connection-to-population-change-and-density" class="section level1">
 <h1>Part 1: Connection to Population Change and Density</h1>
-<p>Recall the Wikipedia page listing the <a href="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate">crime rates</a> of US cities. This information comes from an FBI report from 2015. Suppose we wanted to investigate the effect of crime in 2015 on current population data in 2018. An HTML table, provided online, reports the <a href="http://worldpopulationreview.com/us-cities/">2018 population density and percentage change</a> of 100 major US cities. Why is this information useful when related to violent crimes and what would you expect to discover?</p>
+<p>Recall the Wikipedia page listing the <a href="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate">crime rates</a> of US cities. This information comes from an FBI report from 2015. Suppose we wanted to investigate the effect of crime in 2015 on current population data in 2019. An HTML table, provided online, reports the <a href="http://worldpopulationreview.com/us-cities/">2019 population density and percentage change</a> of 100 major US cities. Why is this information useful when related to violent crimes and what would you expect to discover?</p>
 <div id="chunk-1-web-scraping-and-variable-selection" class="section level2">
 <h2>Chunk 1: Web Scraping and Variable Selection</h2>
-<p>We start by web scraping the population statistics table into R using functions from <code>rvest</code>. Additionally, we only select the variables of interest <code>Change</code> and <code>2018 Density</code> and the keys <code>Name</code> and <code>State</code> required to link this information to violent crimes.</p>
+<p>We start by web scraping the population statistics table into R using functions from <code>rvest</code>. Additionally, we only select the variables of interest <code>Change</code> and <code>2019 Density</code> and the keys <code>Name</code> and <code>State</code> required to link this information to violent crimes.</p>
 <pre class="r"><code>URL.US_CENSUS = &quot;http://worldpopulationreview.com/us-cities/&quot;
 US_CENSUS = URL.US_CENSUS %&gt;%
               read_html() %&gt;%
               html_table(header=T,fill=T) %&gt;%
               .[[1]] %&gt;%
-              select(Name, State, Change, `2018 Density`)
+              select(Name, State, Change, `2019 Density`)
 str(US_CENSUS)</code></pre>
 </div>
 <div id="chunk-2-population-change-and-density-variables-to-numeric" class="section level2">
 <h2>Chunk 2: Population Change and Density Variables to Numeric</h2>
-<p>Ideally, variables <code>Change</code> and <code>2018 Density</code> should be numeric. The following code starts by giving the variable <code>2018 Density</code> a more succinct name and then continues to provide the necessary mutations required to converting character vectors to numeric vectors.</p>
+<p>Ideally, variables <code>Change</code> and <code>2019 Density</code> should be numeric. The following code starts by giving the variable <code>2019 Density</code> a more succinct name and then continues to provide the necessary mutations required to converting character vectors to numeric vectors.</p>
 <pre class="r"><code>US_CENSUS2 = US_CENSUS %&gt;%
-                rename(Density=`2018 Density`) %&gt;%
+                rename(Density=`2019 Density`) %&gt;%
                 mutate(Change=as.numeric(str_replace(Change,&quot;%&quot;,&quot;&quot;))) %&gt;%
                 mutate(Density=str_replace_all(Density,&quot;[,]&quot;,&quot;&quot;))
 
 US_CENSUS2$Density[1] #Example              
-str_replace(US_CENSUS2$Density[1],&quot;\\/(.*)&quot;,&quot;&quot;) #Test
+str_replace(US_CENSUS2$Density[1],&quot;/.*&quot;,&quot;&quot;) #Test
 
 US_CENSUS3 =US_CENSUS2 %&gt;%
-              mutate(Density = as.numeric(str_replace(Density,&quot;\\/(.*)&quot;,&quot;&quot;)))
+              mutate(Density = as.numeric(str_replace(Density,&quot;/.*&quot;,&quot;&quot;)))
 str(US_CENSUS3)
 write_csv(US_CENSUS3,&quot;FINAL_CENSUS.CSV&quot;)</code></pre>
 </div>
