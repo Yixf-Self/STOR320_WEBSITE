@@ -1,0 +1,248 @@
+---
+title: "Lab 3 Solutions"
+author: "Tom Keefe"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+**Exercises:**  1,3 (Pgs. 90-91); 1 (Pg. 93); 2,4 (Pg. 99); 1,2 (Pg. 101); 2,3,5 (Pg. 104)
+
+**Assigned:** Friday, September 14, 2018
+
+**Due:** Friday, September 21, 2018 by 5:00 PM
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as a HTML file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. You do not need R code to answer every question. If you answer without using R code, delete the code chunk. If the question requires R code, make sure you display R code. If the question requires a figure, make sure you display a figure. A lot of the questions can be answered in written response, but require R code and/or figures for understanding and explaining.
+
+```{r, include=FALSE}
+library(tidyverse)
+library(nycflights13)
+library(lvplot)
+```
+
+# Chapter 5 (Pgs. 90-91)
+
+##  Exercise 1
+
+To explore the distributions of x, y, and z, we could either use multiple histograms, or one freq poly chart. Either are acceptable. 
+```{r}
+# Distributions of x, y, and z.
+ggplot(diamonds, aes(x=x)) + geom_histogram()
+ggplot(diamonds, aes(x=y)) + geom_histogram()
+ggplot(diamonds, aes(x=z)) + geom_histogram()
+```
+
+Since the histograms don't appear to fill up the whole horizontal axis, we conclude that there are some far out outliers. However, we we can see that the `x` values mostly range from 3 to 10, the `y` values from about 4 to 10, and the `z` values from 2 to 7. These are rough estimates from the charts. We can use these estimates to zoom in on the histogram and see more detail in the histogram. Additionally, I note from `?diamonds` that these values are measured in millimeters. Since my visual acuity is not much better than 0.5 mm, I choose this as the binwidth.
+
+```{r}
+ggplot(diamonds, aes(x=x)) + geom_histogram(binwidth=0.5) + xlim(c(3, 10))
+ggplot(diamonds, aes(x=y)) + geom_histogram(binwidth=0.5) + xlim(c(4, 10))
+ggplot(diamonds, aes(x=z)) + geom_histogram(binwidth=0.5) + xlim(c(2, 7))
+```
+
+We can see that the bulk of the `x` values are between 4 and 9mm, the `y` values also between 4 and 9mm, and the z values between 2 and 6mm. In all cases the distributions are skew right. This makes sense because it is impossible for the values to be negative. 
+
+I would suppose that `z` is the thickness of the diamond. It's not clear to me what length and width mean for diamonds, because they're usually round. Additionally, `x` and `y` have similar distributions when we remove outliers. However, in `?diamonds` it is revealed that `x` is length, `y` is width, and `z` is depth.
+
+
+##  Exercise 3
+```{r}
+# There are multiple ways to get this data.
+diamonds %>% filter(carat %in% (c(.99, 1))) %>% count(carat)
+```
+
+23 diamonds are 0.99 carat, 1558 diamonds are 1.00 carat. This is probably a matter of measurement: some people measuring diamonds may round to the nearest whole number or nearest tenth; in both cases this would result in a larger quantity of 1.00 measurements than 0.99 measurements.
+
+
+# Chapter 5 (Pg. 93)
+
+##  Exercise 1
+
+The answer has to do with how missing values are handled in categorical variables. Recall that geom_histogram is meant for visualizing continuous variables, while geom_bar is for categorical variables. We will create some categorical data and continous data that both have NA values to see the difference.
+
+```{r}
+# We make a dataframe with a categorical column, "cat", that contains four As, three Bs, and two NAs, 
+# and a continous column, "con", that contains four 3s, three 4s, and two NAs.
+df = data.frame(
+    cat = c('A', 'A', 'A', 'A', 'B', 'B', 'B', NA, NA),
+    con = c(3, 3, 3, 3, 4, 4, 4, NA, NA)
+)
+
+# We plot a bar plot of x and a histogram of y:
+ggplot(df) + geom_bar(aes(x=cat))
+ggplot(df) + geom_histogram(aes(x=con))
+
+```
+
+As we can see, geom_bar plots the NA category, but geom_histogram suppress the NA values. The reason for this is that for categorical data, NA can be interpreted as a category, and we may want to see on our chart how many values are in this category. On a histogram there is not a reasonable place to put NA values. 
+
+# Chapter 5 (Pg. 99)
+
+##  Exercise 2
+We'll make some plots to see what variables have to do with `price`. The y-axis will always be price. For our x variable, if it is continous we will use a scatterplot, and if it is categorical we use a boxplot.
+
+```{r}
+ggplot(diamonds) + geom_point(aes(x=carat, y=price), alpha=0.1)
+ggplot(diamonds) + geom_boxplot(aes(x=cut, y=price))
+ggplot(diamonds) + geom_boxplot(aes(x=color, y=price))
+ggplot(diamonds) + geom_boxplot(aes(x=clarity, y=price))
+```
+
+```{r}
+ggplot(diamonds) + geom_point(aes(x=depth, y=price), alpha=0.1)
+ggplot(diamonds) + geom_point(aes(x=table, y=price), alpha=0.1)
+```
+
+```{r}
+ggplot(diamonds) + geom_point(aes(x=x, y=price), alpha=0.1) + xlim(c(0, 10))
+ggplot(diamonds) + geom_point(aes(x=y, y=price), alpha=0.1) + xlim(c(0, 10))
+ggplot(diamonds) + geom_point(aes(x=z, y=price), alpha=0.1) + xlim(c(0, 10))
+```
+
+Among our continuous variables, we can see visually that `carat`, `x`, `y`, and `z` are positively correlated with price, while `table` and `depth` are not. However, `carat`, `x`, `y`, and `z` are all measures of size and seem to carry mostly the same information. 
+
+Among the categorical variables, `color` and `clarity` seem to have slight associations with price, while `cut` is not. This may seem surprising, because we expect "Ideal" cut diamonds to be definitely more expensive than "Fair" diamonds. 
+
+The best predictors appear to be `carat`, `x`, `y`, and `z`. They're pretty much all equally good, and in fact they're all measures of size, so this might be expected.  Let's see how `carat` varies with `cut` (note: using `x`, `y`, or `z` instead of `carat` is also fine and gives a very similar result):
+
+```{r}
+ggplot(diamonds) + geom_boxplot(aes(x=cut, y=carat))
+```
+
+We can see that worse cut diamonds tend to be bigger, (with the exception of the "Premium" cut). So the reason that Fair diamonds tend to be more expensive than Ideal diamonds is that Ideal diamonds tend to be smaller, and size is a very important predictor of price. This counterintuitive finding is an example of an effect called Simpson's paradox.
+
+
+##  Exercise 4
+Let's compare a boxplot and a letter-value plot for `cut` vs `price`:
+
+```{r}
+ggplot(diamonds) + geom_boxplot(aes(x=cut, y=price))
+ggplot(diamonds) + geom_lv(aes(x=cut, y=price))
+```
+
+We can see that the boxplots display quite a large number of outliers at the ends of the whiskers, and this is simply because there are 50,000 values in the dataset--there are going to be quite a few outlying values. Comparing this to the LV plot, we see that the widest box of the LV plot is the same box as the boxplot. The other boxes in the LV plot tell us how the values in the tails are distributed. In the boxplot, the tails are represented by the thin line coming off the top and bottom of the box, and the dots for outliers. We don't see anything about how the points in these areas are distributed. The letter value plot makes smaller boxes for the tails to tell us where different quantiles are in the tails. 
+
+
+# Chapter 5 (Pg. 101)
+
+##  Exercise 1
+Here are two heatmaps to build intuition about the problem. The first is the same heatmap as presented on page 101:
+```{r}
+diamonds %>% count(color, cut) %>%
+    ggplot(mapping=aes(x=color, y=cut)) + geom_tile(mapping=aes(fill=n))
+```
+
+Notice that for Fair diamonds, all the tiles are the same dark blue color--we can't see any variation. Here's a similar heatmap, but just of the Fair diamonds:
+```{r}
+diamonds %>% filter(cut=="Fair") %>%
+    count(color, cut) %>%
+    ggplot(mapping=aes(x=color, y=cut)) + geom_tile(mapping=aes(fill=n))
+```
+
+We can see from the bottom heatmap that G is the most represented color among Fair diamonds, and J is the least represented color. However, we can't see this information from the top heatmap; in the row for Fair diamonds all the tiles have the same very dark blue color. That's because the better cuts of diamond (Ideal, Premium, etc.) have much higher counts and are hogging the rest of the color spectrum. 
+
+There are two main ways of dealing with this problem: standardizing and log-transforming. Both are acceptable. First we will discuss standardizing.
+
+Standardizing is when we put all of the diamond cuts on the same scale, so that the Ideal diamonds don't hog all the bright colors. We do this using percentages. Instead of getting the count of each (color, cut) pairing, we will take each cut, and find what percent of diamonds with that cut are each color. Then we'll make a heatmap based on that:
+
+```{r}
+percentages = diamonds %>% 
+    count(color, cut) %>% 
+    group_by(cut) %>% 
+    mutate(cut_count=sum(n), percentage = 100*n/cut_count) %>%
+    arrange(cut)
+
+percentages
+```
+
+From the first line of this table, we can see that there are 1610 Fair diamonds in the dataset, and 163 of them are color D, so about 10% of the Fair diamonds are color D.
+
+And now we make the heatmap:
+
+```{r}
+ggplot(percentages, aes(x=color, y=cut)) + geom_tile(aes(fill=percentage))
+```
+
+Now it is easy to see visually how color is represented within each cut. We could do a very similar process to see how cut is represented within each color.
+
+The other method of dealing with the problem of scale is log-transforming. Essentially, instead of getting the count of each (cut, color) pair, we get the _order of magnitude_ instead. Taking the base-10 log of a number basically tells you how many digits are in it. For example $\log_{10} (1000) = 3$ and $\log_{10} (10000) = 4$. So, a log value of 3.5 tells you that the number was "in the thousands".
+
+It is easy to make the log-transformed heatmap:
+
+```{r}
+diamonds %>% 
+    count(color, cut) %>%
+    ggplot(aes(x=color, y=cut)) + geom_tile(aes(fill=log(n, base=10)))
+```
+
+As we can see, the color scale is distributed nicely among the cuts and colors. We can also see some information about how cuts are distributed with colors and vice-versa, for example, there are more Ideal G diamonds than Ideal J diamonds. However, since the values are on a log scale, we have to be careful when determining how _many_ more.
+
+##  Exercise 2
+First we compute the average delay for each (month, dest) pair:
+```{r}
+delays = flights %>% group_by(month, dest) %>% summarize(avg_delay=mean(dep_delay, na.rm=T), count=n())
+```
+
+
+And now we make a heatmap:
+```{r}
+ggplot(delays, aes(x=month, y=dest)) + geom_tile(aes(fill=avg_delay))
+```
+
+"Improving" this plot is a broad question that comes down to what you want to explore. The amount of destinations certainly makes this plot harder to read, but seeing all the destinations might be important for the plot. Potential ways to improve the plot could be:
+
+* Group destinations by state or geographic area to cut down the number of rows in the heatmap
+* Choose a more neutral color for missing values
+* Choose a color scale with more contrast
+* If we wanted to see within-group variation like the previous question, we could standardize or log-transform.
+
+# Chapter 5 (Pg. 104)
+
+##  Exercise 2
+We need make a partition of price; I will use a bin width of \$1000.
+
+```{r}
+ggplot(diamonds) + geom_boxplot(aes(x=price, y=carat, group=cut_width(price, 1000)))
+```
+
+Now for a given price bin, we can see the distribution of `carat`.
+
+##  Exercise 3
+
+
+```{r}
+ggplot(diamonds) + geom_boxplot(aes(x=carat, y=price, group=cut_width(carat, 0.5)))
+```
+
+As expected, the very large carat diamonds have higher prices than the small diamonds.
+
+##  Exercise 5
+There are (at least) two ways to make a binned plot from these two continuous variables. We could bin one variable, like we did in exercise above, or we could bin both variables and make a heatmap. First, the given plot:
+
+```{r}
+ggplot(diamonds) + geom_point(aes(x=x, y=y)) + coord_cartesian(xlim=c(4,11), ylim=c(4,11))
+```
+
+And here's a binned plot, where I bin each x-value into 1mm groups:
+
+```{r}
+ggplot(diamonds) + geom_boxplot(aes(x=x, y=y, group=cut_width(x, 1))) + coord_cartesian(xlim=c(4,11), ylim=c(4,11))
+```
+
+We can still see some of the outliers on the boxplot, but in this case, a scatter plot lets the viewer determine what an outlier should be, rather than the boxplot algorithm. 
+
+Finally, here's a heatmap, where I bin by rounding to the nearest whole millimeter:
+
+```{r}
+diamonds %>% 
+    mutate(x=round(x), y=round(y)) %>%
+    count(x, y) %>%
+    ggplot(aes(x=x, y=y)) + geom_tile(aes(fill=n)) + coord_cartesian(xlim=c(4,11), ylim=c(4,11))
+```
+
+This plot is OK, because it shows the general linear relationship between x and y, and it also shows a little information about the outliers, and it shows that as both x and y increase, there are fewer diamonds represented. However, these relationships are all easier to see on the scatterplot, so the binning operation removes information while making harder to read graph. So the scatterplot is better in this case. 
