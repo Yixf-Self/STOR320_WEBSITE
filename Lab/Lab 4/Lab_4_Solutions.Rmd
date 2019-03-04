@@ -1,0 +1,229 @@
+---
+title: "Lab 4 Solutions"
+author: "Tom Keefe"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+**Exercises:**  2,3 (Pg. 151); 2,4 (Pg. 156); 1,2 (Pgs. 160-161); 2 (Pg. 163); 2,3,4 (Pg. 168)
+
+**Assigned:** Friday, September 28, 2018
+
+**Due:** Friday, October 5, 2018 by 5:00 PM
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as a HTML file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. You do not need R code to answer every question. If you answer without using R code, delete the code chunk. If the question requires R code, make sure you display R code. If the question requires a figure, make sure you display a figure. A lot of the questions can be answered in written response, but require R code and/or figures for understanding and explaining.
+
+```{r, include=FALSE}
+library(tidyverse)
+```
+
+# Chapter 9 (Pg. 151)
+
+##  Exercise 2
+First I extract the TB cases per country per year (part a), and the populations per year (part b), into separate dataframes.
+```{r}
+cases = table2 %>% filter(type=='cases')
+populations = table2 %>% filter(type=='population')
+```
+
+
+Now to get the rates (part c), we pipe `cases` into `mutate`. The `mutate` function goes through `cases` row by row. For each row, `mutate` takes the value of `count`, which represents the number of cases of the disease, multiplies it by 10,000, and divides that by the value of `count` in the `populations` table _that has the same row index_. 
+
+```{r}
+rates = cases %>% mutate(type = "rate", count=10000*count/populations$count)
+```
+
+To explain another way, we take the first row of `cases` (Afghanistan 1999), get the `count` (745), multiply by 10,000, get the first row of `population` (again Afghanistan 1999), get the `count` (19,987,071), and divide.
+
+This only works because we know that the `cases` and `populations` have the same ordering. 
+
+Now we store it back in the appropriate place (part d). To match the format of table2, we should have "rate" in the `type` column, and the computed rate in the `count` column (although this is no longer really a count). We simply add these rows to `table2` using the `rbind` function, and then re-arrange to match the original format:
+
+```{r}
+table2 = rbind(table2, rates)
+table2 = arrange(table2, country, year, type)
+```
+
+Now we do this all again with `table4a` and `table4b`: 
+
+When we compute the rates, we need to store them in a way that matches how the rest of the data is stored. That means the rates should go in a table called `table4c` that has columns `1999` and `2000`, and no other columns.
+
+We use `mutate` in a similar manner as before: it goes through `table4a` row by row, and for each row it gets a value from a _corresponding_ row in `table4b`.
+```{r}
+table4c = table4a %>% mutate(pop1999=table4b$`1999`,
+                             pop2000=table4b$`2000`
+                            )
+table4c
+```
+
+
+Now we use another mutate to get the rates drop t
+```{r}
+table4c = table4c %>% mutate(`1999` = 10000*`1999`/pop1999,
+                             `2000` = 10000*`2000`/pop2000) %>%
+    select(country, `1999`, `2000`)
+table4c
+```
+
+##  Exercise 3
+To recreate the plot using `table2`, we first need to filter on `type=='cases'`:
+
+```{r}
+table2 %>%
+    filter(type=='cases') %>% 
+    ggplot(aes(x=year, y=count)) + 
+    geom_line(aes(group=country), color="grey50") + 
+    geom_point(aes(color=country))
+```
+
+# Chapter 9 (Pg. 156)
+
+##  Exercise 2
+```{r}
+table4a %>% gather(`1999`, `2000`, key="year", value="cases")
+```
+
+`1999` and `2000` need to be enclosed in backticks. (A good rule of thumb in data analytics is to not have your column names be numbers or start with numbers.)
+
+##  Exercise 4
+```{r}
+preg <- tribble(
+    ~pregnant, ~male, ~female,
+    "yes",     NA,    10,
+    "no",      20,    12
+)
+```
+
+This tibble represents numbers of males and females who are or are not pregnant. According to the principles of tidy data, each variable needs its own column, and each observation needs its own row. In this case, the column names `male` and `female` represent the _values_ of a variable (call it `sex`). We need to `gather` these into a `sex` variable.
+
+Another way to explain it: We're measuring counts of people. These measurements are split over the columns `male` and `female`. In tidy data, one measurement should not split over columns. So, we need to use `gather` to make `male` and `female` values of a `sex` variable, and the corresponding counts all in one column, called `count`. 
+
+```{r}
+preg %>% gather(male, female, key="sex", value="count")
+```
+
+
+# Chapter 9 (Pgs. 160-161)
+
+##  Exercise 1
+
+We see from `?separate` what `extra` and `fill` are for. `extra` controls what happens when we separate an element into more pieces than we have columns to fit them into. `fill` controls what happens when there aren't enough pieces to fill all our columns. 
+
+We try `extra='warn'` and `fill='warn'`:
+```{r}
+tibble(x = c("a,b,c", "d,e,f,g", "h,i,j")) %>%
+    separate(x, c("one", "two", "three"), extra="warn")
+
+tibble(x = c("a,b,c", "d,e", "f,g,i")) %>%
+    separate(x, c("one", "two", "three"), fill="warn")
+```
+
+In the console we can see that warnings are generated (copied here):
+```
+Expected 3 pieces. Additional pieces discarded in 1 rows [2].
+Expected 3 pieces. Missing pieces filled with `NA` in 1 rows [2].
+```
+
+Now we try `extra='drop'` and `fill='right'`:
+```{r}
+tibble(x = c("a,b,c", "d,e,f,g", "h,i,j")) %>%
+    separate(x, c("one", "two", "three"), extra="drop")
+
+tibble(x = c("a,b,c", "d,e", "f,g,i")) %>%
+    separate(x, c("one", "two", "three"), fill="right")
+```
+
+We can see that in the first tibble, `g` is dropped from row 2 (there is no room for it); and in the second tibble, there is an NA in row 2, column three, because we fill in the right side with NAs. 
+
+Finally we try `extra='merge'` and `fill='left'`:
+```{r}
+tibble(x = c("a,b,c", "d,e,f,g", "h,i,j")) %>%
+    separate(x, c("one", "two", "three"), extra="merge")
+
+tibble(x = c("a,b,c", "d,e", "f,g,i")) %>%
+    separate(x, c("one", "two", "three"), fill="left")
+```
+
+We see that in the first tibble, `f,g` are merged in row 2 column three. In the second tibble, there is an NA in row 2, column one, because we fill in missing values from the left with NAs. 
+
+##  Exercise 2
+The `remove` argument "removes the input column from the output data frame" (`?separate`). This arguement defaults to True. If we had a reason to keep the original column, we would set this to False. (We might do this if we united several columns to make a unique identifier; we would probably want to keep the original columns in that case.)
+
+# Chapter 9 (Pg. 163)
+
+##  Exercise 2
+Very occasionnaly, NA values may represent data carried forward, like writing ditto marks. `fill` replaces these NAs with the correct repeated value. `direction` is used to specify whether NAs should be filled using the preceding value or the next value. If an NA represents that the precededing value is repeated (this is the usual way) we use `direction="down"`. If the NA represents a repetition of the next non-NA value (this is rare), we use `direction="up"`.
+
+
+# Chapter 9 (Pg. 168)
+
+##  Exercise 2
+We need the `mutate` step to standardize the values of `key` so that they all start with `new_`. If we don't do this, then when we separate `key` on underscores in the next step, the values that lack the underscore will not separate correctly into the desired columns. 
+
+##  Exercise 3
+Lets look at the pipeline before `iso2` and `iso3` are dropped:
+```{r}
+who %>%
+  gather(key, value, new_sp_m014:newrel_f65, na.rm = TRUE) %>% 
+  mutate(key = stringr::str_replace(key, "newrel", "new_rel")) %>%
+  separate(key, c("new", "var", "sexage")) %>%
+  head()
+```
+
+It looks like "Afghanistan", "AF", and "AFG" may all represent the same thing. One way to check this is to make a new dataset `who2`, and see if the number of unique countries equals the number of unique `country`, `iso2`, `iso3` tuples.
+
+```{r}
+who2 = who %>% unite(country_tuple, country, iso2, iso3, remove=FALSE)
+
+head(who2)
+```
+
+Now we get the unique counts:
+```{r}
+length(unique(who2$country))
+length(unique(who2$country_tuple))
+```
+
+These are both 219, so we conclude `iso2` and `iso3` are redundant.
+
+##  Exercise 4
+
+First I use Wickham's code to tidy the `who` data into a new tibble:
+```{r}
+tidy_who = who %>%
+  gather(key, value, new_sp_m014:newrel_f65, na.rm = TRUE) %>% 
+  mutate(key = stringr::str_replace(key, "newrel", "new_rel")) %>%
+  separate(key, c("new", "var", "sexage")) %>% 
+  select(-new, -iso2, -iso3) %>% 
+  separate(sexage, c("sex", "age"), sep = 1)
+```
+
+Lets take a look at the top of the dataset:
+```{r}
+head(tidy_who)
+```
+
+So, we will use a group_by and summarize to count the number of cases for each combination of country, year, and sex. So, if our group is (Afghanistan, 1997, males), we will sum up the TB cases (`value`) over each `age` and `var`.
+
+```{r}
+tb_cases = tidy_who %>% 
+    group_by(country, year, sex) %>%
+    summarize(cases = sum(value))
+head(tb_cases)
+```
+
+And now we make a visualization. There are too many countries to deal with, so I will look at how cases of TB have been distributed by sex each year (1995-2012, because it looks like data collection was best in those years)
+
+```{r}
+tb_cases %>%
+    filter(country=="Afghanistan", year %in% 1995:2012) %>%
+    ggplot() + 
+    geom_line(aes(x=year, y=cases, color=sex)) +
+    ggtitle("TB cases in Afghanistan, by year and sex", "1995-2012")
+```
