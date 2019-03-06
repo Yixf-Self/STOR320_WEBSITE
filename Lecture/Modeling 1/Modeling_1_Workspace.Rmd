@@ -1,5 +1,5 @@
 ---
-title: "Lecture 22 Workspace"
+title: "Modeling 1 Workspace"
 author: "Mario Giacomazzo"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
@@ -38,7 +38,7 @@ TRAIN %>% summarize(mean=mean(vert),sd=sd(vert),min=min(vert),max=max(vert))
 
 
 ```{r,message=F,warning=F}
-ggplot(TRAIN) + geom_histogram(aes(x=vert),fill="lightskyblue2") + theme_minimal()
+ggplot(TRAIN) + geom_histogram(aes(x=vert),fill="lightskyblue2") + theme_dark()
 ```
 
 ```{r}
@@ -67,8 +67,8 @@ COEF0=tibble(
 ```
 
 ```{r}
-TRAIN %>% ggplot()+ geom_point(aes(x="",y=vert),fill="lightskyblue2") +
-    geom_hline(yintercept=COEF0$beta0,alpha=0.3)+xlab("") +theme_minimal()
+TRAIN %>% ggplot()+ geom_point(aes(x="",y=vert),color="lightskyblue2") +
+    geom_hline(yintercept=COEF0$beta0,alpha=0.4,color="white")+xlab("") +theme_dark()
 ```
 
 ```{r}
@@ -95,12 +95,12 @@ coef(LM0)
 ```{r}
 TEST %>% ggplot()+
   xlab("") + theme_minimal()+ geom_point(aes(x="",y=vert),color="lightskyblue2")+
-  geom_point(aes(x="",y=34.53),stroke=2)
+  geom_point(aes(x="",y=34.53),color="white",stroke=2)+theme_dark()
 ```
 
 ```{r}
 ggplot(data=TRAIN) +
-  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_minimal()
+  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_dark()
 ```
 
 ```{r}
@@ -131,8 +131,8 @@ COEF1A=tibble(
 ```
 
 ```{r}
-TRAIN %>% ggplot()+ geom_point(aes(x=shroom,y=vert)) +
-    geom_abline(aes(intercept=COEF1A$beta0,slope=COEF1A$beta1),alpha=0.2,data=COEF1A)+theme_minimal()
+TRAIN %>% ggplot()+ geom_point(aes(x=shroom,y=vert),color="lightskyblue2") +
+    geom_abline(aes(intercept=COEF1A$beta0,slope=COEF1A$beta1),alpha=0.1,data=COEF1A,color="white")+theme_dark()
 ```
 
 ```{r}
@@ -145,21 +145,21 @@ COEF1A %>%
 
 ```{r}
 ggplot(data=TRAIN) +
-  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_minimal() +
-  geom_abline(aes(intercept=9.4,slope=1.24))
+  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=9.4,slope=1.24),color="white",size=1.5)
   
 ```
 
 ```{r}
 ggplot(data=TEST) +
-  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_minimal() +
-  geom_abline(aes(intercept=9.4,slope=1.24))
+  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=9.4,slope=1.24),color="white",size=1.5)
   
 ```
 
 ```{r}
 ggplot(data=TRAIN) +
-  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_minimal()
+  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_dark()
 ```
 
 ```{r}
@@ -190,15 +190,15 @@ BESTMAE1B$par
 
 ```{r}
 ggplot(data=TRAIN) +
-  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_minimal() +
-  geom_abline(aes(intercept=31,slope=0.85))
+  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=31,slope=0.85),color="white",size=1.5)
   
 ```
 
 ```{r}
 ggplot(data=TEST) +
-  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_minimal() +
-  geom_abline(aes(intercept=31,slope=0.85))
+  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=31,slope=0.85),color="white",size=1.5)
   
 ```
 
