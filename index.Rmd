@@ -108,7 +108,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Mar. 1|A/B Testing|[Slides](https://drive.google.com/file/d/1c-fDHnchPBeA-Pd5Sz86TXM-A3T3Ci6P/view?usp=sharing)||[L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||L5|
 |Mar. 4|Programming IV|[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||||||
 |Mar. 6|Modeling I|[Slides](https://drive.google.com/file/d/1Kn1cfghAWIcdBk_u8MBdbNT-bR15BJ8V/view?usp=sharing)||||||
-|Mar. 8|Modeling II|[Lecture 23](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[T11](Tutorial/Tutorial 11/Tutorial_11.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))||[A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1Z7GI0vTDktiW6yyis02CGY4eMDejDfr1/view?usp=sharing))||A3|
+|Mar. 8|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[Tutorial](Tutorial/Modeling 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))||[A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1Z7GI0vTDktiW6yyis02CGY4eMDejDfr1/view?usp=sharing))||A3|
 |Mar. 11|Spring Break||||||
 |Mar. 13|Spring Break||||||
 |Mar. 15|Spring Break||||||
