@@ -1,4 +1,4 @@
-.---
+---
 title: "STOR 320 Tutorial 11"
 author: "Mario Giacomazzo"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
