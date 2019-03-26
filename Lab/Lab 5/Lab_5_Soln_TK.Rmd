@@ -1,0 +1,95 @@
+---
+title: "Lab 5 Solutions"
+author: "Tom Keefe"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+**Exercises:**  1,3 (Pg. 227); 2 (Pg. 232); 1,2 (Pg. 235); 
+
+**Assigned:** Friday, October 12, 2018
+
+**Due:** Friday, October 19, 2018 by 5:00 PM
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as a HTML file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. You do not need R code to answer every question. If you answer without using R code, delete the code chunk. If the question requires R code, make sure you display R code. If the question requires a figure, make sure you display a figure. A lot of the questions can be answered in written response, but require R code and/or figures for understanding and explaining.
+
+```{r, include=FALSE}
+library(tidyverse)
+library(forcats)
+```
+
+# Chapter 12 (Pg. 227)
+
+##  Exercise 1
+The default bar chart is hard to read because the labels on the x-axis are squished together. We can fix this by flipping the coordinates, as described in the diamonds chapter. 
+```{r}
+ggplot(gss_cat, aes(rincome)) + geom_bar() + coord_flip()
+```
+
+##  Exercise 3
+
+In this dataset, `denom` only applies to Protestants. To get this information in a table, use a group_by.
+```{r}
+gss_cat %>% group_by(relig) %>% summarise(denoms=n_distinct(denom)) %>% arrange(-denoms)
+```
+
+We see that `Protestant`, `Christian`, and `Other` have denominations. 
+
+One way to see this visually is a heatmap
+
+```{r}
+ggplot(gss_cat, aes(x=relig, y=denom)) + geom_tile()
+```
+
+# Chapter 12 (Pg. 232)
+
+##  Exercise 2
+```{r}
+str(gss_cat)
+```
+
+```{r}
+levels(gss_cat$marital)
+levels(gss_cat$race)
+levels(gss_cat$rincome)
+levels(gss_cat$partyid)
+levels(gss_cat$relig)
+levels(gss_cat$denom)
+```
+
+`rincome` and `partyid` have principled orders, the others are arbitrary.
+
+# Chapter 12 (Pg. 235)
+
+##  Exercise 1
+I'll use a plot to show how the proportions have changed over time.
+
+```{r}
+gss_cat %>% mutate(partyid = fct_collapse(partyid,
+                                         other = c("No answer", "Don't know", "Other party"),
+                                        rep = c("Strong republican", "Not str republican"),
+                                        ind = c("Ind,near rep", "Independent", "Ind,near dem"),
+                                        dem = c("Not str democrat", "Strong democrat")
+                                        )
+                   ) %>% 
+    group_by(year, partyid) %>%
+    count() %>% 
+    group_by(year) %>% 
+    mutate(prop=n/sum(n)) %>%
+    ggplot(aes(x=year, y=prop, fill=partyid)) + geom_area()
+```
+
+The proportions have been more or less stable since 2000. The number of Republicans has shrank slightly, with some of that loss being taken up by independents.
+
+##  Exercise 2
+We can use `fct_lump` to collapse `rincome` into a smaller set of categories (e.g. 5 categories.)
+
+```{r}
+gss_cat %>% mutate(rincome=fct_lump(rincome, n=5)) %>% count(rincome)
+```
