@@ -1,0 +1,163 @@
+---
+title: "Lab 6 Solutions"
+author: "Tom Keefe"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+**Exercises:**  4 (Pg. 302); 1 (Pgs. 316-317); 1 (Pgs. 328-329); 1, 2 (Pgs. 353-354)
+
+**Assigned:** Friday, October 26, 2018
+
+**Due:** Friday, November 2, 2018 by 5:00 PM
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as a HTML file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. You do not need R code to answer every question. If you answer without using R code, delete the code chunk. If the question requires R code, make sure you display R code. If the question requires a figure, make sure you display a figure. A lot of the questions can be answered in written response, but require R code and/or figures for understanding and explaining.
+
+```{r, include=FALSE}
+library(tidyverse)
+```
+
+# Chapter 16 (Pg. 302)
+
+##  Exercise 4
+
+There are different ways to write all of these functions. My answers do not handle the edge case where the vector has no length, but all of these can be written to also handle that case.
+
+### a)
+Use `[[]]` notation because when the input is a list (a flexible type of vector), we want to return the last item of the list, rather than a list that only contains the last item.
+
+```{r}
+LastValue = function(vector){
+    last_position = length(vector)
+    vector[[last_position]]
+}
+```
+
+### b)
+```{r}
+ValuesAtEvenIndices = function(vector){
+    even_indices = 1:length(vector) %% 2 == 0
+    vector[even_indices]
+}
+```
+
+There is another solution that uses `seq_along`.
+
+### c)
+```{r}
+EverythingButLastValue = function(vector){
+    last_position = length(vector)
+    vector[[-last_position]]
+}
+```
+
+### d)
+```{r}
+EvenValuesNonNA = function(vector){
+    vector[vector %% 2 == 0 & !is.na(vector)]
+}
+```
+
+# Chapter 17 (Pgs. 316-317)
+
+##  Exercise 1
+
+### a)
+```{r}
+for (i in seq_along(mtcars)){
+    print(mean(mtcars[[i]]))
+}
+```
+
+### b)
+```{r}
+library(nycflights13)
+
+for (i in seq_along(flights)){
+    print(typeof(flights[[i]]))
+}
+```
+
+### c)
+```{r}
+for (i in seq_along(iris)){
+    unique_values_in_column = unique(iris[[i]])
+    number_of_unique_values = length(unique_values_in_column)
+    print(number_of_unique_values)
+}
+```
+
+### d)
+```{r}
+output = vector()
+for (mu in c(-10, 0, 10, 100)){
+    deviates = rnorm(10, mean=mu)
+    output = c(output, deviates)
+}
+output
+```
+
+# Chapter 17 (Pgs. 328-329)
+
+##  Exercise 1
+
+### a)
+```{r}
+map(mtcars, mean)
+```
+
+### b)
+```{r}
+map(flights, typeof)
+```
+
+### c)
+```{r}
+iris %>% map(unique) %>% map(length)
+```
+
+### d)
+```{r}
+map(c(-10, 0, 10, 100), rnorm, n=10)
+```
+
+# Chapter 18 (Pgs. 353-354)
+
+##  Exercise 1
+```{r}
+sim1a = tibble(
+    x = rep(1:10, each=3),
+    y = x * 1.5 + 6 + rt(length(x), df=2)
+)
+
+model = lm(y ~ x, data=sim1a)
+coefs = coef(model)
+ggplot(sim1a, aes(x, y)) + geom_point() + geom_abline(intercept=coefs[1], slope=coefs[2])
+```
+
+If we run this a bunch of times (at least 10), we'll see some large outliers randomly come up that cause the model fit to be quite a bit different (for example it might be almost flat, the intercept could be very high or low, etc). The linear model is especially sensitive to these outliers because of the squared term in the distance function. 
+
+##  Exercise 2
+```{r}
+make_prediction = function(mod, data){
+  mod[1] + mod[2] * data$x
+}
+
+
+measure_distance = function(mod, data){
+    diff = data$y - make_prediction(mod, data)
+    mean(abs(diff))  # The mean absolute distance function
+}
+
+best = optim(c(0,0), measure_distance, data=sim1a)
+
+ggplot(sim1a, aes(x,y)) + geom_point() + geom_abline(intercept=best$par[1], slope=best$par[2])
+```
+
+We can see that the model fitted with mean absolute distance is less affected by outliers. (It may take a few simulation runs to get a dataset that has big enough outliers to make this visible.) This is because the mean absoulte distance function is less sensitive to large distiances (i.e. outliers) than mean squared distance.
