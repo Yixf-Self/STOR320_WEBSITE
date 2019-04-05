@@ -120,11 +120,11 @@ This course is an application-driven introduction to data science. Statistical a
 |Mar. 29|Modeling VII|[Slides](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[Tutorial](Tutorial/Modeling 7/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|[L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing))|||L7|
 |Apr. 1|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[Tutorial](Tutorial/Modeling 8/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|||||
 |Apr. 3|Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[Tutorial](Tutorial/Modeling 9/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|||||
-|Apr. 5|TBA||||A4||A4|
+|Apr. 5|Modeling X|[Slides](https://drive.google.com/file/d/1T9FMiYSmDr4WC3pLuyxvVVvDEhpy7ScQ/view?usp=sharing)|||[A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1YU9Rw1fd9pAe7IgR6RXOznEVOAsziIQx/view?usp=sharing))||A4|
 |Apr. 8|Industry 1 ([RTI](https://www.rti.org/))|Link: [1](https://www.bjs.gov/content/pub/pdf/ardprs1516pf.pdf) [2](https://www.theguardian.com/us-news/2015/dec/13/justice-department-database-police-killings-counted-statistics) [3](https://www.theguardian.com/us-news/2016/dec/15/us-police-killings-department-of-justice-program) [4](https://www.youtube.com/watch?v=EPih38jWiqQ&list=PLnRE5K-bsWwH_isDyub8nCM5XCfjDdHRy&index=8)  [5](https://www.datascience.com/blog/data-science-for-social-good-counting-arrest-related-deaths)||||||
 |Apr. 10|Data Ethics|[Lecture 32](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||||||
 |Apr. 12|R Shiny|[Lecture 33](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[T17](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
-|Apr. 15|R Shiny 2||||||
+|Apr. 15|R Shiny 2 ([Frances Tong](https://twitter.com/francestong?lang=en))||||||
 |Apr. 17|API ([Marshall Markham](https://www.linkedin.com/in/marshall-markham-840ab24a))|[Slides](https://drive.google.com/file/d/15xoAnwAnFz-w__UrY6VZal1rwWsBMhSE/view?usp=sharing)|[Tutorial](Tutorial/Guest 2 Tutorial/APIs) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))||||
 |Apr. 19|Good Friday||||||
 |Apr. 22|Industry 2 ([MetLife](https://jobs.metlife.com/cary-jobs))||||||
@@ -148,8 +148,9 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | February 22|        |  A2          |March 1 (5 PM)|
 | March 1    | L5     |              |March 8 (5 PM)|
 | March 8    |        |  A3          |March 22 (5 PM)|
-| March 22    | L6     |             |March 29 (5 PM)|
-| March 29    | L7     |             |April 5 (5 PM)|
+| March 22   | L6     |              |March 29 (5 PM)|
+| March 29   | L7     |              |April 5 (5 PM)|
+| April 5   |        |  A4           |April 19 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**
