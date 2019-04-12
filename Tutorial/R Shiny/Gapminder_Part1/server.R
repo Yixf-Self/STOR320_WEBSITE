@@ -41,7 +41,7 @@ shinyServer(function(input, output) {
   #Part 1: Create a Table Previewing Data
   output$OUTpreview<-renderTable({
     gapminder2 %>% 
-      select(Country,Continent,Year,input$INvariable)%>% 
+      select(Country,Continent,Year,input$INvariable) %>% 
       filter(Country %in% input$INcountry) %>%
       arrange(Year)
   })
