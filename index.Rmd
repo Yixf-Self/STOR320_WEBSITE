@@ -124,7 +124,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Apr. 8|Industry 1 ([RTI](https://www.rti.org/))|[Slides](https://drive.google.com/file/d/1HIPrBx6sziouGscIVwzcbW5yNk4lUCdT/view?usp=sharing)  [1](https://www.bjs.gov/content/pub/pdf/ardprs1516pf.pdf) [2](https://www.theguardian.com/us-news/2015/dec/13/justice-department-database-police-killings-counted-statistics) [3](https://www.theguardian.com/us-news/2016/dec/15/us-police-killings-department-of-justice-program) [4](https://www.youtube.com/watch?v=EPih38jWiqQ&list=PLnRE5K-bsWwH_isDyub8nCM5XCfjDdHRy&index=8)  [5](https://www.datascience.com/blog/data-science-for-social-good-counting-arrest-related-deaths)||||||
 |Apr. 10|Data Ethics|[Slides](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||||||
 |Apr. 12|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
-|Apr. 15|R Shiny 2 ([Frances Tong](https://twitter.com/francestong?lang=en))||||||
+|Apr. 15|Advanced Shiny ([Frances Tong](https://twitter.com/francestong?lang=en))||||||
 |Apr. 17|API ([Marshall Markham](https://www.linkedin.com/in/marshall-markham-840ab24a))|[Slides](https://drive.google.com/file/d/15xoAnwAnFz-w__UrY6VZal1rwWsBMhSE/view?usp=sharing)|[Tutorial](Tutorial/Guest 2 Tutorial/APIs) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))||||
 |Apr. 19|Good Friday||||||
 |Apr. 22|Industry 2 ([MetLife](https://jobs.metlife.com/cary-jobs))||||||
