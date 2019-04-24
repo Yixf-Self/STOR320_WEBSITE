@@ -125,10 +125,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Apr. 10|Data Ethics|[Slides](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||||||
 |Apr. 12|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
 |Apr. 15|Advanced Shiny ([Frances Tong](https://twitter.com/francestong?lang=en))|[Slides](https://francestong.shinyapps.io/stor320_shiny/)|||||
-|Apr. 17|API ([Marshall Markham](https://www.linkedin.com/in/marshall-markham-840ab24a))|[Slides](https://drive.google.com/file/d/1gcD8aeBFZb8BVaphdMYHOcOvPB858lNW/view?usp=sharing)|[Tutorial](Tutorial/API/homework.htm) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))||||
+|Apr. 17|API ([Marshall Markham](https://www.linkedin.com/in/marshall-markham-840ab24a))|[Slides](https://drive.google.com/file/d/1gcD8aeBFZb8BVaphdMYHOcOvPB858lNW/view?usp=sharing)|[Tutorial](https://drive.google.com/file/d/1yHZUKjU0qP9lENbykYFfwY0awMzO6YiE/view?usp=sharing) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))||||
 |Apr. 19|Good Friday||||||
 |Apr. 22|Industry 2 ([MetLife](https://jobs.metlife.com/cary-jobs))||||||
-|Apr. 24|Communication ([Iain Carmichael](https://idc9.github.io))|[Slides]()|[Tutorial](Tutorial/Guest 3 Tutorial/communication) ([.zip](https://drive.google.com/file/d/1HCN66SqqF6eMlX-ZfLBfwy8fD5IGE68i/view?usp=sharing))||||
+|Apr. 24|Communication ([Iain Carmichael](https://idc9.github.io))|[Slides](https://drive.google.com/file/d/1Ydo2XCIMQDF3tm-KeqVrjYnkJUlQOEej/view?usp=sharing)|[Tutorial](Tutorial/Communication/communication) ([.zip](https://drive.google.com/file/d/1HCN66SqqF6eMlX-ZfLBfwy8fD5IGE68i/view?usp=sharing))||||
 |Apr. 26|Final Papers||||||
 |May 6|Final Presentations|||||||
 |||||||||
