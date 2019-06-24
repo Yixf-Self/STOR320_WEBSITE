@@ -85,10 +85,9 @@ This course is an application-driven introduction to data science. Statistical a
 |------|---------|--------|---------|
 |Jun. 24|Introduction | [Slides](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing)||
 ||Data Visualization| [Slides](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Tutorial/Data Visualization/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
-|Jun. 25|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Workflow/Tutorial.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))||||
-|||||
-<!-- |Jun. 25|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Tutorial 2/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|||| -->
-<!-- |Jun. 28|Data Transformation I|[Slides](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)|||||| -->
+|Jun. 25|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Workflow/Tutorial.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|
+|Jun. 26|Data Transformation I|[Slides](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)||
+||Data Transformation II|[Slides](https://drive.google.com/file/d/1W35ZO5yKH0k-yI3ogr7ilN0r5Fn85Rat/view?usp=sharing)|[T3](Tutorial/Tutorial 3/Tutorial_3.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|
 <!-- |Jul. 1|Data Transformation II|[Slides](https://drive.google.com/file/d/1W35ZO5yKH0k-yI3ogr7ilN0r5Fn85Rat/view?usp=sharing)|[T3](Tutorial/Tutorial 3/Tutorial_3.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|[L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||[L2](Lab/Lab 2/Lab_2_Soln_TK.html)| -->
 <!-- |Jul. 2|Data Transformation III|[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)|||||| -->
 <!-- |Jul. 3|Data Transformation IV|[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[T4](Tutorial/Tutorial 4/Tutorial_4.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))||[A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))||[A1](Analysis/Analysis 1/Solutions_1.html)| -->
@@ -147,9 +146,9 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | Assigned | Lab (L) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:-------------:|----------------:|
 | June 24  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||June 28 (5 PM) |
-| June 28 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))     |               |July 1 (5 PM) |
+| June 28 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))||July 1 (5 PM) |
 | July 1 |        |  A1            |July 5 (5 PM) |
-| July 5 | L3     |              |July 8 (5 PM)|
+| July 5 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||July 8 (5 PM)|
 | July 8 | L4     |              |July 10 (5 PM)|
 | July 10|        |  A2          |July 12 (5 PM)|
 | July 12    | L5     |              |July 15  (5 PM)|

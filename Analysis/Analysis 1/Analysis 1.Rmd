@@ -7,11 +7,11 @@ output: html_document
 
 #Instructions
 
-**Assigned:** Friday, January 25, 2019
+**Overview:** For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.
 
-**Due:** Friday, February 8, 2019 by 5:00 PM
+**Helpful:** Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.
 
-**Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. 
 
 #Introduction
 
