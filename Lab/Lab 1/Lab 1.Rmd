@@ -13,9 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Exercises:** 1-5 (Pgs. 6-7); 1-2, 5 (Pg. 12); 1-5 (Pgs. 20-21); Open Response
 
-**Assigned:** Friday, January 11, 2019
+**Assigned:** Monday, June 24, 2019
 
-**Due:** Friday, January 18, 2019 by 5:00 PM
+**Due:** Friday, June 28, 2019 by 5:00 PM
 
 **Submission:** Submit via an electronic document on Sakai. Must be submitted as a html file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. 
 
