@@ -2,7 +2,7 @@ library(tidyverse)
 library(readxl)
 
 #Read Rosters
-Section=read_excel("STOR320_001_SP19_Roster.xlsx")
+Section=read_excel("STOR320_Roster.xlsx")
 
 #Function to Divide Sections into Groups
 Group.select.func<-function(data){
@@ -11,10 +11,11 @@ Group.select.func<-function(data){
   random.order=sample(1:length(student.names),replace=F)
   group=tibble(Order=random.order,Name=student.names) %>%
           arrange(Order) %>%
-          mutate(Group=c(rep(1:(length(student.names)%/%4),each=4),rep(NA,length(student.names)%%4))) %>%
-          mutate(Group=replace_na(Group,max(Group,na.rm=T))) %>%
+          mutate(Group=rep(1:(length(student.names)%/%5+(length(student.names)%%5!=0)),
+                           each=5,length=length(student.names))) %>%
           mutate(Role="TBD") %>%
-          select(-Order)
+          select(-Order) %>%
+          arrange(Group)
   return(group)
 }
 
@@ -22,4 +23,4 @@ Group.select.func<-function(data){
 Final.Section=Group.select.func(Section)
 
 #Save Datasets
-write_csv(Final.Section,path=str_c(getwd(),"/STOR320.001 Group Assignments.csv"))
+write_csv(Final.Section,path=str_c(getwd(),"/STOR320 Group Assignments.csv"))

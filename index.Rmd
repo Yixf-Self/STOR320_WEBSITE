@@ -68,7 +68,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
-- Instructional Assistant: **[Thomas Keefe](http://stat-or.unc.edu/people/graduate-students-department)**
+- Instructional Assistant: **[Xinyuan Niu](http://stat-or.unc.edu/people/graduate-students-department)**
 
 - **[Course Syllabus](https://drive.google.com/file/d/1GCWeZarTqsu7HajnJqCC8vPNjC3q1LXC/view?usp=sharing)**
 
@@ -83,7 +83,8 @@ This course is an application-driven introduction to data science. Statistical a
 
 | Date | Lecture | Slides | Tutorial (T) | Lab (L) | Analysis (A)| Project (P)| Solutions  |
 |------|---------|--------|---------|:---:|:------------:|:------------:|-----------:|
-|Jun. 24|Introduction | [Slides](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing) || ||| ||
+|Jun. 24|Introduction | [Slides](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing)|| ||| ||
+|||||||||
 |Jun. 25|Data Visualization I | [Slides](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Tutorial/Tutorial 1/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||[L1](Lab/Lab 1/Lab_1_Solutions.html)|
 |Jun. 26|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Tutorial 2/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))||||
 |Jun. 27|Data Visualization II | [Slides]() |  | ||||
@@ -140,11 +141,11 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 
 | Assigned | Lab (L) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:-------------:|----------------:|
-| January 11 | L1     |              |January 18 (5 PM) |
-| January 18 | L2     |              |January 25 (5 PM) |
-| January 25 |        |  A1          |February 8 (5 PM) |
-| February 8 | L3     |              |February 15 (5 PM)|
-| February 15| L4     |              |February 22 (5 PM)|
+| June 24  | L1     |              |June 28 (5 PM) |
+| June 28 | L2     |               |July 1 (5 PM) |
+| July 1 |        |  A1            |July 5 (5 PM) |
+| July 5 | L3     |              |July 8 (5 PM)|
+| July 8 | L4     |              |July 10 (5 PM)|
 | February 22|        |  A2          |March 1 (5 PM)|
 | March 1    | L5     |              |March 8 (5 PM)|
 | March 8    |        |  A3          |March 22 (5 PM)|
@@ -155,21 +156,21 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 
 # **Final Project Details**
 
-For the final project, each section of STOR 320 will be divided (ideally) into reasearch groups of size 4. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. May God have mercy on your souls. 
+For the final project, each section of STOR 320 will be divided (ideally) into reasearch groups of size 5. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. May God have mercy on your souls. 
 
 ## Research Group Assignments
 
-To find your research group, see the **[spreadsheet](https://docs.google.com/spreadsheets/d/1YkzC-Bvl0LPm48ysyNSdfdcn9ImJkjI9wxsvzPU41iE/edit?usp=sharing)** sponsored by Google.
+To find your research group, see the **[spreadsheet](https://docs.google.com/spreadsheets/d/1hwmR1xrH7QJNkXjoSpYHdpzcN-mYkIjMZNypVzLP0Jk/edit?usp=sharing)** sponsored by Google.
 
 ## Four Roles
 
 Although everyone is responsible for the entire project, each member of the group will be assigned a specific role for accountability and consistency. These four specific roles are described as follows:
 
-- **The Creator:** Schedule and Meet with Dr. Mario or Sir Thomas Keefe to Propose Your Group's Research Idea
+- **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea
 
-- **The Interpreter:** Schedule and Meet with Dr. Mario or Sir Thomas Keefe to Share Findings from Exploratory Analysis
+- **The Interpreter:** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis
 
-- **The Orator:** Give a Captivating 4 Minute Slideshow Presentation During Final Exam Day
+- **The Orator(s):** Give a Captivating 4 Minute Slideshow Presentation During Final Exam Day
 
 - **The Deliverer:** Deliver Your Group from Evil by Editing and Submitting the Exploratory Analysis and Final Written Paper via SAKAI Before the Deadline
 
@@ -188,19 +189,21 @@ This final project will be divided into four parts worth a total of 100 points. 
 * **[P2: Exploratory Data Analysis](Final Project/Exploratory_Data_Analysis.html)** *(20 Points)*
     + [Template](Final Project/EDA_Template.html) ([.Rmd](https://drive.google.com/file/d/1EM2JXvZ9aHX8oLeB5z1MIWFgDCjAFKvn/view?usp=sharing))
     
-* **[P3: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
-* **[P4: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
+* **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
     + [Template](Final Project/Final_Paper_Template.html) ([.Rmd](https://drive.google.com/file/d/16kLjQmszVA5nJyUPwwPy94BltOog6YSO/view?usp=sharing))
     + [Rank Spreadsheet](https://drive.google.com/file/d/1GMfQRhnKrjmzPK8mrMIr_RLDXBJFQRoZ/view?usp=sharing)
+    
+* **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
+
     
 ## Due Dates of Individual Parts
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Office Hours Meeting     | March 1 (5PM)|
-| P2  | Exploratory Data Analysis |Submit on Sakai| April 5 (5PM)|
-| P3  | Final Presentation|In Class| May 6 (8 AM)|
-| P4  | Final Written Paper|Submit on Sakai|April 26 (5 PM)|
+| P1  | Project Proposal| Sakai + Meeting    | July 5 (5PM)|
+| P2  | Exploratory Data Analysis |Sakai + Meeting| July 19 (5PM)|
+| P3  | Final Written Paper|Sakai|July 26 (5 PM)|
+| P4  | Final Presentation|Class| July 29 (11:30 AM)|
 ||||
 
 
