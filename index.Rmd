@@ -85,6 +85,7 @@ This course is an application-driven introduction to data science. Statistical a
 |------|---------|--------|---------|
 |Jun. 24|Introduction | [Slides](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing)||
 ||Data Visualization| [Slides](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Tutorial/Data Visualization/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
+|Jun. 25|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Workflow/Tutorial.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))||||
 |||||
 <!-- |Jun. 25|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Tutorial 2/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|||| -->
 <!-- |Jun. 28|Data Transformation I|[Slides](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)|||||| -->
@@ -146,7 +147,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | Assigned | Lab (L) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:-------------:|----------------:|
 | June 24  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||June 28 (5 PM) |
-| June 28 | L2     |               |July 1 (5 PM) |
+| June 28 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))     |               |July 1 (5 PM) |
 | July 1 |        |  A1            |July 5 (5 PM) |
 | July 5 | L3     |              |July 8 (5 PM)|
 | July 8 | L4     |              |July 10 (5 PM)|
