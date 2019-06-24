@@ -84,7 +84,7 @@ This course is an application-driven introduction to data science. Statistical a
 | Date | Lecture | Slides | Tutorial |
 |------|---------|--------|---------|
 |Jun. 24|Introduction | [Slides](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing)||
-||Data Visualization| [Slides](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Tutorial/Tutorial 1/Tutorial_1.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
+||Data Visualization| [Slides](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [T1](Tutorial/Data Visualization/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
 |||||
 <!-- |Jun. 25|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [T2](Tutorial/Tutorial 2/Tutorial_2.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|||| -->
 <!-- |Jun. 28|Data Transformation I|[Slides](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)|||||| -->
