@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2019-06-27" />
+<meta name="date" content="2019-07-02" />
 
 <title>STOR 320 Tutorial on Tidy Data</title>
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">STOR 320 Tutorial on Tidy Data</h1>
 <h4 class="author"><em>Mario Giacomazzo</em></h4>
-<h4 class="date"><em>June 27, 2019</em></h4>
+<h4 class="date"><em>July 02, 2019</em></h4>
 
 </div>
 
@@ -155,7 +155,7 @@ untidy.school = tibble(
 <pre><code>## Warning: package 'bindrcpp' was built under R version 3.5.1</code></pre>
 <p>Below is an HTML table generated using the <code>xtable</code> package in R. For more information regarding this package, see the <a href="https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf">xtable gallery</a>. The R code in the code chunk converts an R data frame object to an HTML table. HTML table attributes can be specified within the function <code>print()</code>. The code chunk option <code>echo=F</code> prevents the code from showing and the option <code>results=&quot;asis&quot;</code> ensures that the resulting HTML table is displayed when knitted to HTML. The table provides a preview of the first 10 rows of the simulated data.</p>
 <!-- html table generated in R 3.5.0 by xtable 1.8-3 package -->
-<!-- Thu Jun 27 10:13:20 2019 -->
+<!-- Tue Jul 02 12:35:32 2019 -->
 <table align="center" , rules="rows" , width="50%," frame="hsides" , border-spacing="5px">
 <tr>
 <th>
@@ -185,10 +185,10 @@ value2018
 Score
 </td>
 <td align="center">
-51
+41
 </td>
 <td align="center">
-73
+74
 </td>
 </tr>
 <tr>
@@ -202,27 +202,27 @@ Score
 Percentile
 </td>
 <td align="center">
-56
-</td>
-<td align="center">
-31
-</td>
-</tr>
-<tr>
-<td align="center">
-1
-</td>
-<td align="center">
-2
-</td>
-<td align="center">
-Score
+18
 </td>
 <td align="center">
 37
 </td>
+</tr>
+<tr>
 <td align="center">
-79
+1
+</td>
+<td align="center">
+2
+</td>
+<td align="center">
+Score
+</td>
+<td align="center">
+45
+</td>
+<td align="center">
+82
 </td>
 </tr>
 <tr>
@@ -236,10 +236,10 @@ Score
 Percentile
 </td>
 <td align="center">
-8
+30
 </td>
 <td align="center">
-84
+96
 </td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ Percentile
 Score
 </td>
 <td align="center">
-50
+35
 </td>
 <td align="center">
 </td>
@@ -269,7 +269,7 @@ Score
 Percentile
 </td>
 <td align="center">
-51
+6
 </td>
 <td align="center">
 </td>
@@ -285,10 +285,10 @@ Percentile
 Score
 </td>
 <td align="center">
-58
+53
 </td>
 <td align="center">
-73
+74
 </td>
 </tr>
 <tr>
@@ -302,10 +302,10 @@ Score
 Percentile
 </td>
 <td align="center">
-82
+62
 </td>
 <td align="center">
-31
+37
 </td>
 </tr>
 <tr>
@@ -319,10 +319,10 @@ Percentile
 Score
 </td>
 <td align="center">
-58
+54
 </td>
 <td align="center">
-71
+69
 </td>
 </tr>
 <tr>
@@ -336,10 +336,10 @@ Score
 Percentile
 </td>
 <td align="center">
-82
+66
 </td>
 <td align="center">
-16
+5
 </td>
 </tr>
 </table>
@@ -352,10 +352,10 @@ Percentile
 <pre><code>## # A tibble: 4 x 5
 ##   school student type       value2017 value2018
 ##    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
-## 1      1       1 Score             51        73
-## 2      1       1 Percentile        56        31
-## 3      2       1 Score             59        73
-## 4      2       1 Percentile        84        31</code></pre>
+## 1      1       1 Score             41        74
+## 2      1       1 Percentile        18        37
+## 3      2       1 Score             55        79
+## 4      2       1 Percentile        69        83</code></pre>
 <p>The subsetted table contains scores and percentiles for two completely different children identified by <code>student==1</code>. We need to create a unique identifier for each student in the Cleveland school district. The <code>unite()</code> function can be utilized to create a new variable called <code>CID</code> by concatenating the identifiers for <code>school</code> and <code>student</code>. We want <code>CID</code> to follow the general form <em>SCHOOL.STUDENT</em>. Create a new tibble called <code>untidy2.school</code> that fixes this problem without dropping the original variables <code>school</code> or <code>student</code>. Read the documentation for <code>unite()</code> either by searching on google or using <code>?unite</code> to prevent the loss of original variables in the creation of a new variable.</p>
 <pre class="r"><code>untidy2.school = untidy.school %&gt;%
                     unite(CID,school,student,MORE)
