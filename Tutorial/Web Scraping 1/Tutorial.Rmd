@@ -51,7 +51,7 @@ URL.VIOLENT="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime
 VIOLENT = URL.VIOLENT %>%
   read_html() %>%
   html_table(fill=T) %>%
-  .[[2]]
+  .[[1]]
 str(VIOLENT)
 ```
 
@@ -81,7 +81,7 @@ str(VIOLENT3)
 Using `str_detect()` we can identify cases in `City` where unwanted characters {"-","2","*"} make an appearance.
 
 ```{r, eval=F}
-VIOLENT3[str_detect(VIOLENT3$City,"[-2*]"),]$City
+VIOLENT3[str_detect(VIOLENT3$City,"[-34*]"),]$City
 ```
 
 ##Chunk 5: Cleaning Problematic Cities
@@ -90,18 +90,15 @@ The unwanted characters {"-","2","*"} are special, but not our friends. In Wikip
 
 ```{r, eval=F}
 VIOLENT4 = VIOLENT3 %>%
-              mutate(City=str_replace_all(City,"[*]",""))
-VIOLENT4 %>%
-  filter(City %in% c("Cleveland","Newark","Portland","Raleigh"))
+              mutate(City=str_replace_all(City,"[,(0-9){1}*]",""))
+
 VIOLENT5 = VIOLENT4 %>% 
-              mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
-VIOLENT5 %>%
-  filter(City %in% c("Charlotte"))
+              mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City),
+                     City=ifelse(City=="Savannah-Chatham Metropolitan","Savannah",City))
+
 VIOLENT6 = VIOLENT5 %>%
-              mutate(City=str_replace(City,"[2]",""))
-VIOLENT6 %>%
-  filter(City %in% c("Mobile"))
-str(VIOLENT6)
+              mutate(City=str_replace(City,"Metropolitan",""))
+
 write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
 ```
 

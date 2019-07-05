@@ -165,7 +165,7 @@ $(document).ready(function () {
 VIOLENT = URL.VIOLENT %&gt;%
   read_html() %&gt;%
   html_table(fill=T) %&gt;%
-  .[[2]]
+  .[[1]]
 str(VIOLENT)</code></pre>
 </div>
 <div id="chunk-2-initial-selection-of-violent-crimes-and-cleaning" class="section level2">
@@ -186,24 +186,21 @@ str(VIOLENT3)</code></pre>
 <div id="chunk-4-identifying-problematic-cases-in-city" class="section level2">
 <h2>Chunk 4: Identifying Problematic Cases in <code>City</code></h2>
 <p>Using <code>str_detect()</code> we can identify cases in <code>City</code> where unwanted characters {“-”,“2”,“*“} make an appearance.</p>
-<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[-2*]&quot;),]$City</code></pre>
+<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[-34*]&quot;),]$City</code></pre>
 </div>
 <div id="chunk-5-cleaning-problematic-cities" class="section level2">
 <h2>Chunk 5: Cleaning Problematic Cities</h2>
 <p>The unwanted characters {“-”,“2”,“*“} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss.</p>
 <pre class="r"><code>VIOLENT4 = VIOLENT3 %&gt;%
-              mutate(City=str_replace_all(City,&quot;[*]&quot;,&quot;&quot;))
-VIOLENT4 %&gt;%
-  filter(City %in% c(&quot;Cleveland&quot;,&quot;Newark&quot;,&quot;Portland&quot;,&quot;Raleigh&quot;))
+              mutate(City=str_replace_all(City,&quot;[,(0-9){1}*]&quot;,&quot;&quot;))
+
 VIOLENT5 = VIOLENT4 %&gt;% 
-              mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City))
-VIOLENT5 %&gt;%
-  filter(City %in% c(&quot;Charlotte&quot;))
+              mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City),
+                     City=ifelse(City==&quot;Savannah-Chatham Metropolitan&quot;,&quot;Savannah&quot;,City))
+
 VIOLENT6 = VIOLENT5 %&gt;%
-              mutate(City=str_replace(City,&quot;[2]&quot;,&quot;&quot;))
-VIOLENT6 %&gt;%
-  filter(City %in% c(&quot;Mobile&quot;))
-str(VIOLENT6)
+              mutate(City=str_replace(City,&quot;Metropolitan&quot;,&quot;&quot;))
+
 write_csv(VIOLENT6,&quot;FINAL_VIOLENT.CSV&quot;)</code></pre>
 </div>
 </div>
