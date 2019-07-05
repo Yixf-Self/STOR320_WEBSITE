@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2019-07-03" />
+<meta name="date" content="2019-07-05" />
 
 <title>STOR 320 Tutorial on Web Scraping 1</title>
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">STOR 320 Tutorial on Web Scraping 1</h1>
 <h4 class="author"><em>Mario Giacomazzo</em></h4>
-<h4 class="date"><em>July 03, 2019</em></h4>
+<h4 class="date"><em>July 05, 2019</em></h4>
 
 </div>
 
@@ -179,24 +179,25 @@ str(VIOLENT2)</code></pre>
 <h2>Chunk 3: Fixing Variable Types</h2>
 <p>The subheadings in the Wikipedia table create problems when parsed to data frame. The presence of this problem causes known numeric variables to be treated as categorical variables. We need to use functions inside and outside <code>tidyverse</code> to fix this issue.</p>
 <pre class="r"><code>VIOLENT3=VIOLENT2 %&gt;%
-            mutate(Population=str_replace_all(Population,&quot;,&quot;,&quot;&quot;)) %&gt;%
             mutate_at(3:8,as.numeric)
 str(VIOLENT3)</code></pre>
 </div>
 <div id="chunk-4-identifying-problematic-cases-in-city" class="section level2">
 <h2>Chunk 4: Identifying Problematic Cases in <code>City</code></h2>
-<p>Using <code>str_detect()</code> we can identify cases in <code>City</code> where unwanted characters {“-”,“2”,“*“} make an appearance.</p>
-<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[-34*]&quot;),]$City</code></pre>
+<p>Using <code>str_detect()</code> we can identify cases in <code>City</code> where unwanted characters {“,”,“0” to “9”} make an appearance.</p>
+<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[,(0-9){1}]&quot;),]$City</code></pre>
 </div>
 <div id="chunk-5-cleaning-problematic-cities" class="section level2">
 <h2>Chunk 5: Cleaning Problematic Cities</h2>
-<p>The unwanted characters {“-”,“2”,“*“} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss.</p>
+<p>The unwanted characters {“,”,“0” to “9”} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss. We see this in both cities and states. Also, there are other scenarios where cities have unusual names that may be problematic when involving additional data.</p>
 <pre class="r"><code>VIOLENT4 = VIOLENT3 %&gt;%
-              mutate(City=str_replace_all(City,&quot;[,(0-9){1}*]&quot;,&quot;&quot;))
+              mutate(City=str_replace_all(City,&quot;[,(0-9){1}]&quot;,&quot;&quot;)) %&gt;%
+              mutate(State=str_replace_all(State,&quot;[,(0-9){1}]&quot;,&quot;&quot;))
 
 VIOLENT5 = VIOLENT4 %&gt;% 
               mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City),
-                     City=ifelse(City==&quot;Savannah-Chatham Metropolitan&quot;,&quot;Savannah&quot;,City))
+                     City=ifelse(City==&quot;Savannah-Chatham Metropolitan&quot;,&quot;Savannah&quot;,City),
+                     City=ifelse(City==&quot;Las Vegas Metropolitan Police Department&quot;,&quot;Las Vegas&quot;,City))
 
 VIOLENT6 = VIOLENT5 %&gt;%
               mutate(City=str_replace(City,&quot;Metropolitan&quot;,&quot;&quot;))

@@ -9,7 +9,7 @@ URL.VIOLENT="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime
 VIOLENT = URL.VIOLENT %>%
   read_html() %>%
   html_table(fill=T) %>%
-  .[[2]]
+  .[[1]]
 str(VIOLENT)
 
 #1.2
@@ -19,27 +19,22 @@ str(VIOLENT2)
 
 #1.3
 VIOLENT3=VIOLENT2 %>%
-  mutate(Population=str_replace_all(Population,",","")) %>%
   mutate_at(3:8,as.numeric)
 str(VIOLENT3)
 
 #1.4
-VIOLENT3[str_detect(VIOLENT3$City,"[-2*]"),]$City
+VIOLENT3[str_detect(VIOLENT3$City,"[,(0-9){1}]"),]$City
 
 #1.5
 VIOLENT4 = VIOLENT3 %>%
-  mutate(City=str_replace_all(City,"[*]",""))
-VIOLENT4 %>%
-  filter(City %in% c("Cleveland","Newark","Portland","Raleigh"))
+  mutate(City=str_replace_all(City,"[,(0-9){1}]","")) %>%
+  mutate(State=str_replace_all(State,"[,(0-9){1}]",""))
 VIOLENT5 = VIOLENT4 %>% 
-  mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
-VIOLENT5 %>%
-  filter(City %in% c("Charlotte"))
+  mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City),
+         City=ifelse(City=="Savannah-Chatham Metropolitan","Savannah",City),
+         City=ifelse(City=="Las Vegas Metropolitan Police Department","Las Vegas",City))
 VIOLENT6 = VIOLENT5 %>%
-  mutate(City=str_replace(City,"[2]",""))
-VIOLENT6 %>%
-  filter(City %in% c("Mobile"))
-str(VIOLENT6)
+  mutate(City=str_replace(City,"Metropolitan",""))
 write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
 
 #2.1
