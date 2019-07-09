@@ -146,19 +146,19 @@ This course is an application-driven introduction to data science. Statistical a
 
 All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. 
 
-| Assigned | Lab (L) | Analysis (A) | Due Date (Time) |
-|----------|:--------:|:-------------:|----------------:|
-| June 24  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||June 28 (5 PM) |
-| June 28 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))||July 1 (5 PM) |
-| July 1 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))|July 5 (5 PM) |
-| July 5 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||July 8 (5 PM)|
-| July 8 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))||July 10 (5 PM)|
-| July 10||  [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip](https://drive.google.com/file/d/1I5sckP-XEic_N9iYR7-8CpIrxjQ0PJgV/view?usp=sharing))|July 12 (5 PM)|
-| July 12 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))||July 15  (5 PM)|
-| July 15    |        |  [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1Z7GI0vTDktiW6yyis02CGY4eMDejDfr1/view?usp=sharing))          |July 19 (5 PM)|
-| July 19  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing))     |              |July 22 (5 PM)|
-| July 22   | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing))     |              |July 24 (5 PM)|
-| July 24   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1veOCeyVo6nhNo1jrzFPO9QIwoMXPaMga/view?usp=sharing))           |July 29 (5 PM)|
+| Assigned | Lab (L) | Analysis (A) |Solutions| Due Date (Time) |
+|----------|:--------:|:-------------:|:-------------:|----------------:|
+| June 24  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[Solutions](Lab/Lab 1/Lab_1_Solutions.html)|June 28 (5 PM) |
+| June 28 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))||[Solutions](Lab/Lab 2/Lab_2_Soln_TK.html)|July 1 (5 PM) |
+| July 1 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))|[Solutions](Analysis/Analysis 1/Solutions_1.html)|July 5 (5 PM) |
+| July 5 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||[Solutions](Lab/Lab 3/Lab_3_Solutions.html)|July 8 (5 PM)|
+| July 8 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||July 10 (5 PM)|
+| July 10|| [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip](https://drive.google.com/file/d/1I5sckP-XEic_N9iYR7-8CpIrxjQ0PJgV/view?usp=sharing))||July 12 (5 PM)|
+| July 12 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||July 15  (5 PM)|
+| July 15 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1Z7GI0vTDktiW6yyis02CGY4eMDejDfr1/view?usp=sharing))|        |July 19 (5 PM)|
+| July 19  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing)) |||July 22 (5 PM)|
+| July 22 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing)) |||July 24 (5 PM)|
+| July 24   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1veOCeyVo6nhNo1jrzFPO9QIwoMXPaMga/view?usp=sharing))||July 29 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**
