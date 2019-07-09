@@ -24,13 +24,13 @@ The purpose of the final presentation is to verbally communicate your group's pr
 
 # **Requirements**
 
-In 3 to 5 minutes, you will focus your presentation on a single question. Ideally, this should be 1 of the 2 questions you will write about in your final paper. A slideshow should be used to organize the information. First, you should creatively introduce the question and orally defend why your group found this particular question interesting. Next, you should briefly discuss the data your group used to answer this question. The original source of the data should be given. The source is not the website where you found the data, but who is responsible for gathering the original data. Figures and tables can be used to highlight variables of interest. Last, you should explain the statistical methods you employed to answer the question and the results you discovered. I recommend using multiple modeling techniques.
+In 4 to 7 minutes, you will focus your presentation on a single question. Ideally, this should be 1 of the 2 questions you will write about in your final paper. A slideshow should be used to organize the information. First, you should creatively introduce the question and orally defend why your group found this particular question interesting. Next, you should briefly discuss the data your group used to answer this question. The original source of the data should be given. The source is not the website where you found the data, but who is responsible for gathering the original data. Figures and tables can be used to highlight variables of interest. Last, you should explain the statistical methods you employed to answer the question and the results you discovered. I recommend using multiple modeling techniques.
 
-During the presentation, I will subjectively assess how well the question is explained, how well the methods are explained, and how well the content is organized on a scale from 1 to 3. The quality of slides will also be subjectively scored on a scale from 1 to 3. Slides should not be cluttered, too wordy, unreadable, or plain. A minimum of 4 visuals is required. Eye contact and body language will also be subjectively assessed on a scale from 1 to 3. The Orator should not be reading the slides. This is a short presentation that should be well rehearsed.
+During the presentation, I will subjectively assess how well the question is explained, how well the methods are explained, and how well the content is organized on a scale from 0 to 3. The quality of slides will also be subjectively scored on a scale from 0 to 3. Slides should not be cluttered, too wordy, unreadable, or plain. A minimum of 4 visuals is required. Eye contact and body language will also be subjectively assessed on a scale from 0 to 3. The Orator should not be reading the slides. This is a short presentation that should be well rehearsed.
 
-The Orator is solely responsible for giving the presentation. All members should help develop the slides, organize the information, and provide an audience for the Orator to practice. Everyone should proofread the slides since grammatical and spelling errors will result in a loss of points. While the Orator is presenting, the other members are free to either stand in front of the class or remain seated. All members are free to assist the Orator in answering questions from the audience. 
+The Orator is solely responsible for giving the presentation. All members should help develop the slides, organize the information, and provide an audience for the Orator to practice. Everyone should proofread the slides since grammatical and spelling errors will result in a loss of points. While the Orator is presenting, the other members are free to either stand in front of the class or remain seated. After 7 minutes, I will abruptly cut off your presentation.
 
-The final presentations will take place on the final exam day as scheduled by the university. Presentations will be ordered according to the group's number. Attendance of all members is required. Each member that fails to attend will automatically lose five points from their individual grade. After 5 minutes, I will abruptly cut off your presentation, and then allow the audience to ask 1 or 2 questions.
+The final presentations will take place on the final exam day as scheduled by the university. Presentations will be ordered according to the group's number. The Deliverer is responsible for submitting the slides to Sakai. The slides are due before the presentations begin. Attendance of all members is required. Each member that fails to attend will automatically lose five points from their individual grade. 
 
 
 # **Rubric**
@@ -43,9 +43,9 @@ The final presentations will take place on the final exam day as scheduled by th
 |Eye Contact and Body Language|3 Points|
 |Quality of Slides|3 Points|
 |4 Visuals|4 Points|
-|Ability to Answer Questions|2 Points|
 |Grammatical and/or Spelling Errors|2 Points|
-|Between 3 and 5 Minutes|2 Points|
+|Between 4 and 7 Minutes|2 Points|
+|Slides Submitted on Sakai|2 Points|
 |Attendance| 5 Points|
 |**Total**|**30 Points**|
 |||

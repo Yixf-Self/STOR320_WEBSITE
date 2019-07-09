@@ -210,7 +210,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 | P1  | Project Proposal| Sakai + Meeting    | July 5 (5PM)|
 | P2  | Exploratory Data Analysis |Sakai + Meeting| July 19 (5PM)|
 | P3  | Final Written Paper|Sakai|July 26 (5 PM)|
-| P4  | Final Presentation|Class| July 29 (11:30 AM)|
+| P4  | Final Presentation|Sakai + Class| July 29 (11:30 AM)|
 ||||
 
 
