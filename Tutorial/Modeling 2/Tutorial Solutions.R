@@ -11,7 +11,6 @@ ggplot(data=DATA) +
 
 #1.2
 WAPLOT.func=function(Location){
-
   DATA %>% filter(L == Location) %>%
     ggplot()+
     geom_point(aes(x=A,y=W),alpha=0.3)+
