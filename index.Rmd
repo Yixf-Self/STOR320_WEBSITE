@@ -176,7 +176,7 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 ## Research Group Assignments
 
-To find your research group, see the **[spreadsheet](https://docs.google.com/spreadsheets/d/1hwmR1xrH7QJNkXjoSpYHdpzcN-mYkIjMZNypVzLP0Jk/edit?usp=sharing)** sponsored by Google.
+To find your research group, see the following spreadsheets: **[Section 1]()** and **[Section 2]()**
 
 ## Four Roles
 
@@ -216,10 +216,11 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Sakai + Meeting    | July 5 (5PM)|
-| P2  | Exploratory Data Analysis |Sakai + Meeting| July 19 (5PM)|
-| P3  | Final Written Paper|Sakai|July 26 (5 PM)|
-| P4  | Final Presentation|Sakai + Class| July 29 (11:30 AM)|
+| P1  | Project Proposal| Sakai + Meeting    | October 11 (5PM)|
+| P2  | Exploratory Data Analysis |Sakai + Meeting| November 15 (5PM)|
+| P3  | Final Written Paper|Sakai|December 4 (5 PM)|
+| P4  | Final Presentation (Section 1)|Sakai + Class| December 13 (12:00 AM)|
+| P4  | Final Presentation (Section 2)|Sakai + Class| December 9 (12:00 AM)|
 ||||
 
 
