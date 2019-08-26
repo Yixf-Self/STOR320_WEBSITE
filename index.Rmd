@@ -94,14 +94,16 @@ This course is an application-driven introduction to data science. Statistical a
 |Aug. 28|Data Transformation I|[Slides](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)||
 |Aug. 30|Data Transformation II|[Slides](https://drive.google.com/file/d/1W35ZO5yKH0k-yI3ogr7ilN0r5Fn85Rat/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|
 |Sep. 2|No Labor Day|||
+|Sep. 4|Data Transformation III|[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
+|Sep. 6|Data Transformation IV|[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))|
 |Sep. 20|Trip to Cleveland|||
 |Oct. 18|Fall Break|||
 |Nov. 27|Thanksgiving|||
 |Nov. 29|Thanksgiving|||
 |||||
 
-<!-- |Aug. 28|Data Transformation III|[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)|| -->
-<!-- ||Data Transformation IV|[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))| -->
+<!--  -->
+<!--  -->
 <!-- |Aug. 30|Exploratory Data Analysis I|[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)|| -->
 <!-- ||Exploratory Data Analysis II|[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[Tutorial](Tutorial/Exploratory Data Analysis/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))|| -->
 <!-- |Sep. 2|No Labor Day||| -->
@@ -162,17 +164,18 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 |----------|:--------:|:-------------:|:-------------:|----------------:|
 | Aug. 23  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[Solutions]()|Aug. 30 (5 PM) |
 | Aug. 30 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))||[Solutions](Lab/Lab 2/Lab_2_Soln_TK.html)|Sep. 6 (5 PM) |
+| Sep. 6 || [A1]() ([.zip]())|[Solutions](Analysis/Analysis 1/Solutions_1.html)|Sep. 20 (5 PM) |
+| Sep. 20 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||[Solutions](Lab/Lab 3/Lab_3_Solutions.html)|Sep. 27 (5 PM)|
+| Sep. 27 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))||[Solutions](Lab/Lab 4/Lab_4_Solutions.html)|Oct. 4 (5 PM)|
+| Oct. 4|| [A2]() ([.zip]())|[Solutions](Analysis/Analysis 2/Solutions_2.html)|Oct. 18 (5 PM)|
+| Oct. 18 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))||[Solutions](Lab/Lab 5/Lab_5_Soln_TK.html)|Oct. 25  (5 PM)|
+| Oct. 25 || [A3]() ([.zip]())|[Solutions](Analysis/Analysis 3/Solutions_3.html)        |Nov. 1 (5 PM)|
+| Nov. 1  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing)) ||[Solutions](Lab/Lab 6/Lab_6_Solutions.html)|Nov. 8 (5 PM)|
+| Nov. 8 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing)) ||[Solutions](Lab/Lab 7/Lab_7_Solutions.html)|Nov. 15 (5 PM)|
+| Nov. 15  |        |  [A4]() ([.zip]())|[Solutions](Analysis/Analysis 4/Solutions_4.html) |Nov. 22 (5 PM)|
 |          |        |             |           |
 
-<!-- | July 1 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))|[Solutions](Analysis/Analysis 1/Solutions_1.html)|July 5 (5 PM) | -->
-<!-- | July 5 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||[Solutions](Lab/Lab 3/Lab_3_Solutions.html)|July 8 (5 PM)| -->
-<!-- | July 8 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))||[Solutions](Lab/Lab 4/Lab_4_Solutions.html)|July 10 (5 PM)| -->
-<!-- | July 10|| [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip](https://drive.google.com/file/d/1I5sckP-XEic_N9iYR7-8CpIrxjQ0PJgV/view?usp=sharing))|[Solutions](Analysis/Analysis 2/Solutions_2b.html)|July 12 (5 PM)| -->
-<!-- | July 12 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))||[Solutions](Lab/Lab 5/Lab_5_Soln_TK.html)|July 15  (5 PM)| -->
-<!-- | July 15 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1Z7GI0vTDktiW6yyis02CGY4eMDejDfr1/view?usp=sharing))|[Solutions](Analysis/Analysis 3/Solutions_3.html)        |July 19 (5 PM)| -->
-<!-- | July 19  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing)) ||[Solutions](Lab/Lab 6/Lab_6_Solutions.html)|July 22 (5 PM)| -->
-<!-- | July 22 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing)) |||July 24 (5 PM)| -->
-<!-- | July 24   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1veOCeyVo6nhNo1jrzFPO9QIwoMXPaMga/view?usp=sharing))||July 29 (5 PM)| -->
+
 
 
 # **Final Project Details**
