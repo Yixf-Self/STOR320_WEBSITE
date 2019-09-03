@@ -102,6 +102,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 16|Data Import|[Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)|| 
 |Sep. 18|Tidy Data I|[Slides](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||
 |Sep. 20|Trip to Cleveland|||
+|Oct. 11|Industry I ([Deloitte](https://drive.google.com/file/d/1fL11hV4DEgt8aIyAkI1x5TormR1lm4NH/view?usp=sharing))|||
 |Oct. 18|Fall Break|||
 |Nov. 27|Thanksgiving|||
 |Nov. 29|Thanksgiving|||
