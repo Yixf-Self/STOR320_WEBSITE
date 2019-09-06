@@ -1,5 +1,5 @@
 ---
-title: "STOR 320 Tutorial on Data Transformation 1"
+title: "STOR 320 Tutorial on Data Transformation 2"
 author: "Mario Giacomazzo"
 date: "August 22, 2018"
 output: html_document
