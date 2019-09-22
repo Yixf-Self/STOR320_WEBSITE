@@ -102,38 +102,39 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 16|Data Import|[Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)|| 
 |Sep. 18|Tidy Data I|[Slides](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||
 |Sep. 20|Trip to Cleveland|||
+|Sep. 23|Tidy Data II|[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[Tutorial](Tutorial/Tidy/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|
+|Sep. 25|Web Scraping I|[Slides](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|
+|Sep. 27|Web Scraping II|[Slides](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|
+|Sep. 30|Joins I|[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
+|Oct. 2|Joins II|[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
+|Oct. 4|Final Project II|[Slides](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)||
+|Oct. 7|Factors|[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
+|Oct. 9|Programming I|[Slides](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|
 |Oct. 11|Industry I ([Deloitte](https://drive.google.com/file/d/1fL11hV4DEgt8aIyAkI1x5TormR1lm4NH/view?usp=sharing))|||
+|Oct. 14|Programming II|[Slides](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[Tutorial](Tutorial/Programming 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|
+|Oct. 16|Programming III|[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
 |Oct. 18|Fall Break|||
+|Oct. 21|Programming IV|[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
+|Oct. 23|Modeling I|[Slides](https://drive.google.com/file/d/1Kn1cfghAWIcdBk_u8MBdbNT-bR15BJ8V/view?usp=sharing)||
+|Oct. 25|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[Tutorial](Tutorial/Modeling 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))|
+|Oct. 28|Modeling III|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)|[Tutorial](Tutorial/Modeling 3/Tutorial.html) ([.zip](https://drive.google.com/file/d/1w92U22YHiUd9agVaQuKnweirOwrLIOj-/view?usp=sharing))|
+|Oct. 30|Modeling IV|[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)|[Tutorial](Tutorial/Modeling 4/Tutorial.html) ([.zip](https://drive.google.com/file/d/1f8D4xLKPwavJWy93d5DDJU2yr1B6gPt4/view?usp=sharing))|
+|Nov. 1|Modeling V|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
+|Nov. 4|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
+|Nov. 6|Modeling VII|[Slides](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[Tutorial](Tutorial/Modeling 7/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|
+|Nov. 8|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[Tutorial](Tutorial/Modeling 8/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|
+|Nov. 11|Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[Tutorial](Tutorial/Modeling 9/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|
+|Nov. 13|Modeling X|[Slides](https://drive.google.com/file/d/1T9FMiYSmDr4WC3pLuyxvVVvDEhpy7ScQ/view?usp=sharing)||
+|Nov. 15|Data Ethics|[Slides](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||
+|Nov. 18|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
 |Nov. 27|Thanksgiving|||
 |Nov. 29|Thanksgiving|||
+|Dec. 4|Final Paper||
 |||||
 
 
 
-<!-- ||Tidy Data II|[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[Tutorial](Tutorial/Tidy/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))| -->
-<!-- |Jul. 3|Web Scraping I|[Slides](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))| -->
-<!-- |Jul. 4|Firework Day||| -->
-<!-- |Jul. 5|Web Scraping II|[Slides](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))| -->
-<!-- |Jul. 8|Joins I|[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)|| -->
-<!-- ||Joins II|[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)|| -->
-<!-- |Jul. 9|Final Project II|[Slides](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)|| -->
-<!-- ||Factors|[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)|| -->
-<!-- |Jul. 10|Programming I|[Slides](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))| -->
-<!-- ||Programming II|[Slides](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[Tutorial](Tutorial/Programming 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))| -->
-<!-- |Jul. 11|Programming III|[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)|| -->
-<!-- ||Programming IV|[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)|| -->
-<!-- |Jul. 12|Modeling I|[Slides](https://drive.google.com/file/d/1Kn1cfghAWIcdBk_u8MBdbNT-bR15BJ8V/view?usp=sharing)|| -->
-<!-- |Jul. 15|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[Tutorial](Tutorial/Modeling 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))| -->
-<!-- ||Modeling III|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)|[Tutorial](Tutorial/Modeling 3/Tutorial.html) ([.zip](https://drive.google.com/file/d/1w92U22YHiUd9agVaQuKnweirOwrLIOj-/view?usp=sharing))| -->
-<!-- |Jul. 16|Modeling IV|[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)|[Tutorial](Tutorial/Modeling 4/Tutorial.html) ([.zip](https://drive.google.com/file/d/1f8D4xLKPwavJWy93d5DDJU2yr1B6gPt4/view?usp=sharing))| -->
-<!-- |Jul. 17|Modeling V|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)|| -->
-<!-- |Jul. 18|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)|| -->
-<!-- |Jul. 19|Modeling VII|[Slides](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[Tutorial](Tutorial/Modeling 7/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))| -->
-<!-- |Jul. 22|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[Tutorial](Tutorial/Modeling 8/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))| -->
-<!-- ||Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[Tutorial](Tutorial/Modeling 9/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))| -->
-<!-- |Jul. 23|Modeling X|[Slides](https://drive.google.com/file/d/1T9FMiYSmDr4WC3pLuyxvVVvDEhpy7ScQ/view?usp=sharing)|| -->
-<!-- |Jul 24|Data Ethics|[Slides](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)|| -->
-<!-- |Jul. 25|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))||||| -->
+
 <!-- |Jul. 26|Final Papers||| -->
 <!-- |Jul. 29|Final Presentations||| -->
 <!-- |Mar. 11|Spring Break|||||| -->
@@ -228,8 +229,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Sakai + Meeting    | Oct. 11 (5PM)|
-| P2  | Exploratory Data Analysis |Sakai + Meeting| Nov. 15 (5PM)|
+| P1  | Project Proposal| Meeting    | Oct. 11 (5PM)|
+| P2  | Exploratory Data Analysis |Meeting| Nov. 15 (5PM)|
 | P3  | Final Written Paper|Sakai|Dec. 4 (5 PM)|
 | P4  | Final Presentation (Section 2)|Sakai + Class| Dec. 9 (12:00 AM)|
 | P4  | Final Presentation (Section 1)|Sakai + Class| Dec. 13 (12:00 AM)|
