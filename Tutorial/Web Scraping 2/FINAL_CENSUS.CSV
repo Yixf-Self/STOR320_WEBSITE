@@ -1,5 +1,5 @@
 Name,State,Change,Density
-New York City,New York,0.25,11056
+New York,New York,0.25,11056
 Los Angeles,California,0.67,3343
 Chicago,Illinois,-0.32,4550
 Houston,Texas,0.8,1431
@@ -22,11 +22,13 @@ Washington Dc,District Of Columbia,1.54,4506
 El Paso,Texas,0.65,1045
 Boston,Massachusetts,1.05,5549
 Nashville,Tennessee,0.94,551
+Nashville,Tennessee,0.94,551
 Portland,Oregon,1.4,1931
 Las Vegas,Nevada,1.6,1903
 Detroit,Michigan,-0.53,1843
 Oklahoma City,Oklahoma,1.19,421
 Memphis,Tennessee,-0.27,788
+Louisville,Kentucky,0.24,909
 Louisville,Kentucky,0.24,909
 Baltimore,Maryland,-1.12,2836
 Milwaukee,Wisconsin,-0.74,2336
@@ -57,6 +59,7 @@ Anaheim,California,0.49,2756
 Honolulu,Hawaii,-0.07,2238
 Riverside,California,1.04,1592
 Santa Ana,California,0.06,4762
+Lexington,Kentucky,1.13,449
 Lexington,Kentucky,1.13,449
 Corpus Christi,Texas,0.37,729
 Henderson,Nevada,2.62,1170
@@ -96,6 +99,7 @@ Fremont,California,0.72,1188
 Hialeah,Florida,-0.28,4215
 Richmond,Virginia,1.54,1507
 Boise,Idaho,1.26,1092
+Boise,Idaho,1.26,1092
 Garland,Texas,-0.54,1565
 Baton Rouge,Louisiana,-0.27,1015
 Spokane,Washington,1.3,1261
@@ -119,6 +123,7 @@ Grand Rapids,Michigan,0.68,1742
 Little Rock,Arkansas,0.17,649
 Huntsville,Alabama,1.08,361
 Huntington Beach,California,-0.2,2859
+Augusta,Georgia,0.14,253
 Augusta,Georgia,0.14,253
 Overland Park,Kansas,1.5,1016
 Montgomery,Alabama,-0.45,477
@@ -193,9 +198,4 @@ Charleston,South Carolina,1.4,496
 Olathe,Kansas,1.06,886
 Midland,Texas,1.04,721
 West Valley City,Utah,0.43,1506
-Gainesville,Florida,1.09,839
-Columbia,South Carolina,0.24,387
-Carrollton,Texas,0.39,1433
 Warren,Michigan,-0.14,1512
-Sterling Heights,Michigan,0.32,1417
-Hamn,Virginia,-0.71,995
