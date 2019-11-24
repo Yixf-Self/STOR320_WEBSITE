@@ -214,8 +214,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 | P1  | Project Proposal| Meeting    | Oct. 11 (5PM)|
 | P2  | Exploratory Data Analysis |Sakai + Meeting| Nov. 15 (5PM)|
 | P3  | Final Written Paper|Sakai|Dec. 4 (5 PM)|
-| P4  | Final Presentation (Section 2)|Sakai + Class| Dec. 9 (12:00 AM)|
-| P4  | Final Presentation (Section 1)|Sakai + Class| Dec. 13 (12:00 AM)|
+| P4  | Final Presentation (Section 2)|Sakai + Class| Dec. 9 (12:00 PM)|
+| P4  | Final Presentation (Section 1)|Sakai + Class| Dec. 13 (12:00 PM)|
 ||||
 
 
