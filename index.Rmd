@@ -148,7 +148,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 
 | Assigned | Lab (L) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| JAN 10  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))||[Solutions](Lab/Lab 1/Lab_1_Solutions.html)|JAN 17 (5 PM) |
+| JAN 10  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[Solutions](Lab/Lab 1/Lab_1_Solutions.html)|JAN 17 (5 PM) |
 | JAN 17 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))||[Solutions](Lab/Lab 2/Lab_2_Soln_TK.html)|JAN 24 (5 PM) |
 | JAN 24 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))|[Solutions](Analysis/Analysis 1/Solutions_1.html)|FEB 7 (5 PM) |
 | FEB 7 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))||[Solutions](Lab/Lab 3/Lab_3_Solutions.html)|FEB 14 (5 PM)|
