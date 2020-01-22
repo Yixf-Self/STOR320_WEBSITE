@@ -210,8 +210,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Meeting    | FEB 7 (5PM)|
-| P2  | Exploratory Data Analysis |Sakai + Meeting| MAR 13 (5PM)|
+| P1  | Project Proposal| Meeting    | FEB 14 (5PM)|
+| P2  | Exploratory Data Analysis |Sakai + Meeting| MAR 20 (5PM)|
 | P3  | Final Written Paper|Sakai|APR 24 (5 PM)|
 | P4  | Final Presentation |Sakai + Class| APR 28 (12:00 PM)|
 ||||
