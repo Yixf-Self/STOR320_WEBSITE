@@ -46,7 +46,7 @@ Many Wikipedia pages contain information organized in tables. Consider the [US C
 
 Using `rvest` functions such as `read_html()` and `html_table()`, we create a data frame called `VIOLENT` that contains all information read from the desired Wikipedia page.
 
-```{r, eval=F}
+```{r, eval=T}
 URL.VIOLENT="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29"
 VIOLENT = URL.VIOLENT %>%
   read_html() %>%
@@ -59,8 +59,8 @@ str(VIOLENT)
 
 You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?
 
-```{r, eval=F}
-VIOLENT2=VIOLENT[-1,1:8]
+```{r, eval=T}
+VIOLENT2=VIOLENT[-c(1,2),1:8]
 colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robbery","Assault")
 str(VIOLENT2)
 ```
@@ -81,6 +81,7 @@ Using `str_detect()` we can identify cases in `City` where unwanted characters {
 
 ```{r, eval=F}
 VIOLENT3[str_detect(VIOLENT3$City,"[,(0-9){1}]"),]$City
+VIOLENT3[str_detect(VIOLENT3$State,"[,(0-9){1}]"),]$State
 ```
 
 ##Chunk 5: Cleaning Problematic Cities
@@ -93,12 +94,10 @@ VIOLENT4 = VIOLENT3 %>%
               mutate(State=str_replace_all(State,"[,(0-9){1}]",""))
 
 VIOLENT5 = VIOLENT4 %>% 
-              mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City),
-                     City=ifelse(City=="Savannah-Chatham Metropolitan","Savannah",City),
-                     City=ifelse(City=="Las Vegas Metropolitan Police Department","Las Vegas",City))
+              mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
 
 VIOLENT6 = VIOLENT5 %>%
-              mutate(City=str_replace(City,"Metropolitan",""))
+              mutate(City=str_replace(City,"Metro",""))
 
 write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
 ```

@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2019-09-25" />
+<meta name="date" content="2020-02-11" />
 
 <title>STOR 320 Tutorial on Web Scraping 1</title>
 
@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">STOR 320 Tutorial on Web Scraping 1</h1>
 <h4 class="author"><em>Mario Giacomazzo</em></h4>
-<h4 class="date"><em>September 25, 2019</em></h4>
+<h4 class="date"><em>February 11, 2020</em></h4>
 
 </div>
 
@@ -167,13 +167,36 @@ VIOLENT = URL.VIOLENT %&gt;%
   html_table(fill=T) %&gt;%
   .[[1]]
 str(VIOLENT)</code></pre>
+<pre><code>## 'data.frame':    102 obs. of  13 variables:
+##  $ State         : chr  &quot;State&quot; &quot;&quot; &quot;Alabama&quot; &quot;Alaska&quot; ...
+##  $ City          : chr  &quot;City&quot; &quot;&quot; &quot;Mobile3&quot; &quot;Anchorage&quot; ...
+##  $ Population    : chr  &quot;Population&quot; &quot;&quot; &quot;248431&quot; &quot;296188&quot; ...
+##  $ Violent crime : chr  &quot;Total&quot; &quot;&quot; &quot;740.25&quot; &quot;1203.29&quot; ...
+##  $ Violent crime : chr  &quot;Murder andNonnegligentmanslaughter&quot; &quot;&quot; &quot;20.13&quot; &quot;9.12&quot; ...
+##  $ Violent crime : chr  &quot;Violent crime&quot; &quot;&quot; &quot;57.16&quot; &quot;132.01&quot; ...
+##  $ Violent crime : chr  &quot;Rape1&quot; &quot;&quot; &quot;177.11&quot; &quot;262.67&quot; ...
+##  $ Violent crime : chr  &quot;Robbery&quot; &quot;&quot; &quot;485.85&quot; &quot;799.49&quot; ...
+##  $ Property crime: chr  &quot;Aggravatedassault&quot; &quot;&quot; &quot;5453.83&quot; &quot;5415.82&quot; ...
+##  $ Property crime: chr  &quot;Total&quot; &quot;&quot; &quot;1216.84&quot; &quot;748.17&quot; ...
+##  $ Property crime: chr  &quot;Burglary&quot; &quot;&quot; &quot;3730.21&quot; &quot;3619.66&quot; ...
+##  $ Property crime: chr  &quot;Larceny-theft&quot; &quot;&quot; &quot;506.78&quot; &quot;1047.98&quot; ...
+##  $ Arson2        : chr  &quot;Motorvehicletheft&quot; &quot;&quot; &quot;22.94&quot; &quot;20.93&quot; ...</code></pre>
 </div>
 <div id="chunk-2-initial-selection-of-violent-crimes-and-cleaning" class="section level2">
 <h2>Chunk 2: Initial Selection of Violent Crimes and Cleaning</h2>
 <p>You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?</p>
-<pre class="r"><code>VIOLENT2=VIOLENT[-1,1:8]
+<pre class="r"><code>VIOLENT2=VIOLENT[-c(1,2),1:8]
 colnames(VIOLENT2)=c(&quot;State&quot;,&quot;City&quot;,&quot;Population&quot;,&quot;Total&quot;,&quot;Murder&quot;,&quot;Rape&quot;,&quot;Robbery&quot;,&quot;Assault&quot;)
 str(VIOLENT2)</code></pre>
+<pre><code>## 'data.frame':    100 obs. of  8 variables:
+##  $ State     : chr  &quot;Alabama&quot; &quot;Alaska&quot; &quot;Arizona&quot; &quot;Arizona&quot; ...
+##  $ City      : chr  &quot;Mobile3&quot; &quot;Anchorage&quot; &quot;Chandler&quot; &quot;Gilbert&quot; ...
+##  $ Population: chr  &quot;248431&quot; &quot;296188&quot; &quot;249355&quot; &quot;242090&quot; ...
+##  $ Total     : chr  &quot;740.25&quot; &quot;1203.29&quot; &quot;259.47&quot; &quot;85.51&quot; ...
+##  $ Murder    : chr  &quot;20.13&quot; &quot;9.12&quot; &quot;2.01&quot; &quot;2.07&quot; ...
+##  $ Rape      : chr  &quot;57.16&quot; &quot;132.01&quot; &quot;52.13&quot; &quot;16.11&quot; ...
+##  $ Robbery   : chr  &quot;177.11&quot; &quot;262.67&quot; &quot;56.95&quot; &quot;21.07&quot; ...
+##  $ Assault   : chr  &quot;485.85&quot; &quot;799.49&quot; &quot;148.38&quot; &quot;46.26&quot; ...</code></pre>
 </div>
 <div id="chunk-3-fixing-variable-types" class="section level2">
 <h2>Chunk 3: Fixing Variable Types</h2>
@@ -185,7 +208,8 @@ str(VIOLENT3)</code></pre>
 <div id="chunk-4-identifying-problematic-cases-in-city" class="section level2">
 <h2>Chunk 4: Identifying Problematic Cases in <code>City</code></h2>
 <p>Using <code>str_detect()</code> we can identify cases in <code>City</code> where unwanted characters {“,”,“0” to “9”} make an appearance.</p>
-<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[,(0-9){1}]&quot;),]$City</code></pre>
+<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[,(0-9){1}]&quot;),]$City
+VIOLENT3[str_detect(VIOLENT3$State,&quot;[,(0-9){1}]&quot;),]$State</code></pre>
 </div>
 <div id="chunk-5-cleaning-problematic-cities" class="section level2">
 <h2>Chunk 5: Cleaning Problematic Cities</h2>
@@ -195,12 +219,10 @@ str(VIOLENT3)</code></pre>
               mutate(State=str_replace_all(State,&quot;[,(0-9){1}]&quot;,&quot;&quot;))
 
 VIOLENT5 = VIOLENT4 %&gt;% 
-              mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City),
-                     City=ifelse(City==&quot;Savannah-Chatham Metropolitan&quot;,&quot;Savannah&quot;,City),
-                     City=ifelse(City==&quot;Las Vegas Metropolitan Police Department&quot;,&quot;Las Vegas&quot;,City))
+              mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City))
 
 VIOLENT6 = VIOLENT5 %&gt;%
-              mutate(City=str_replace(City,&quot;Metropolitan&quot;,&quot;&quot;))
+              mutate(City=str_replace(City,&quot;Metro&quot;,&quot;&quot;))
 
 write_csv(VIOLENT6,&quot;FINAL_VIOLENT.CSV&quot;)</code></pre>
 </div>

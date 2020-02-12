@@ -13,7 +13,7 @@ VIOLENT = URL.VIOLENT %>%
 str(VIOLENT)
 
 #1.2
-VIOLENT2=VIOLENT[-1,1:8]
+VIOLENT2=VIOLENT[-c(1,2),1:8]
 colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robbery","Assault")
 str(VIOLENT2)
 
@@ -24,17 +24,19 @@ str(VIOLENT3)
 
 #1.4
 VIOLENT3[str_detect(VIOLENT3$City,"[,(0-9){1}]"),]$City
+VIOLENT3[str_detect(VIOLENT3$State,"[,(0-9){1}]"),]$State
 
 #1.5
 VIOLENT4 = VIOLENT3 %>%
   mutate(City=str_replace_all(City,"[,(0-9){1}]","")) %>%
   mutate(State=str_replace_all(State,"[,(0-9){1}]",""))
+
 VIOLENT5 = VIOLENT4 %>% 
-  mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City),
-         City=ifelse(City=="Savannah-Chatham Metropolitan","Savannah",City),
-         City=ifelse(City=="Las Vegas Metropolitan Police Department","Las Vegas",City))
+  mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
+
 VIOLENT6 = VIOLENT5 %>%
-  mutate(City=str_replace(City,"Metropolitan",""))
+  mutate(City=str_replace(City,"Metro",""))
+
 write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
 
 #2.1
