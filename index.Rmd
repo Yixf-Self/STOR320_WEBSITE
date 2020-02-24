@@ -103,12 +103,13 @@ This course is an application-driven introduction to data science. Statistical a
 |FEB 14|Web Scraping III|[Slides](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|
 |FEB 17|Joins I|[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
 |FEB 19|Joins II|[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
-|FEB 21|Final Project II|[Slides](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)||
-|FEB 24|Factors|[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
-|FEB 26|Programming I|[Slides](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|
-|FEB 28|Programming II|[Slides](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[Tutorial](Tutorial/Programming 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|
-|MAR 2|Programming III|[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
-|MAR 4|Programming IV|[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
+|FEB 21|Let It Snow|||
+|FEB 24|Final Project II|[Slides](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)||
+|FEB 26|Factors|[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
+|FEB 28|Programming I|[Slides](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|
+|MAR 2|Programming II|[Slides](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[Tutorial](Tutorial/Programming 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|
+|MAR 4|Programming III|[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
+|MAR 6|Programming IV|[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
 | MAR 9 |SPRING BRIZZEAK I|||
 | MAR 11 |SPRING BRIZZEAK II|||
 | MAR 13 |SPRING BRIZZEAK III|||
@@ -202,7 +203,7 @@ This final project will be divided into four parts worth a total of 100 points. 
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
     + [Template](Final Project/Final_Paper_Template.html) ([.Rmd](https://drive.google.com/file/d/16kLjQmszVA5nJyUPwwPy94BltOog6YSO/view?usp=sharing))
-    + [Rank Survey]()
+    + [Group Grades](https://docs.google.com/forms/d/e/1FAIpQLSdpsXNOkT1c0gdcujcggb-hg-YoAKO5k-RdGBywwO1pr0YEXg/viewform?usp=sf_link)
     
 * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
 
