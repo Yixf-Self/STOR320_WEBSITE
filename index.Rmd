@@ -157,7 +157,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | FEB 7 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/1IbNS1o6105OF1-96J_0dGye6iH8SQuXo/view?usp=sharing))||[Solutions](Lab/Lab 3/Lab_3_Solutions.html)|FEB 14 (5 PM)|
 | FEB 14 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1r2adPoDXnNmcTljOqI2oRpLZxG9DEAZt/view?usp=sharing))||[Solutions](Lab/Lab 4/Lab_4_Solutions.html)| FEB 21 (5 PM)|
 | FEB 21 || [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip](https://drive.google.com/file/d/1wgvFBXbGPVQBTlix6GzgHmLb2el-Y9R9/view?usp=sharing))|[Solutions](Analysis/Analysis 2/Solutions_2.html)|MAR 6 (5 PM)|
-| MAR 6 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd]())||[Solutions](Lab/Lab 5/Lab_5_Soln_TK.html)|MAR 13  (5 PM)|
+| MAR 6 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))||[Solutions](Lab/Lab 5/Lab_5_Soln_TK.html)|MAR 13  (5 PM)|
 | MAR 13 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip]())|[Solutions](Analysis/Analysis 3/Solutions_3.html)        |MAR 27 (5 PM)|
 | MAR 27  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd]()) ||[Solutions](Lab/Lab 6/Lab_6_Solutions.html)|APR 3 (5 PM)|
 | APR 3 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd]()) ||[Solutions](Lab/Lab 7/Lab_7_Solutions.html)|APR 10 (5 PM)|
