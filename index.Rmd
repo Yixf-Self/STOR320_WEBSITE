@@ -153,7 +153,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | MAR 13 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1JRgRxUvmg-SWsM7H-nfSNNbNgP2zpkY2/view?usp=sharing))|[Solutions](Analysis/Analysis 3/Solutions_3.html)        |APR 3 (5 PM)|
 | MAR 27  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) ||[Solutions](Lab/Lab 6/Lab_6_Solutions.html)|APR 10 (5 PM)|
 | APR 3 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) ||[Solutions](Lab/Lab 7/Lab_7_Solutions.html)|APR 17 (5 PM)|
-| APR 10  | |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1Php1Yc72wNjfhMCNi5p_JfogMgu6k_Rf/view?usp=sharing))|[Solutions](Analysis/Analysis 4/Solutions_4.html) |APR 28 (12 PM)|
+| APR 10  | |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1Php1Yc72wNjfhMCNi5p_JfogMgu6k_Rf/view?usp=sharing))|[Solutions](Analysis/Analysis 4/Solutions_4.html) |APR 28 (3 PM)|
 
 
 
@@ -187,6 +187,8 @@ Although everyone is responsible for the entire project, each member of the grou
 
 * No student will grade the contribution of the others in your group. I will be able to see what you did on an individual basis in your papers. 
 
+* There will be no final presentation. Your last analysis is due on the final exam day by the end of your exam period.
+
 ## Four Parts Including Point Values
 
 This final project will be divided into four parts worth a total of 100 points. Each part will have a clear rubric as non-subjective as possible. The parts along with total point values are found below:
@@ -206,7 +208,7 @@ This final project will be divided into four parts worth a total of 100 points. 
     + [Template](Final Project/Final_Paper_Template.html) ([.Rmd](https://drive.google.com/file/d/16kLjQmszVA5nJyUPwwPy94BltOog6YSO/view?usp=sharing))
     + [Group Grades](https://docs.google.com/forms/d/e/1FAIpQLSdpsXNOkT1c0gdcujcggb-hg-YoAKO5k-RdGBywwO1pr0YEXg/viewform?usp=sf_link)
     
-* **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
+<!-- * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)* -->
 
     
 ## Due Dates of Individual Parts
