@@ -72,6 +72,9 @@ This course is an application-driven introduction to data science. Statistical a
 
 * Course Syllabi:  **[Section 2](https://drive.google.com/file/d/18BzTf_X95uysZ__0Vq-lOXWyfz3VWXb8/view?usp=sharing)**
 
+- Zoom Links:
+    + **[Lectures:](https://unc.zoom.us/j/488895311)** Open MWF from 12PM-1:15AM
+    + **[Office Hours:](https://unc.zoom.us/j/100129995)** Open T from 9AM - 3PM
 
   </div>
   <div class="column">
